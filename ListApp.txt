@@ -1,0 +1,17 @@
+1.App01 : Data Gathering
+    a.App01a :  Data Gathering from Psutil Lib - Cpu & Mem, Udp client side
+    b.App01b :  Data Gathering from Curl lib - Server Respon, Save to csv, limit csv size
+    c.App01c :  Data Gathering from Udp Server Side (Cpu-Mem), read csv (Server respon)
+                Write to Csv (Id;Cpu;Mem;ServerResp)
+2.App02 : Fuzzy Logic - FL_Modul
+    a. Read Csv (Id;Cpu;Mem;ServerResp)
+    b. Do Fuzzy Logic
+    c. Calculate Output
+    d. Run Server Udp Side - FL_Modul
+3.App03 : Load Balance - LB_Modul
+    a. Run Client Udp Side - Get Udp Output Fuzzy
+        Output fuzzy == Loadwindow
+        Loadwindow High == least Load Server
+    b. Load Ryu Lib
+    c. Change OpenFlow Table based on Least Loaded Server
+            
