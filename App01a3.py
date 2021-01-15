@@ -20,7 +20,7 @@ def job():
 	msg = str(cpu_percent()) + ';' + str(virtual_memory().percent)
 	print("Publish Cpu/Ram data", msg)
 	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
-	client.publish(topic="sdn/cpumem01", payload=msg, qos=0, retain=False)
+	client.publish(topic="sdn/cpumem03", payload=msg, qos=0, retain=False)
 
 # This timer will run job() five times, one second apart
 timer = multitimer.MultiTimer(interval=1, function=job, count=-1)

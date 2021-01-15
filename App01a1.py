@@ -26,3 +26,5 @@ def job():
 timer = multitimer.MultiTimer(interval=1, function=job, count=-1)
 # Also, this timer would run indefinitely...
 timer.start()
+
+print("Do other job")
