@@ -21,6 +21,9 @@ add03 = 'http://192.168.8.3'
 rsp_tm_s1 = 1
 rsp_tm_s2 = 1
 rsp_tm_s3 = 1
+rsp_std_s1 = 1
+rsp_std_s2 = 1
+rsp_std_s3 = 1
 
 #create initial dataframe
 # intialise data of lists. 
@@ -92,6 +95,7 @@ client.message_callback_add("sdn/cpumem02", on_message_from_cpumem02)
 client.subscribe("sdn/cpumem03", qos=0)
 
 client.message_callback_add("sdn/cpumem03", on_message_from_cpumem03)
+
 
 #Start getting Server Response From Here
 def job1():
@@ -174,14 +178,30 @@ timer3 = multitimer.MultiTimer(interval=10, function=job3, count=-1)
 # Also, this timer would run indefinitely...
 timer3.start()
 
+
 time.sleep( 2 )
 #Start collect all data
 #save to dataframe
+#ready to print to csv
+#publish data clean to MQTT broker
 def job4():
 	global df1
 	global rsp_tm_s1
 	global rsp_tm_s2
 	global rsp_tm_s3
+	global rsp_std_s1
+	global rsp_std_s2
+	global rsp_std_s3
+	global cpu01
+	global cpu02
+	global cpu03
+	global mem01
+	global mem02
+	global mem03
+	global time01
+	global time02
+	global time03
+	global client
 	# Appending a Data Frame
 	s = pd.DataFrame({'id':['server1','server2','server3'],'cpu':[cpu01,cpu02,cpu03], 'mem':[mem01,mem02,mem03],'rsp_tm':[time01,time02,time03]}) 
 	  
@@ -199,32 +219,62 @@ def job4():
 	# select multiple rows with some 
 	# particular columns 
 	df_s1 = df.loc[['server1'], 
-	               ['rsp_tm'] 
-	rsp_tm_s1 = df_s1['rsp_tm'].mean()
+	               ['rsp_tm'] ]
+	rsp_tm_s1 = df_s1['rsp_tm'].tail().mean()
+	rsp_std_s1 = df_s1['rsp_tm'].std()
 	# Show the dataframe 
-	print("mean = ", rsp_tm_s1)
+	print("s1 respon time mean(last 5) = ", rsp_tm_s1)
+	print("s1 respon time std = ", rsp_std_s1)
 	print(df_s1, "\n")
 
 	df_s2 = df.loc[['server2'], 
-	               ['rsp_tm']   
-	rsp_tm_s2 = df_s2['rsp_tm'].mean()
+	               ['rsp_tm']]   
+	rsp_tm_s2 = df_s2['rsp_tm'].tail().mean()
+	rsp_std_s2 = df_s2['rsp_tm'].std()
 	# Show the dataframe 
-	print("mean = ", rsp_tm_s2)
+	print("s2 respon time mean(last 5) = ", rsp_tm_s2)
+	print("s2 respon time std = ", rsp_std_s2)
 	print(df_s2, "\n")
 
 	df_s3 = df.loc[['server3'], 
-	               ['rsp_tm']   
-	rsp_tm_s3 = df_s3['rsp_tm'].mean()
+	               ['rsp_tm'] ]  
+	rsp_tm_s3 = df_s3['rsp_tm'].tail().mean()
+	rsp_std_s3 = df_s3['rsp_tm'].std()
 	# Show the dataframe 
-	print("mean = ", rsp_tm_s3)
+	print("s3 respon time mean(last 5) = ", rsp_tm_s3)
+	print("s3 respon time std = ", rsp_std_s3)
 	print(df_s3, "\n")
+
+	#Publish data to MQTT Broker
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/rsptm01", payload=rsp_tm_s1, qos=0, retain=False)
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/rsptm02", payload=rsp_tm_s2, qos=0, retain=False)
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/rsptm03", payload=rsp_tm_s3, qos=0, retain=False)
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/rspstd01", payload=rsp_std_s1, qos=0, retain=False)
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/rspstd02", payload=rsp_std_s2, qos=0, retain=False)
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/rspstd03", payload=rsp_std_s3, qos=0, retain=False)
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/cpu01", payload=cpu01, qos=0, retain=False)
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/cpu02", payload=cpu02, qos=0, retain=False)
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/cpu03", payload=cpu03, qos=0, retain=False)
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/mem01", payload=mem01, qos=0, retain=False)
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/mem02", payload=mem02, qos=0, retain=False)
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	client.publish(topic="sdn/mem03", payload=mem03, qos=0, retain=False)
 
 # This timer will run job() five times, one second apart
 timer4 = multitimer.MultiTimer(interval=1, function=job4, count=5)
 # Also, this timer would run indefinitely...
 timer4.start()
-
-
 
 #Start Lopp MQTT
 client.loop_forever()
