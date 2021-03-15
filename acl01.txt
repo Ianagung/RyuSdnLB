@@ -1,0 +1,2 @@
+user user01
+topic readwrite sdn/#
