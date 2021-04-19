@@ -275,6 +275,7 @@ def job4():
 timer4 = multitimer.MultiTimer(interval=1, function=job4, count=5)
 # Also, this timer would run indefinitely...
 timer4.start()
+#Do Fuzzy
 
 #Start Lopp MQTT
 client.loop_forever()
