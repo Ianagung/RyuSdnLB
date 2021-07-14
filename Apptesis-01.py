@@ -25,8 +25,8 @@ def job():
 	# message you send to server	
 	msg1 = str(cpu_percent())
 	msg2 = str(virtual_memory().percent)
-	client.publish(topic="sdn/cpu01", payload=msg, qos=0, retain=False)
-	client.publish(topic="sdn/mem01", payload=msg, qos=0, retain=False)
+	client.publish(topic="sdn/cpu01", payload=msg1, qos=0, retain=False)
+	client.publish(topic="sdn/mem01", payload=msg2, qos=0, retain=False)
 	msg = msg1 + ';' + msg2
 	print("cpu & ram usage", msg)
 
