@@ -22,13 +22,13 @@ time.sleep( 5 )
 
 def job():
 	
-	# message you send to server
-	msg = str(cpu_percent()) + ';' + str(virtual_memory().percent)
-	print("cpu & ram usage", msg)
-	msg = str(cpu_percent())
+	# message you send to server	
+	msg1 = str(cpu_percent())
+	msg2 = str(virtual_memory().percent)
 	client.publish(topic="sdn/cpu01", payload=msg, qos=0, retain=False)
-	msg = str(virtual_memory().percent)
 	client.publish(topic="sdn/mem01", payload=msg, qos=0, retain=False)
+	msg = msg1 + ';' + msg2
+	print("cpu & ram usage", msg)
 
 # This timer will run job() five times, one second apart
 timer = multitimer.MultiTimer(interval=1, function=job, count=-1)
