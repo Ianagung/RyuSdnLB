@@ -11,7 +11,7 @@ import time
 from psutil import cpu_percent, cpu_count, virtual_memory
 
 #MQTT connection
-broker_url = "192.168.56.105"
+broker_url = "192.168.53.3"
 broker_port = 1883
 client = mqtt.Client()
 # edit code for passwords
@@ -25,10 +25,10 @@ def job():
 	# message you send to server
 	msg = str(cpu_percent()) + ';' + str(virtual_memory().percent)
 	print("cpu & ram usage", msg)
-	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
-	#client.publish(topic="sdn/cpumem01", payload=msg, qos=0, retain=False)
-	client.publish(topic="sdn/cpumem01", payload=msg, qos=0, retain=False)
-	client.publish(topic="sdn/cpumem01", payload=msg, qos=0, retain=False)
+	msg = str(cpu_percent())
+	client.publish(topic="sdn/cpu01", payload=msg, qos=0, retain=False)
+	msg = str(virtual_memory().percent)
+	client.publish(topic="sdn/mem01", payload=msg, qos=0, retain=False)
 
 # This timer will run job() five times, one second apart
 timer = multitimer.MultiTimer(interval=1, function=job, count=-1)
