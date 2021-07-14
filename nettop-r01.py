@@ -47,7 +47,7 @@ lineno = 0
 win = curses.initscr()
 
 #MQTT connection
-broker_url = "192.168.56.105"
+broker_url = "192.168.53.3"
 broker_port = 1883
 client = mqtt.Client()
 # edit code for passwords
