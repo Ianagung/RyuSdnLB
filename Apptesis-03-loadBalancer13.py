@@ -165,16 +165,16 @@ class loadBalancer13(app_manager.RyuApp):
             if((ipContents.dst=="10.0.0.100") and (ipContents.proto==0x06)):
                 tcpContents=pkt.get_protocols(tcp.tcp)[0]
 
-#Perform TCP action only if matching TCP properties
+                #Perform TCP action only if matching TCP properties
                 match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,eth_src=eth.src,eth_dst=eth.dst,ip_proto=ipContents.proto,ipv4_src=ipContents.src,ipv4_dst=ipContents.dst,tcp_src=tcpContents.src_port,tcp_dst=tcpContents.dst_port)
 
-#Send host TCP segments to destination server using destination server port connected to controller
+                #Send host TCP segments to destination server using destination server port connected to controller
                 actions1=[parser.OFPActionSetField(ipv4_src="10.0.0.100"),parser.OFPActionSetField(eth_dst=serverMac),parser.OFPActionSetField(ipv4_dst=serverIP),parser.OFPActionOutput(self.serverCount)]
 
                 ipInst1=[parser.OFPInstructionActions(ofproto.OFPIT_APPLY_ACTIONS,actions1)] 
                 cookie1=random.randint(0, 0xffffffffffffffff)
 
-#Create flow for incoming TCP segments from host to server through controller (IP: 10.0.0.100)
+                #Create flow for incoming TCP segments from host to server through controller (IP: 10.0.0.100)
                 flowMod1=parser.OFPFlowMod(datapath=datapath,match=match1,idle_timeout=7,instructions=ipInst1,buffer_id=msg.buffer_id,cookie=cookie1)
 
                 self.logger.info("\n Added flow for Host to Server condition------->")
@@ -184,39 +184,39 @@ class loadBalancer13(app_manager.RyuApp):
 
                 self.logger.info("\n LB-Server - SIP: 10.0.0.100 DIP: "+str(serverIP))
 
-#Add flow in the flow table of the virtual switch
+                #Add flow in the flow table of the virtual switch
 
                 datapath.send_msg(flowMod1)
 
-############TCP Server to Host
+                ############TCP Server to Host
 
-#Perform TCP action only if matching TCP properties
+                #Perform TCP action only if matching TCP properties
                 match2=parser.OFPMatch(self.serverCount,eth_type=eth.ethertype,eth_src=serverMac,eth_dst="11:22:33:ab:cd:ef",ip_proto=ipContents.proto,ipv4_src=serverIP,ipv4_dst="10.0.0.100",tcp_src=tcpContents.dst_port,tcp_dst=tcpContents.src_port)
 
-#Send server TCP segments to host using source host port connected to controller
+                #Send server TCP segments to host using source host port connected to controller
                 actions2=[parser.OFPActionSetField(eth_src="11:22:33:ab:cd:ef"),parser.OFPActionSetField(ipv4_src="10.0.0.100"),parser.OFPActionSetField(eth_dst=eth.src),parser.OFPActionSetField(ipv4_dst=ipContents.src),parser.OFPActionOutput(in_port)]
 
                 ipInst2=[parser.OFPInstructionActions(ofproto.OFPIT_APPLY_ACTIONS,actions2)] 
 
                 cookie2=random.randint(0, 0xffffffffffffffff)
 
-#Create flow for TCP segments from server to host through controller (IP: 10.0.0.100)
+                #Create flow for TCP segments from server to host through controller (IP: 10.0.0.100)
                 flowMod2=parser.OFPFlowMod(datapath=datapath,match=match2,idle_timeout=7,instructions=ipInst2,cookie=cookie2)
 
                 self.logger.info("\n Server-LB - SIP: "+str(serverIP)+" DIP: 10.0.0.100")
 
                 self.logger.info("\n LB-Client - SIP: 10.0.0.100 DIP: "+str(ipContents.src))
 
-#Add flow in the flow table of the virtual switch
+                #Add flow in the flow table of the virtual switch
 
                 datapath.send_msg(flowMod2)
 
                 self.logger.info("\n Added flow for Server to Host condition------->")
 
-############Server Count increment
-#Increase count so the next server will serve the next TCP connection from different or same host (When it completes the current TCP session with current TCP server)
+        ############Server Count increment
+        #Increase count so the next server will serve the next TCP connection from different or same host (When it completes the current TCP session with current TCP server)
 
-                self.serverCount+=1
-                if(self.serverCount>3):
-                    self.serverCount=1
+        self.serverCount+=1
+        if(self.serverCount>3):
+            self.serverCount=1
        
