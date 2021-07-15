@@ -130,7 +130,7 @@ class loadBalancer13(app_manager.RyuApp):
 
             self.logger.info("\n Reached inside of first ARP type check-------->")
             arpContents=pkt.get_protocols(arp.arp)[0]
-            if((arpContents.dst_ip=="10.0.0.100")and(arpContents.opcode==1)):
+            if((arpContents.dst_ip=="10.0.0.100") and (arpContents.opcode==1)):
                 self.logger.info("\n Reached inside of ARP reply for 10.0.0.100-------->")
                 packetReply=self.arpReplyGenerate(arpContents.src_mac,arpContents.src_ip)
                 actionsServer=[parser.OFPActionOutput(in_port)]
@@ -162,7 +162,7 @@ class loadBalancer13(app_manager.RyuApp):
 
         if(eth.ethertype==0x0800):
             ipContents=pkt.get_protocols(ipv4.ipv4)[0]
-            if((ipContents.dst=="10.0.0.100")and(ipContents.proto==0x06)):
+            if((ipContents.dst=="10.0.0.100") and (ipContents.proto==0x06)):
                 tcpContents=pkt.get_protocols(tcp.tcp)[0]
 
 #Perform TCP action only if matching TCP properties
@@ -201,7 +201,7 @@ class loadBalancer13(app_manager.RyuApp):
                 cookie2=random.randint(0, 0xffffffffffffffff)
 
 #Create flow for TCP segments from server to host through controller (IP: 10.0.0.100)
-     flowMod2=parser.OFPFlowMod(datapath=datapath,match=match2,idle_timeout=7,instructions=ipInst2,cookie=cookie2)
+                flowMod2=parser.OFPFlowMod(datapath=datapath,match=match2,idle_timeout=7,instructions=ipInst2,cookie=cookie2)
 
                 self.logger.info("\n Server-LB - SIP: "+str(serverIP)+" DIP: 10.0.0.100")
 
@@ -216,7 +216,7 @@ class loadBalancer13(app_manager.RyuApp):
 ############Server Count increment
 #Increase count so the next server will serve the next TCP connection from different or same host (When it completes the current TCP session with current TCP server)
 
-        self.serverCount+=1
-        if(self.serverCount>3):
-            self.serverCount=1
+                self.serverCount+=1
+                if(self.serverCount>3):
+                    self.serverCount=1
        
