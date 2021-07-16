@@ -49,8 +49,8 @@ class loadBalancer13(app_manager.RyuApp):
         self.serverMac1="00:00:00:00:00:01"
         self.serverIP2="10.0.0.2"
         self.serverMac2="00:00:00:00:00:02"
-        self.serverIP3="10.0.0.3"
-        self.serverMac3="00:00:00:00:00:03"
+        #self.serverIP3="10.0.0.3"
+        #self.serverMac3="00:00:00:00:00:03"
 
 ############Count to indicate which server to use for TCP session. H1=1, H2=2, H3=3
 
@@ -58,6 +58,13 @@ class loadBalancer13(app_manager.RyuApp):
 
     @set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
     def switch_features_handler(self, ev):
+        # install table-miss flow entry
+        #
+        # We specify NO BUFFER to max_len of the output action due to
+        # OVS bug. At this moment, if we specify a lesser number, e.g.,
+        # 128, OVS will send Packet-In with invalid buffer_id and
+        # truncated packet data. In that case, we cannot output packets
+        # correctly.  The bug has been fixed in OVS v2.1.0.
         datapath = ev.msg.datapath
         ofproto = datapath.ofproto
         parser = datapath.ofproto_parser
@@ -82,9 +89,8 @@ class loadBalancer13(app_manager.RyuApp):
                                     match=match, instructions=inst)
         datapath.send_msg(mod)
 
-############Generate ARP reply packet for ARP request to controller (IP: 10.0.0.100).
-#srcMac can be any value to set controller MAC address for controller IP address.
-
+    ############Generate ARP reply packet for ARP request to controller (IP: 10.0.0.100).
+    #srcMac can be any value to set controller MAC address for controller IP address.
     def arpReplyGenerate(self, dstMac, dstIp):
         srcMac = "11:22:33:ab:cd:ef"
         srcIp = "10.0.0.100"
@@ -98,8 +104,7 @@ class loadBalancer13(app_manager.RyuApp):
 
         return packetReply
 
-############Module to receive Packet-In
-
+    ############Module to receive Packet-In
     @set_ev_cls(ofp_event.EventOFPPacketIn, MAIN_DISPATCHER)
     def _packet_in_handler(self, ev):
         if ev.msg.msg_len < ev.msg.total_len:
@@ -217,6 +222,6 @@ class loadBalancer13(app_manager.RyuApp):
         #Increase count so the next server will serve the next TCP connection from different or same host (When it completes the current TCP session with current TCP server)
 
         self.serverCount+=1
-        if(self.serverCount>3):
+        if(self.serverCount>2):
             self.serverCount=1
        
