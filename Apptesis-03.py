@@ -41,6 +41,7 @@ client.subscribe("sdn/fuzzyout", qos=1)
 
 client.message_callback_add("sdn/fuzzyout", on_message_from_fuzzyout)
 
-client.loop_forever()
+#client.loop_forever()
+client.loop_start()
 
 print("Do Something else")
