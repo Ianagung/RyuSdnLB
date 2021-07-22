@@ -251,9 +251,9 @@ def job1():
         window_load[i] += delta_ld_window
         #reset jika sudah kena threshold atas dan bawah
         #reset window_load
-        if window_load[i] > 100
+        if window_load[i] > 100:
             window_load[i] = 90
-        if window_load[i] < 0
+        if window_load[i] < 0:
             window_load[i] = 10
         
     #compare nilai window_load terbesar
