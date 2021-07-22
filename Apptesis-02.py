@@ -52,7 +52,7 @@ thruput01 = 10 #throughput=kbps
 thruput02 = 10 #throughput=kbps
 thruput03 = 10 #throughput=kbps
 listserver = [1,2]
-window_load = [1,1]
+window_load = [50,50]
 max_window_load_server = 1
 # getting length of list
 lengths = len(listserver)
