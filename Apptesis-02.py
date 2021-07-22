@@ -24,7 +24,7 @@ sys.path.append(".")
 from fuzzyMam3inCMT import Fuzzy
 
 
-broker_url = "localhost"
+broker_url = "127.0.0.1"
 broker_port = 1883
 add01 = 'http://192.168.56.101'
 add02 = 'http://192.168.56.109'
