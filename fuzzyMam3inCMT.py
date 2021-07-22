@@ -126,7 +126,7 @@ class Fuzzy:
         #slow decrease load window value change
         sd_degree2 = np.fmin(cpu_high_degree, mem_low_degree)
         #very small decrease load window value change
-        vsd_degree2 = np.fmax(cpu_high_degree, mem_verylow_degree)
+        vsd_degree2 = np.fmin(cpu_high_degree, mem_verylow_degree)
 
         #fast decrease load window value change
         fd_degree3 = np.fmin(cpu_medium_degree, mem_veryhigh_degree)
