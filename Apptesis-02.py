@@ -243,14 +243,14 @@ def job1():
             cpu_val = cpu02
             mem_val = mem02
             truput_val = thruput02
-    #do fuzzy untuk setiap server  
+        #do fuzzy untuk setiap server  
         myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
         delta_ld_window = myFuzzy.get_fuzzy()
         print("Perubahan Load Window Server-%s is %.2f" % ( listserver[i], delta_ld_window))
-    #hitung total workload
+        #hitung total workload
         window_load[i] += delta_ld_window
-    #reset jika sudah kena threshold atas dan bawah
-    #reset window_load
+        #reset jika sudah kena threshold atas dan bawah
+        #reset window_load
         if window_load[i] > 100
             window_load[i] = 90
         if window_load[i] < 0
