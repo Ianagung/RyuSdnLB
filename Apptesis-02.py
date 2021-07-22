@@ -8,9 +8,13 @@
 # -buat looping utk menghitung hasil fuzzy per server (1,2,3)
 # -hasil fuzzy = window_load_change
 # -hitung value window_load_current = window_load_current + window_load_change
-# -memutuskan nilai window_load terkecil
+# -memutuskan nilai window_load_current terbesar
 # -mengkorelasikan dengan alamat server
-# -mempublish server mana dengan load terkecil
+# -mempublish server mana dengan load terkecil= window_load_terbesar
+#In the next step of the fuzzy system design process, the fuzzy rules base is defined (Table 2). 
+#The rules are constructed to indicate that greater consumable resources cause higher load; 
+#therefore, the size of the window should be smaller. 
+#The opposite of this is true as well.
 # -add timer to start looping data fuzzy - done
 #!/usr/bin/env python3
 import paho.mqtt.client as mqtt
@@ -51,7 +55,7 @@ listserver = [1,2]
 window_load = [1,1]
 max_window_load_server = 1
 # getting length of list
-lengths = len(list)
+lengths = len(listserver)
 
 def on_connect(client, userdata, flags, rc):
     print("Connected With Result Code " ,rc)
@@ -239,21 +243,29 @@ def job1():
             cpu_val = cpu02
             mem_val = mem02
             truput_val = thruput02
-    #do fuzzy   
+    #do fuzzy untuk setiap server  
         myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
         delta_ld_window = myFuzzy.get_fuzzy()
         print("Perubahan Load Window Server-%s is %.2f" % ( listserver[i], delta_ld_window))
     #hitung total workload
         window_load[i] += delta_ld_window
     #reset jika sudah kena threshold atas dan bawah
-        #reset window_load
+    #reset window_load
+        if window_load[i] > 100
+            window_load[i] = 90
+        if window_load[i] < 0
+            window_load[i] = 10
+        
     #compare nilai window_load terbesar
-        #max(list)
+    #find index of maximum element
+    ## index of maximum element
     #update global value window load
-        #max_window_load_server = 1
+    #max_window_load_server = 1
+    max_window_load_server = window_load.index(max(window_load))
+    print (max_window_load_server)       
 
 # This timer will run job() five times, one second apart
-timer1 = multitimer.MultiTimer(interval=1, function=job1, count=-1)
+timer1 = multitimer.MultiTimer(interval=5, function=job1, count=-1)
 # Also, this timer would run indefinitely...
 timer1.start()
 
