@@ -136,7 +136,7 @@ class loadBalancer13(app_manager.RyuApp):
         # learn a mac address to avoid FLOOD next time.
         self.mac_to_port[dpid][src] = in_port
 
-        ipContents=pkt.get_protocols(ipv4.ipv4)
+        ipContents=pkt.get_protocol(ipv4.ipv4)
         if(ipContents.dst!="192.168.147.100"):
         #if(dst!="192.168.147.100"):
             self.logger.info("\n Reached first outside of  TCP - IP protocol &&  IP virtual switch check-------->")
