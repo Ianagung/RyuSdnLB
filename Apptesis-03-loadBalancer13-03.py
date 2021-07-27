@@ -343,8 +343,11 @@ class loadBalancer13(app_manager.RyuApp):
                     tcp_src=tcpContents.src_port,tcp_dst=tcpContents.dst_port)
 
                 #Send host TCP segments to destination server using destination server port connected to controller
+                #get mac to port
+                if serverMac in self.mac_to_port[dpid]:
+                    serverOutport = self.mac_to_port[dpid][serverMac]
                 actions1=[parser.OFPActionSetField(ipv4_src=self.lbIP),parser.OFPActionSetField(eth_dst=serverMac),
-                    parser.OFPActionSetField(ipv4_dst=serverIP),parser.OFPActionOutput(self.serverCount)]
+                    parser.OFPActionSetField(ipv4_dst=serverIP),parser.OFPActionOutput(serverOutport)]
 
                 ipInst1=[parser.OFPInstructionActions(ofproto.OFPIT_APPLY_ACTIONS,actions1)] 
                 cookie1=random.randint(0, 0xffffffffffffffff)
@@ -367,11 +370,14 @@ class loadBalancer13(app_manager.RyuApp):
                 ############TCP Server to Host
 
                 #Perform TCP action only if matching TCP properties
-                match2=parser.OFPMatch(self.serverCount,eth_type=eth.ethertype,eth_src=serverMac,
+                match2=parser.OFPMatch(eth_type=eth.ethertype,eth_src=serverMac,
                     eth_dst="11:22:33:ab:cd:ef",ip_proto=ipContents.proto,ipv4_src=serverIP,
                     ipv4_dst=self.lbIP,tcp_src=tcpContents.dst_port,tcp_dst=tcpContents.src_port)
 
                 #Send server TCP segments to host using source host port connected to controller
+                #get mac to port
+                if serverMac in self.mac_to_port[dpid]:
+                    serverOutport = self.mac_to_port[dpid][serverMac]
                 actions2=[parser.OFPActionSetField(eth_src="11:22:33:ab:cd:ef"),
                     parser.OFPActionSetField(ipv4_src=self.lbIP),
                     parser.OFPActionSetField(eth_dst=eth.src),parser.OFPActionSetField(ipv4_dst=ipContents.src),
