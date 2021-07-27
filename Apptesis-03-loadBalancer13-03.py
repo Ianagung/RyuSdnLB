@@ -303,7 +303,7 @@ class loadBalancer13(app_manager.RyuApp):
             # ip = pkt.get_protocol(ipv4.ipv4)
             # srcip = ip.src
             # dstip = ip.dst
-            if(ipContents!=self.lbIP):
+            if(ipContents.dst!=self.lbIP):
                 self.logger.info("IP Cek bukan controller Bisa ping")
                 if dst in self.mac_to_port[dpid]:
                     out_port = self.mac_to_port[dpid][dst]
