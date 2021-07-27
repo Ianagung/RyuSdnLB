@@ -176,16 +176,20 @@ class loadBalancer13(app_manager.RyuApp):
                 tcpContents=pkt.get_protocols(tcp.tcp)[0]
 
                 #Perform TCP action only if matching TCP properties
-                match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,eth_src=eth.src,eth_dst=eth.dst,ip_proto=ipContents.proto,ipv4_src=ipContents.src,ipv4_dst=ipContents.dst,tcp_src=tcpContents.src_port,tcp_dst=tcpContents.dst_port)
+                match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,eth_src=eth.src,eth_dst=eth.dst,
+                    ip_proto=ipContents.proto,ipv4_src=ipContents.src,ipv4_dst=ipContents.dst,
+                    tcp_src=tcpContents.src_port,tcp_dst=tcpContents.dst_port)
 
                 #Send host TCP segments to destination server using destination server port connected to controller
-                actions1=[parser.OFPActionSetField(ipv4_src="192.168.147.100"),parser.OFPActionSetField(eth_dst=serverMac),parser.OFPActionSetField(ipv4_dst=serverIP),parser.OFPActionOutput(self.serverCount)]
+                actions1=[parser.OFPActionSetField(ipv4_src="192.168.147.100"),parser.OFPActionSetField(eth_dst=serverMac),
+                    parser.OFPActionSetField(ipv4_dst=serverIP),parser.OFPActionOutput(self.serverCount)]
 
                 ipInst1=[parser.OFPInstructionActions(ofproto.OFPIT_APPLY_ACTIONS,actions1)] 
                 cookie1=random.randint(0, 0xffffffffffffffff)
 
                 #Create flow for incoming TCP segments from host to server through controller (IP: 192.168.147.100)
-                flowMod1=parser.OFPFlowMod(datapath=datapath,match=match1,idle_timeout=7,instructions=ipInst1,buffer_id=msg.buffer_id,cookie=cookie1)
+                flowMod1=parser.OFPFlowMod(datapath=datapath,match=match1,idle_timeout=7,instructions=ipInst1,
+                    buffer_id=msg.buffer_id,cookie=cookie1)
 
                 self.logger.info("\n Added flow for Host to Server condition------->")
                 self.logger.info("\n Application on server"+str(self.serverCount)+" - IP: "+str(serverIP)+" Mac: "+str(serverMac))
