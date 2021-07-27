@@ -172,7 +172,7 @@ class loadBalancer13(app_manager.RyuApp):
         elif(eth.ethertype==0x0806):
             #ethertype==0x0806==ARP
             arpContents=pkt.get_protocols(arp.arp)[0]
-                if(arpContents.dst_ip!="192.168.147.100"):
+            if(arpContents.dst_ip!="192.168.147.100"):
                 self.logger.info("\n ARP check bukan controller")
                 if dst in self.mac_to_port[dpid]:
                     out_port = self.mac_to_port[dpid][dst]
