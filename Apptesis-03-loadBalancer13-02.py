@@ -135,7 +135,7 @@ class loadBalancer13(app_manager.RyuApp):
         self.mac_to_port[dpid][src] = in_port
 
         ipContents=pkt.get_protocols(ipv4.ipv4)[0]
-        if((ipContents.dst!="192.168.147.100"):
+        if(ipContents.dst!="192.168.147.100"):
         #if(dst!="192.168.147.100"):
             self.logger.info("\n Reached first outside of  TCP - IP protocol &&  IP virtual switch check-------->")
             if dst in self.mac_to_port[dpid]:
