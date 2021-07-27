@@ -131,7 +131,7 @@ class loadBalancer13(app_manager.RyuApp):
         src = eth.src
         dpid = datapath.id
         self.mac_to_port.setdefault(dpid, {})
-        self.logger.info("\n Packet-In - DPID: %s SMAC: %s DMAC: %s InPort: %s", dpid, src, dst, in_port)
+        self.logger.info("Packet-In - DPID: %s SMAC: %s DMAC: %s InPort: %s", dpid, src, dst, in_port)
 
         # learn a mac address to avoid FLOOD next time.
         self.mac_to_port[dpid][src] = in_port
@@ -139,112 +139,138 @@ class loadBalancer13(app_manager.RyuApp):
         #ip01=pkt.get_protocol(ipv4.ipv4)
         #if(ipContents.dst!="192.168.147.100"):
         #if(dst!="192.168.147.100"):
-        if((eth.ethertype!=0x0806) or (eth.ethertype!=0x0800)):
-            #ethertype==0x0806==ARP
-            self.logger.info("\n Bukan IP-ARP check")
-            if dst in self.mac_to_port[dpid]:
-                out_port = self.mac_to_port[dpid][dst]
-            else:
-                out_port = ofproto.OFPP_FLOOD
+        # if((eth.ethertype!=0x0806) or (eth.ethertype!=0x0800)):
+        #     #ethertype==0x0806==ARP
+        #     self.logger.info("\n Bukan IP-ARP check")
+        #     if dst in self.mac_to_port[dpid]:
+        #         out_port = self.mac_to_port[dpid][dst]
+        #     else:
+        #         out_port = ofproto.OFPP_FLOOD
 
-            actions = [parser.OFPActionOutput(out_port)]
+        #     actions = [parser.OFPActionOutput(out_port)]
 
-            # install a flow to avoid packet_in next time
-            if out_port != ofproto.OFPP_FLOOD:
-                match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
-                # verify if we have a valid buffer_id, if yes avoid to send both
-                # flow_mod & packet_out
-                if msg.buffer_id != ofproto.OFP_NO_BUFFER:
-                    self.add_flow(datapath, 10, match, actions, msg.buffer_id)
-                    return
-                else:
-                    self.add_flow(datapath, 10, match, actions)
-            data = None
-            if msg.buffer_id == ofproto.OFP_NO_BUFFER:
-                data = msg.data
+        #     # install a flow to avoid packet_in next time
+        #     if out_port != ofproto.OFPP_FLOOD:
+        #         match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
+        #         # verify if we have a valid buffer_id, if yes avoid to send both
+        #         # flow_mod & packet_out
+        #         if msg.buffer_id != ofproto.OFP_NO_BUFFER:
+        #             self.add_flow(datapath, 10, match, actions, msg.buffer_id)
+        #             return
+        #         else:
+        #             self.add_flow(datapath, 10, match, actions)
+        #     data = None
+        #     if msg.buffer_id == ofproto.OFP_NO_BUFFER:
+        #         data = msg.data
 
-            out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
-                                      in_port=in_port, actions=actions, data=data)
-            datapath.send_msg(out)
+        #     out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
+        #                               in_port=in_port, actions=actions, data=data)
+        #     datapath.send_msg(out)
         
         # check IP Protocol and create a match for IP
         
-        elif(eth.ethertype==0x0806):
-            #ethertype==0x0806==ARP
-            arpContents=pkt.get_protocols(arp.arp)[0]
-            if(arpContents.dst_ip!="192.168.147.100"):
-                self.logger.info("\n ARP check bukan controller")
-                if dst in self.mac_to_port[dpid]:
-                    out_port = self.mac_to_port[dpid][dst]
-                else:
-                    out_port = ofproto.OFPP_FLOOD
+        # elif(eth.ethertype==0x0806):
+        #     #ethertype==0x0806==ARP
+        #     arpContents=pkt.get_protocols(arp.arp)[0]
+        #     if(arpContents.dst_ip!="192.168.147.100"):
+        #         self.logger.info("\n ARP check bukan controller")
+        #         if dst in self.mac_to_port[dpid]:
+        #             out_port = self.mac_to_port[dpid][dst]
+        #         else:
+        #             out_port = ofproto.OFPP_FLOOD
 
-                actions = [parser.OFPActionOutput(out_port)]
+        #         actions = [parser.OFPActionOutput(out_port)]
 
-                # install a flow to avoid packet_in next time
-                if out_port != ofproto.OFPP_FLOOD:
-                    match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
-                    # verify if we have a valid buffer_id, if yes avoid to send both
-                    # flow_mod & packet_out
-                    if msg.buffer_id != ofproto.OFP_NO_BUFFER:
-                        self.add_flow(datapath, 10, match, actions, msg.buffer_id)
-                        return
-                    else:
-                        self.add_flow(datapath, 10, match, actions)
-                data = None
-                if msg.buffer_id == ofproto.OFP_NO_BUFFER:
-                    data = msg.data
+        #         # install a flow to avoid packet_in next time
+        #         if out_port != ofproto.OFPP_FLOOD:
+        #             match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
+        #             # verify if we have a valid buffer_id, if yes avoid to send both
+        #             # flow_mod & packet_out
+        #             if msg.buffer_id != ofproto.OFP_NO_BUFFER:
+        #                 self.add_flow(datapath, 10, match, actions, msg.buffer_id)
+        #                 return
+        #             else:
+        #                 self.add_flow(datapath, 10, match, actions)
+        #         data = None
+        #         if msg.buffer_id == ofproto.OFP_NO_BUFFER:
+        #             data = msg.data
 
-                out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
-                                          in_port=in_port, actions=actions, data=data)
-                datapath.send_msg(out)
-        elif (eth.ethertype == ether_types.ETH_TYPE_IP):
-            ip = pkt.get_protocol(ipv4.ipv4)
-            srcip = ip.src
-            dstip = ip.dst
+        #         out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
+        #                                   in_port=in_port, actions=actions, data=data)
+        #         datapath.send_msg(out)
+        # elif (eth.ethertype == ether_types.ETH_TYPE_IP):
+        #     ip = pkt.get_protocol(ipv4.ipv4)
+        #     srcip = ip.src
+        #     dstip = ip.dst
 
-            if(dstip!="192.168.147.100"):
-                self.logger.info("\n IP Cek bukan controller Bisa ping")
-                if dst in self.mac_to_port[dpid]:
-                    out_port = self.mac_to_port[dpid][dst]
-                else:
-                    out_port = ofproto.OFPP_FLOOD
+        #     if(dstip!="192.168.147.100"):
+        #         self.logger.info("IP Cek bukan controller Bisa ping")
+        #         if dst in self.mac_to_port[dpid]:
+        #             out_port = self.mac_to_port[dpid][dst]
+        #         else:
+        #             out_port = ofproto.OFPP_FLOOD
 
-                actions = [parser.OFPActionOutput(out_port)]
+        #         actions = [parser.OFPActionOutput(out_port)]
 
-                # install a flow to avoid packet_in next time
-                if out_port != ofproto.OFPP_FLOOD:
-                    match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
-                    # verify if we have a valid buffer_id, if yes avoid to send both
-                    # flow_mod & packet_out
-                    if msg.buffer_id != ofproto.OFP_NO_BUFFER:
-                        self.add_flow(datapath, 10, match, actions, msg.buffer_id)
-                        return
-                    else:
-                        self.add_flow(datapath, 10, match, actions)
-                data = None
-                if msg.buffer_id == ofproto.OFP_NO_BUFFER:
-                    data = msg.data
+        #         # install a flow to avoid packet_in next time
+        #         if out_port != ofproto.OFPP_FLOOD:
+        #             match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
+        #             # verify if we have a valid buffer_id, if yes avoid to send both
+        #             # flow_mod & packet_out
+        #             if msg.buffer_id != ofproto.OFP_NO_BUFFER:
+        #                 self.add_flow(datapath, 10, match, actions, msg.buffer_id)
+        #                 return
+        #             else:
+        #                 self.add_flow(datapath, 10, match, actions)
+        #         data = None
+        #         if msg.buffer_id == ofproto.OFP_NO_BUFFER:
+        #             data = msg.data
 
-                out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
-                                          in_port=in_port, actions=actions, data=data)
-                datapath.send_msg(out)
+        #         out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
+        #                                   in_port=in_port, actions=actions, data=data)
+        #         datapath.send_msg(out)
         
 
 ############ARP Reply handling
 #Send ARP reply for ARP request to controller (IP: 192.168.147.100)       
         if(eth.ethertype==0x0806):
             #ethertype==0x0806==ARP
-            self.logger.info("\n Reached inside of first ARP type check-------->")
+            self.logger.info("Reached inside of ARP type check-------->")
             arpContents=pkt.get_protocols(arp.arp)[0]
+            if(arpContents.dst_ip!="192.168.147.100"):
+                self.logger.info("ARP check not Kontrol IP")
+                if dst in self.mac_to_port[dpid]:
+                    out_port = self.mac_to_port[dpid][dst]
+                else:
+                    out_port = ofproto.OFPP_FLOOD
+
+                actions = [parser.OFPActionOutput(out_port)]
+
+                # install a flow to avoid packet_in next time
+                if out_port != ofproto.OFPP_FLOOD:
+                    match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
+                    # verify if we have a valid buffer_id, if yes avoid to send both
+                    # flow_mod & packet_out
+                    if msg.buffer_id != ofproto.OFP_NO_BUFFER:
+                        self.add_flow(datapath, 10, match, actions, msg.buffer_id)
+                        return
+                    else:
+                        self.add_flow(datapath, 10, match, actions)
+                data = None
+                if msg.buffer_id == ofproto.OFP_NO_BUFFER:
+                    data = msg.data
+
+                out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
+                                          in_port=in_port, actions=actions, data=data)
+                datapath.send_msg(out)
             if((arpContents.dst_ip=="192.168.147.100") and (arpContents.opcode==1)):
-                self.logger.info("\n Reached inside of ARP reply for 192.168.147.100-------->")
+                self.logger.info("Reached inside of ARP reply for 192.168.147.100-------->")
                 packetReply=self.arpReplyGenerate(arpContents.src_mac,arpContents.src_ip)
                 actionsServer=[parser.OFPActionOutput(in_port)]
                 arpServer=parser.OFPPacketOut(datapath=datapath,in_port=ofproto.OFPP_ANY,
                     data=packetReply.data,actions=actionsServer,buffer_id=0xffffffff)
 
-                self.logger.info("\n Packet-Out - DPID: %s SMAC: 11:22:33:ab:cd:ef DMAC: %s OutPort: %s", dpid, src, in_port) 
+                self.logger.info("Packet-Out - DPID: %s SMAC: 11:22:33:ab:cd:ef DMAC: %s OutPort: %s", dpid, src, in_port) 
 
                 datapath.send_msg(arpServer)
             return
@@ -255,7 +281,7 @@ class loadBalancer13(app_manager.RyuApp):
 #S1 or H1 is used as server for count of 1
 #S2 or H2 is used as server for count of 2
 #S3 or H3 is used as server for count of 3
-        self.logger.info("\n Reached after NOT AN ARP type && IP controller check-------->")
+        #self.logger.info("\n Reached after NOT AN ARP type && IP controller check-------->")
        
 
         if(self.serverCount==1):
@@ -269,14 +295,44 @@ class loadBalancer13(app_manager.RyuApp):
             serverMac=self.serverMac3        
 
         if(eth.ethertype==0x0800):
-            self.logger.info("\n Reached inside of first IP type check-------->")
+            self.logger.info("Reached inside of IP type check-------->")
             ipContents=pkt.get_protocols(ipv4.ipv4)[0]
-            if((ipContents.dst=="192.168.147.100") and (ipContents.proto==0x06)):
+            # elif (eth.ethertype == ether_types.ETH_TYPE_IP):
+            # ip = pkt.get_protocol(ipv4.ipv4)
+            # srcip = ip.src
+            # dstip = ip.dst
+            if(ipContents!="192.168.147.100"):
+                self.logger.info("IP Cek bukan controller Bisa ping")
+                if dst in self.mac_to_port[dpid]:
+                    out_port = self.mac_to_port[dpid][dst]
+                else:
+                    out_port = ofproto.OFPP_FLOOD
+
+                actions = [parser.OFPActionOutput(out_port)]
+
+                # install a flow to avoid packet_in next time
+                if out_port != ofproto.OFPP_FLOOD:
+                    match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
+                    # verify if we have a valid buffer_id, if yes avoid to send both
+                    # flow_mod & packet_out
+                    if msg.buffer_id != ofproto.OFP_NO_BUFFER:
+                        self.add_flow(datapath, 10, match, actions, msg.buffer_id)
+                        return
+                    else:
+                        self.add_flow(datapath, 10, match, actions)
+                data = None
+                if msg.buffer_id == ofproto.OFP_NO_BUFFER:
+                    data = msg.data
+
+                out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
+                                          in_port=in_port, actions=actions, data=data)
+                datapath.send_msg(out)
+            elif((ipContents.dst=="192.168.147.100") and (ipContents.proto==0x06)):
                 #IPPROTO_ICMP = 1
                 #IPPROTO_IGMP = 2
                 #IPPROTO_TCP = 6
                 #IPPROTO_UDP = 17
-                self.logger.info("\n Reached inside of  TCP type && IP controller check-------->")
+                self.logger.info("Reached inside of  TCP type && IP controller check-------->")
                 tcpContents=pkt.get_protocols(tcp.tcp)[0]
 
                 #Perform TCP action only if matching TCP properties
@@ -295,12 +351,12 @@ class loadBalancer13(app_manager.RyuApp):
                 flowMod1=parser.OFPFlowMod(datapath=datapath,match=match1,idle_timeout=7,instructions=ipInst1,
                     buffer_id=msg.buffer_id,cookie=cookie1)
 
-                self.logger.info("\n Added flow for Host to Server condition------->")
-                self.logger.info("\n Application on server"+str(self.serverCount)+" - IP: "+str(serverIP)+" Mac: "+str(serverMac))
+                self.logger.info("Added flow for Host to Server condition------->")
+                self.logger.info("Application on server"+str(self.serverCount)+" - IP: "+str(serverIP)+" Mac: "+str(serverMac))
 
-                self.logger.info("\n Client-LB - SIP: "+str(ipContents.src)+" DIP: "+str(ipContents.dst))
+                self.logger.info("Client-LB - SIP: "+str(ipContents.src)+" DIP: "+str(ipContents.dst))
 
-                self.logger.info("\n LB-Server - SIP: 192.168.147.100 DIP: "+str(serverIP))
+                self.logger.info("LB-Server - SIP: 192.168.147.100 DIP: "+str(serverIP))
 
                 #Add flow in the flow table of the virtual switch
 
@@ -326,23 +382,51 @@ class loadBalancer13(app_manager.RyuApp):
                 #Create flow for TCP segments from server to host through controller (IP: 192.168.147.100)
                 flowMod2=parser.OFPFlowMod(datapath=datapath,match=match2,idle_timeout=7,instructions=ipInst2,cookie=cookie2)
 
-                self.logger.info("\n Server-LB - SIP: "+str(serverIP)+" DIP: 192.168.147.100")
+                self.logger.info("Server-LB - SIP: "+str(serverIP)+" DIP: 192.168.147.100")
 
-                self.logger.info("\n LB-Client - SIP: 192.168.147.100 DIP: "+str(ipContents.src))
+                self.logger.info("LB-Client - SIP: 192.168.147.100 DIP: "+str(ipContents.src))
 
                 #Add flow in the flow table of the virtual switch
 
                 datapath.send_msg(flowMod2)
 
-                self.logger.info("\n Added flow for Server to Host condition------->")
+                self.logger.info("Added flow for Server to Host condition------->")
                 
-                self.logger.info("\n Round Robin Server Pick Algorithm")
+                self.logger.info("Round Robin Server Pick Algorithm")
                 ############Server Count increment
                 #Increase count so the next server will serve the next TCP connection from different or same host 
                 #(When it completes the current TCP session with current TCP server)
                 self.serverCount+=1
                 if(self.serverCount>2):
                     self.serverCount=1
+
+        if((eth.ethertype!=0x0806) and (eth.ethertype!=0x0800)):
+            #ethertype==0x0806==ARP
+            self.logger.info("not IP&ARP check")
+            if dst in self.mac_to_port[dpid]:
+                out_port = self.mac_to_port[dpid][dst]
+            else:
+                out_port = ofproto.OFPP_FLOOD
+
+            actions = [parser.OFPActionOutput(out_port)]
+
+            # install a flow to avoid packet_in next time
+            if out_port != ofproto.OFPP_FLOOD:
+                match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
+                # verify if we have a valid buffer_id, if yes avoid to send both
+                # flow_mod & packet_out
+                if msg.buffer_id != ofproto.OFP_NO_BUFFER:
+                    self.add_flow(datapath, 10, match, actions, msg.buffer_id)
+                    return
+                else:
+                    self.add_flow(datapath, 10, match, actions)
+            data = None
+            if msg.buffer_id == ofproto.OFP_NO_BUFFER:
+                data = msg.data
+
+            out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
+                                      in_port=in_port, actions=actions, data=data)
+            datapath.send_msg(out)
 
         
 
