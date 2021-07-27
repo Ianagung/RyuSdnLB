@@ -131,8 +131,37 @@ class loadBalancer13(app_manager.RyuApp):
         self.mac_to_port.setdefault(dpid, {})
         self.logger.info("\n Packet-In - DPID: %s SMAC: %s DMAC: %s InPort: %s", dpid, src, dst, in_port)
 
+        # learn a mac address to avoid FLOOD next time.
+        self.mac_to_port[dpid][src] = in_port
+
+        if dst in self.mac_to_port[dpid]:
+            out_port = self.mac_to_port[dpid][dst]
+        else:
+            out_port = ofproto.OFPP_FLOOD
+
+        actions = [parser.OFPActionOutput(out_port)]
+
+        # install a flow to avoid packet_in next time
+        if out_port != ofproto.OFPP_FLOOD:
+            match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
+            # verify if we have a valid buffer_id, if yes avoid to send both
+            # flow_mod & packet_out
+            if msg.buffer_id != ofproto.OFP_NO_BUFFER:
+                self.add_flow(datapath, 1, match, actions, msg.buffer_id)
+                return
+            else:
+                self.add_flow(datapath, 1, match, actions)
+        data = None
+        if msg.buffer_id == ofproto.OFP_NO_BUFFER:
+            data = msg.data
+
+        out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
+                                  in_port=in_port, actions=actions, data=data)
+        datapath.send_msg(out)
+
 ############ARP Reply handling
 #Send ARP reply for ARP request to controller (IP: 192.168.147.100)
+        
 
         if(eth.ethertype==0x0806):
             #ethertype==0x0806==ARP
@@ -142,7 +171,8 @@ class loadBalancer13(app_manager.RyuApp):
                 self.logger.info("\n Reached inside of ARP reply for 192.168.147.100-------->")
                 packetReply=self.arpReplyGenerate(arpContents.src_mac,arpContents.src_ip)
                 actionsServer=[parser.OFPActionOutput(in_port)]
-                arpServer=parser.OFPPacketOut(datapath=datapath,in_port=ofproto.OFPP_ANY,data=packetReply.data,actions=actionsServer,buffer_id=0xffffffff)
+                arpServer=parser.OFPPacketOut(datapath=datapath,in_port=ofproto.OFPP_ANY,
+                    data=packetReply.data,actions=actionsServer,buffer_id=0xffffffff)
 
                 self.logger.info("\n Packet-Out - DPID: %s SMAC: 11:22:33:ab:cd:ef DMAC: %s OutPort: %s", dpid, src, in_port) 
 
@@ -205,10 +235,15 @@ class loadBalancer13(app_manager.RyuApp):
                 ############TCP Server to Host
 
                 #Perform TCP action only if matching TCP properties
-                match2=parser.OFPMatch(self.serverCount,eth_type=eth.ethertype,eth_src=serverMac,eth_dst="11:22:33:ab:cd:ef",ip_proto=ipContents.proto,ipv4_src=serverIP,ipv4_dst="192.168.147.100",tcp_src=tcpContents.dst_port,tcp_dst=tcpContents.src_port)
+                match2=parser.OFPMatch(self.serverCount,eth_type=eth.ethertype,eth_src=serverMac,
+                    eth_dst="11:22:33:ab:cd:ef",ip_proto=ipContents.proto,ipv4_src=serverIP,
+                    ipv4_dst="192.168.147.100",tcp_src=tcpContents.dst_port,tcp_dst=tcpContents.src_port)
 
                 #Send server TCP segments to host using source host port connected to controller
-                actions2=[parser.OFPActionSetField(eth_src="11:22:33:ab:cd:ef"),parser.OFPActionSetField(ipv4_src="192.168.147.100"),parser.OFPActionSetField(eth_dst=eth.src),parser.OFPActionSetField(ipv4_dst=ipContents.src),parser.OFPActionOutput(in_port)]
+                actions2=[parser.OFPActionSetField(eth_src="11:22:33:ab:cd:ef"),
+                    parser.OFPActionSetField(ipv4_src="192.168.147.100"),
+                    parser.OFPActionSetField(eth_dst=eth.src),parser.OFPActionSetField(ipv4_dst=ipContents.src),
+                    parser.OFPActionOutput(in_port)]
 
                 ipInst2=[parser.OFPInstructionActions(ofproto.OFPIT_APPLY_ACTIONS,actions2)] 
 
