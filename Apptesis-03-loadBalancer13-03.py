@@ -46,14 +46,14 @@ class loadBalancer13(app_manager.RyuApp):
         self.mac_to_port = {}
 
 ############Assigning IP address to TCP servers (H1, H2, and H3)
-        self.serverIP1="192.168.147.6"
-        self.serverMac1="08:00:27:4E:58:A6"
-        self.serverIP2="192.168.147.5"
-        self.serverMac2="08:00:27:55:6b:96"
-        # self.serverIP1="10.0.0.1"
-        # self.serverMac1="00:00:00:00:00:01"
-        # self.serverIP2="10.0.0.2"
-        # self.serverMac2="00:00:00:00:00:02"
+        # self.serverIP1="192.168.147.6"
+        # self.serverMac1="08:00:27:4E:58:A6"
+        # self.serverIP2="192.168.147.5"
+        # self.serverMac2="08:00:27:55:6b:96"
+        self.serverIP1="10.0.0.1"
+        self.serverMac1="00:00:00:00:00:01"
+        self.serverIP2="10.0.0.2"
+        self.serverMac2="00:00:00:00:00:02"
         #self.serverIP3="10.0.0.3"
         #self.serverMac3="00:00:00:00:00:03"
 
