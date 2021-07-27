@@ -29,6 +29,8 @@ from ryu.lib.packet import arp
 from ryu.lib.packet import icmp
 from ryu.ofproto import ether, inet
 from ryu.lib.packet import tcp
+from ryu.lib.packet import udp
+from ryu.lib.packet import in_proto
 from ryu.controller.handler import MAIN_DISPATCHER, CONFIG_DISPATCHER
 from ryu.controller.handler import set_ev_cls
 from ryu.lib.packet import ether_types
@@ -134,7 +136,7 @@ class loadBalancer13(app_manager.RyuApp):
         # learn a mac address to avoid FLOOD next time.
         self.mac_to_port[dpid][src] = in_port
 
-        ipContents=pkt.get_protocols(ipv4.ipv4)[0]
+        ipContents=pkt.get_protocols(ipv4.ipv4)
         if(ipContents.dst!="192.168.147.100"):
         #if(dst!="192.168.147.100"):
             self.logger.info("\n Reached first outside of  TCP - IP protocol &&  IP virtual switch check-------->")
