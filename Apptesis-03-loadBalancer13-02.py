@@ -136,10 +136,12 @@ class loadBalancer13(app_manager.RyuApp):
         # learn a mac address to avoid FLOOD next time.
         self.mac_to_port[dpid][src] = in_port
 
-        ipContents=pkt.get_protocol(ipv4.ipv4)
-        if(ipContents.dst!="192.168.147.100"):
+        #ip01=pkt.get_protocol(ipv4.ipv4)
+        #if(ipContents.dst!="192.168.147.100"):
         #if(dst!="192.168.147.100"):
-            self.logger.info("\n Reached first outside of  TCP - IP protocol &&  IP virtual switch check-------->")
+        if((eth.ethertype!=0x0806) or (eth.ethertype!=0x0800)):
+            #ethertype==0x0806==ARP
+            self.logger.info("\n Bukan IP-ARP check")
             if dst in self.mac_to_port[dpid]:
                 out_port = self.mac_to_port[dpid][dst]
             else:
@@ -164,6 +166,69 @@ class loadBalancer13(app_manager.RyuApp):
             out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
                                       in_port=in_port, actions=actions, data=data)
             datapath.send_msg(out)
+        
+        # check IP Protocol and create a match for IP
+        
+        elif(eth.ethertype==0x0806):
+            #ethertype==0x0806==ARP
+            arpContents=pkt.get_protocols(arp.arp)[0]
+                if(arpContents.dst_ip!="192.168.147.100"):
+                self.logger.info("\n ARP check bukan controller")
+                if dst in self.mac_to_port[dpid]:
+                    out_port = self.mac_to_port[dpid][dst]
+                else:
+                    out_port = ofproto.OFPP_FLOOD
+
+                actions = [parser.OFPActionOutput(out_port)]
+
+                # install a flow to avoid packet_in next time
+                if out_port != ofproto.OFPP_FLOOD:
+                    match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
+                    # verify if we have a valid buffer_id, if yes avoid to send both
+                    # flow_mod & packet_out
+                    if msg.buffer_id != ofproto.OFP_NO_BUFFER:
+                        self.add_flow(datapath, 10, match, actions, msg.buffer_id)
+                        return
+                    else:
+                        self.add_flow(datapath, 10, match, actions)
+                data = None
+                if msg.buffer_id == ofproto.OFP_NO_BUFFER:
+                    data = msg.data
+
+                out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
+                                          in_port=in_port, actions=actions, data=data)
+                datapath.send_msg(out)
+        elif (eth.ethertype == ether_types.ETH_TYPE_IP):
+            ip = pkt.get_protocol(ipv4.ipv4)
+            srcip = ip.src
+            dstip = ip.dst
+
+            if(dstip!="192.168.147.100"):
+                self.logger.info("\n IP Cek bukan controller Bisa ping")
+                if dst in self.mac_to_port[dpid]:
+                    out_port = self.mac_to_port[dpid][dst]
+                else:
+                    out_port = ofproto.OFPP_FLOOD
+
+                actions = [parser.OFPActionOutput(out_port)]
+
+                # install a flow to avoid packet_in next time
+                if out_port != ofproto.OFPP_FLOOD:
+                    match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
+                    # verify if we have a valid buffer_id, if yes avoid to send both
+                    # flow_mod & packet_out
+                    if msg.buffer_id != ofproto.OFP_NO_BUFFER:
+                        self.add_flow(datapath, 10, match, actions, msg.buffer_id)
+                        return
+                    else:
+                        self.add_flow(datapath, 10, match, actions)
+                data = None
+                if msg.buffer_id == ofproto.OFP_NO_BUFFER:
+                    data = msg.data
+
+                out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
+                                          in_port=in_port, actions=actions, data=data)
+                datapath.send_msg(out)
         
 
 ############ARP Reply handling
