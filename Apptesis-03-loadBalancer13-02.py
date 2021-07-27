@@ -134,12 +134,38 @@ class loadBalancer13(app_manager.RyuApp):
         # learn a mac address to avoid FLOOD next time.
         self.mac_to_port[dpid][src] = in_port
 
+        ipContents=pkt.get_protocols(ipv4.ipv4)[0]
+        if((ipContents.dst=="192.168.147.100")
+        #if(dst!="192.168.147.100"):
+            self.logger.info("\n Reached first outside of  TCP - IP protocol &&  IP virtual switch check-------->")
+            if dst in self.mac_to_port[dpid]:
+                out_port = self.mac_to_port[dpid][dst]
+            else:
+                out_port = ofproto.OFPP_FLOOD
+
+            actions = [parser.OFPActionOutput(out_port)]
+
+            # install a flow to avoid packet_in next time
+            if out_port != ofproto.OFPP_FLOOD:
+                match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
+                # verify if we have a valid buffer_id, if yes avoid to send both
+                # flow_mod & packet_out
+                if msg.buffer_id != ofproto.OFP_NO_BUFFER:
+                    self.add_flow(datapath, 10, match, actions, msg.buffer_id)
+                    return
+                else:
+                    self.add_flow(datapath, 10, match, actions)
+            data = None
+            if msg.buffer_id == ofproto.OFP_NO_BUFFER:
+                data = msg.data
+
+            out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
+                                      in_port=in_port, actions=actions, data=data)
+            datapath.send_msg(out)
         
 
 ############ARP Reply handling
-#Send ARP reply for ARP request to controller (IP: 192.168.147.100)
-        
-
+#Send ARP reply for ARP request to controller (IP: 192.168.147.100)       
         if(eth.ethertype==0x0806):
             #ethertype==0x0806==ARP
             self.logger.info("\n Reached inside of first ARP type check-------->")
@@ -162,7 +188,7 @@ class loadBalancer13(app_manager.RyuApp):
 #S1 or H1 is used as server for count of 1
 #S2 or H2 is used as server for count of 2
 #S3 or H3 is used as server for count of 3
-        self.logger.info("\n Reached inside NOT AN ARP type check-------->")
+        self.logger.info("\n Reached after NOT AN ARP type && IP controller check-------->")
        
 
         if(self.serverCount==1):
@@ -251,32 +277,7 @@ class loadBalancer13(app_manager.RyuApp):
                 if(self.serverCount>2):
                     self.serverCount=1
 
-        elif(dst!="192.168.147.100"):
-            self.logger.info("\n Reached outside of  TCP - IP protocol &&  IP virtual switch check-------->")
-            if dst in self.mac_to_port[dpid]:
-                out_port = self.mac_to_port[dpid][dst]
-            else:
-                out_port = ofproto.OFPP_FLOOD
-
-            actions = [parser.OFPActionOutput(out_port)]
-
-            # install a flow to avoid packet_in next time
-            if out_port != ofproto.OFPP_FLOOD:
-                match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
-                # verify if we have a valid buffer_id, if yes avoid to send both
-                # flow_mod & packet_out
-                if msg.buffer_id != ofproto.OFP_NO_BUFFER:
-                    self.add_flow(datapath, 10, match, actions, msg.buffer_id)
-                    return
-                else:
-                    self.add_flow(datapath, 10, match, actions)
-            data = None
-            if msg.buffer_id == ofproto.OFP_NO_BUFFER:
-                data = msg.data
-
-            out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
-                                      in_port=in_port, actions=actions, data=data)
-            datapath.send_msg(out)
+        
 
 
        
