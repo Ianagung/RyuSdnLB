@@ -1,0 +1,389 @@
+skytech@skytech-VirtualBox:~/Documents/RyuSdnLB$ ryu-manager Apptesis-03-lb.py --test-switch-dir lb_config.json 
+loading app Apptesis-03-lb.py
+loading app ryu.controller.ofp_handler
+instantiating app Apptesis-03-lb.py of LoadBalancer
+[2021-07-27 16:00:11,324] - CRITICAL - Switch is now working in **PROACTIVE** mode
+instantiating app ryu.controller.ofp_handler of OFPHandler
+[2021-07-27 16:00:34,918] - INFO - Sent FLOOD ARP to 10.0.0.7
+[2021-07-27 16:00:34,918] - INFO - Sent FLOOD ARP to 10.0.0.8
+[2021-07-27 16:00:34,920] - INFO - Sent FLOOD ARP to 10.0.0.5
+[2021-07-27 16:00:34,923] - INFO - Sent FLOOD ARP to 10.0.0.6
+[2021-07-27 16:00:47,977] - INFO - Has an ARP (10.0.0.1 asking for 10.0.0.2)
+[2021-07-27 16:00:47,979] - INFO - Get a client packet from 10.0.0.1 --> 10.0.0.2
+[2021-07-27 16:00:47,979] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.5)
+[2021-07-27 16:00:47,980] - INFO - Forward packet 10.0.0.1 --> 10.0.0.6
+[2021-07-27 16:00:47,983] - INFO - Has an ARP (10.0.0.6 asking for 10.0.0.1)
+[2021-07-27 16:00:47,992] - INFO - Get a server packet from 10.0.0.6 --> 10.0.0.1
+[2021-07-27 16:00:47,993] - INFO - Forward packet 10.1.2.3 --> 10.0.0.1
+[2021-07-27 16:00:47,997] - INFO - Has an ARP (10.0.0.1 asking for 10.0.0.3)
+[2021-07-27 16:00:48,006] - INFO - Get a client packet from 10.0.0.1 --> 10.0.0.3
+[2021-07-27 16:00:48,006] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.6)
+[2021-07-27 16:00:48,007] - INFO - Forward packet 10.0.0.1 --> 10.0.0.5
+[2021-07-27 16:00:48,009] - INFO - Has an ARP (10.0.0.5 asking for 10.0.0.1)
+[2021-07-27 16:00:48,017] - INFO - Has an ARP (10.0.0.1 asking for 10.0.0.4)
+[2021-07-27 16:00:48,018] - INFO - Get a client packet from 10.0.0.1 --> 10.0.0.4
+[2021-07-27 16:00:48,019] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.6)
+[2021-07-27 16:00:48,021] - INFO - Forward packet 10.0.0.1 --> 10.0.0.5
+[2021-07-27 16:00:48,029] - INFO - Has an ARP (10.0.0.1 asking for 10.0.0.5)
+[2021-07-27 16:00:48,037] - INFO - Get a client packet from 10.0.0.1 --> 10.0.0.5
+[2021-07-27 16:00:48,037] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.5)
+[2021-07-27 16:00:48,038] - INFO - Forward packet 10.0.0.1 --> 10.0.0.6
+[2021-07-27 16:00:48,054] - INFO - Has an ARP (10.0.0.1 asking for 10.0.0.6)
+[2021-07-27 16:00:48,056] - INFO - Get a client packet from 10.0.0.1 --> 10.0.0.6
+[2021-07-27 16:00:48,057] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.6)
+[2021-07-27 16:00:48,057] - INFO - Forward packet 10.0.0.1 --> 10.0.0.5
+[2021-07-27 16:00:48,064] - INFO - Has an ARP (10.0.0.1 asking for 10.0.0.7)
+[2021-07-27 16:00:48,065] - INFO - Get a client packet from 10.0.0.1 --> 10.0.0.7
+[2021-07-27 16:00:48,068] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.5)
+[2021-07-27 16:00:48,069] - INFO - Forward packet 10.0.0.1 --> 10.0.0.6
+[2021-07-27 16:00:48,074] - INFO - Has an ARP (10.0.0.1 asking for 10.0.0.8)
+[2021-07-27 16:00:48,076] - INFO - Get a client packet from 10.0.0.1 --> 10.0.0.8
+[2021-07-27 16:00:48,079] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.6)
+[2021-07-27 16:00:48,085] - INFO - Forward packet 10.0.0.1 --> 10.0.0.5
+[2021-07-27 16:00:48,092] - INFO - Has an ARP (10.0.0.2 asking for 10.0.0.1)
+[2021-07-27 16:00:48,101] - INFO - Get a client packet from 10.0.0.2 --> 10.0.0.1
+[2021-07-27 16:00:48,101] - INFO - Add a flow entry pair (client 10.0.0.2 --> server 10.0.0.5)
+[2021-07-27 16:00:48,103] - INFO - Forward packet 10.0.0.2 --> 10.0.0.6
+[2021-07-27 16:00:48,106] - INFO - Has an ARP (10.0.0.6 asking for 10.0.0.2)
+[2021-07-27 16:00:48,111] - INFO - Get a server packet from 10.0.0.6 --> 10.0.0.2
+[2021-07-27 16:00:48,111] - INFO - Forward packet 10.1.2.3 --> 10.0.0.2
+[2021-07-27 16:00:48,120] - INFO - Has an ARP (10.0.0.2 asking for 10.0.0.3)
+[2021-07-27 16:00:48,121] - INFO - Get a client packet from 10.0.0.2 --> 10.0.0.3
+[2021-07-27 16:00:48,122] - INFO - Add a flow entry pair (client 10.0.0.2 --> server 10.0.0.5)
+[2021-07-27 16:00:48,123] - INFO - Forward packet 10.0.0.2 --> 10.0.0.5
+[2021-07-27 16:00:48,125] - INFO - Has an ARP (10.0.0.5 asking for 10.0.0.2)
+[2021-07-27 16:00:48,134] - INFO - Has an ARP (10.0.0.2 asking for 10.0.0.4)
+[2021-07-27 16:00:48,136] - INFO - Get a client packet from 10.0.0.2 --> 10.0.0.4
+[2021-07-27 16:00:48,136] - INFO - Add a flow entry pair (client 10.0.0.2 --> server 10.0.0.6)
+[2021-07-27 16:00:48,137] - INFO - Forward packet 10.0.0.2 --> 10.0.0.6
+[2021-07-27 16:00:48,139] - INFO - Get a server packet from 10.0.0.6 --> 10.0.0.2
+[2021-07-27 16:00:48,139] - INFO - Forward packet 10.1.2.3 --> 10.0.0.2
+[2021-07-27 16:00:48,144] - INFO - Has an ARP (10.0.0.2 asking for 10.0.0.5)
+[2021-07-27 16:00:48,154] - INFO - Get a client packet from 10.0.0.2 --> 10.0.0.5
+[2021-07-27 16:00:48,155] - INFO - Add a flow entry pair (client 10.0.0.2 --> server 10.0.0.5)
+[2021-07-27 16:00:48,156] - INFO - Forward packet 10.0.0.2 --> 10.0.0.6
+[2021-07-27 16:00:48,161] - INFO - Has an ARP (10.0.0.2 asking for 10.0.0.6)
+[2021-07-27 16:00:48,164] - INFO - Get a client packet from 10.0.0.2 --> 10.0.0.6
+[2021-07-27 16:00:48,165] - INFO - Add a flow entry pair (client 10.0.0.2 --> server 10.0.0.5)
+[2021-07-27 16:00:48,170] - INFO - Forward packet 10.0.0.2 --> 10.0.0.5
+[2021-07-27 16:00:48,176] - INFO - Has an ARP (10.0.0.2 asking for 10.0.0.7)
+[2021-07-27 16:00:48,182] - INFO - Get a client packet from 10.0.0.2 --> 10.0.0.7
+[2021-07-27 16:00:48,183] - INFO - Add a flow entry pair (client 10.0.0.2 --> server 10.0.0.6)
+[2021-07-27 16:00:48,184] - INFO - Forward packet 10.0.0.2 --> 10.0.0.5
+[2021-07-27 16:00:48,190] - INFO - Has an ARP (10.0.0.2 asking for 10.0.0.8)
+[2021-07-27 16:00:48,191] - INFO - Get a client packet from 10.0.0.2 --> 10.0.0.8
+[2021-07-27 16:00:48,192] - INFO - Add a flow entry pair (client 10.0.0.2 --> server 10.0.0.5)
+[2021-07-27 16:00:48,193] - INFO - Forward packet 10.0.0.2 --> 10.0.0.5
+[2021-07-27 16:00:48,205] - INFO - Has an ARP (10.0.0.3 asking for 10.0.0.1)
+[2021-07-27 16:00:48,208] - INFO - Get a client packet from 10.0.0.3 --> 10.0.0.1
+[2021-07-27 16:00:48,209] - INFO - Add a flow entry pair (client 10.0.0.3 --> server 10.0.0.6)
+[2021-07-27 16:00:48,210] - INFO - Forward packet 10.0.0.3 --> 10.0.0.5
+[2021-07-27 16:00:48,213] - INFO - Has an ARP (10.0.0.5 asking for 10.0.0.3)
+[2021-07-27 16:00:48,217] - INFO - Get a server packet from 10.0.0.5 --> 10.0.0.3
+[2021-07-27 16:00:48,218] - INFO - Forward packet 10.1.2.3 --> 10.0.0.3
+[2021-07-27 16:00:48,221] - INFO - Has an ARP (10.0.0.3 asking for 10.0.0.2)
+[2021-07-27 16:00:48,225] - INFO - Get a client packet from 10.0.0.3 --> 10.0.0.2
+[2021-07-27 16:00:48,226] - INFO - Add a flow entry pair (client 10.0.0.3 --> server 10.0.0.5)
+[2021-07-27 16:00:48,232] - INFO - Forward packet 10.0.0.3 --> 10.0.0.6
+[2021-07-27 16:00:48,240] - INFO - Has an ARP (10.0.0.6 asking for 10.0.0.3)
+[2021-07-27 16:00:48,243] - INFO - Has an ARP (10.0.0.3 asking for 10.0.0.4)
+[2021-07-27 16:00:48,254] - INFO - Get a client packet from 10.0.0.3 --> 10.0.0.4
+[2021-07-27 16:00:48,254] - INFO - Add a flow entry pair (client 10.0.0.3 --> server 10.0.0.6)
+[2021-07-27 16:00:48,255] - INFO - Forward packet 10.0.0.3 --> 10.0.0.5
+[2021-07-27 16:00:48,263] - INFO - Has an ARP (10.0.0.3 asking for 10.0.0.5)
+[2021-07-27 16:00:48,264] - INFO - Get a client packet from 10.0.0.3 --> 10.0.0.5
+[2021-07-27 16:00:48,265] - INFO - Add a flow entry pair (client 10.0.0.3 --> server 10.0.0.5)
+[2021-07-27 16:00:48,266] - INFO - Forward packet 10.0.0.3 --> 10.0.0.5
+[2021-07-27 16:00:48,272] - INFO - Has an ARP (10.0.0.3 asking for 10.0.0.6)
+[2021-07-27 16:00:48,274] - INFO - Get a client packet from 10.0.0.3 --> 10.0.0.6
+[2021-07-27 16:00:48,276] - INFO - Add a flow entry pair (client 10.0.0.3 --> server 10.0.0.5)
+[2021-07-27 16:00:48,277] - INFO - Forward packet 10.0.0.3 --> 10.0.0.5
+[2021-07-27 16:00:48,281] - INFO - Has an ARP (10.0.0.3 asking for 10.0.0.7)
+[2021-07-27 16:00:48,285] - INFO - Get a client packet from 10.0.0.3 --> 10.0.0.7
+[2021-07-27 16:00:48,285] - INFO - Add a flow entry pair (client 10.0.0.3 --> server 10.0.0.5)
+[2021-07-27 16:00:48,293] - INFO - Forward packet 10.0.0.3 --> 10.0.0.6
+[2021-07-27 16:00:48,299] - INFO - Has an ARP (10.0.0.3 asking for 10.0.0.8)
+[2021-07-27 16:00:48,304] - INFO - Get a client packet from 10.0.0.3 --> 10.0.0.8
+[2021-07-27 16:00:48,308] - INFO - Add a flow entry pair (client 10.0.0.3 --> server 10.0.0.6)
+[2021-07-27 16:00:48,309] - INFO - Forward packet 10.0.0.3 --> 10.0.0.5
+[2021-07-27 16:00:48,313] - INFO - Has an ARP (10.0.0.4 asking for 10.0.0.1)
+[2021-07-27 16:00:48,315] - INFO - Get a client packet from 10.0.0.4 --> 10.0.0.1
+[2021-07-27 16:00:48,316] - INFO - Add a flow entry pair (client 10.0.0.4 --> server 10.0.0.5)
+[2021-07-27 16:00:48,317] - INFO - Forward packet 10.0.0.4 --> 10.0.0.6
+[2021-07-27 16:00:48,323] - INFO - Has an ARP (10.0.0.6 asking for 10.0.0.4)
+[2021-07-27 16:00:48,325] - INFO - Get a server packet from 10.0.0.6 --> 10.0.0.4
+[2021-07-27 16:00:48,327] - INFO - Forward packet 10.1.2.3 --> 10.0.0.4
+[2021-07-27 16:00:48,330] - INFO - Has an ARP (10.0.0.4 asking for 10.0.0.2)
+[2021-07-27 16:00:48,336] - INFO - Get a client packet from 10.0.0.4 --> 10.0.0.2
+[2021-07-27 16:00:48,337] - INFO - Add a flow entry pair (client 10.0.0.4 --> server 10.0.0.6)
+[2021-07-27 16:00:48,342] - INFO - Forward packet 10.0.0.4 --> 10.0.0.5
+[2021-07-27 16:00:48,346] - INFO - Has an ARP (10.0.0.5 asking for 10.0.0.4)
+[2021-07-27 16:00:48,353] - INFO - Has an ARP (10.0.0.4 asking for 10.0.0.3)
+[2021-07-27 16:00:48,383] - INFO - Get a client packet from 10.0.0.4 --> 10.0.0.3
+[2021-07-27 16:00:48,384] - INFO - Add a flow entry pair (client 10.0.0.4 --> server 10.0.0.6)
+[2021-07-27 16:00:48,385] - INFO - Forward packet 10.0.0.4 --> 10.0.0.6
+[2021-07-27 16:00:48,390] - INFO - Has an ARP (10.0.0.4 asking for 10.0.0.5)
+[2021-07-27 16:00:48,391] - INFO - Get a client packet from 10.0.0.4 --> 10.0.0.5
+[2021-07-27 16:00:48,392] - INFO - Add a flow entry pair (client 10.0.0.4 --> server 10.0.0.6)
+[2021-07-27 16:00:48,392] - INFO - Forward packet 10.0.0.4 --> 10.0.0.6
+[2021-07-27 16:00:48,403] - INFO - Has an ARP (10.0.0.4 asking for 10.0.0.6)
+[2021-07-27 16:00:48,409] - INFO - Get a client packet from 10.0.0.4 --> 10.0.0.6
+[2021-07-27 16:00:48,410] - INFO - Add a flow entry pair (client 10.0.0.4 --> server 10.0.0.6)
+[2021-07-27 16:00:48,411] - INFO - Forward packet 10.0.0.4 --> 10.0.0.5
+[2021-07-27 16:00:48,416] - INFO - Has an ARP (10.0.0.4 asking for 10.0.0.7)
+[2021-07-27 16:00:48,420] - INFO - Get a client packet from 10.0.0.4 --> 10.0.0.7
+[2021-07-27 16:00:48,420] - INFO - Add a flow entry pair (client 10.0.0.4 --> server 10.0.0.5)
+[2021-07-27 16:00:48,421] - INFO - Forward packet 10.0.0.4 --> 10.0.0.6
+[2021-07-27 16:00:48,435] - INFO - Has an ARP (10.0.0.4 asking for 10.0.0.8)
+[2021-07-27 16:00:48,437] - INFO - Get a client packet from 10.0.0.4 --> 10.0.0.8
+[2021-07-27 16:00:48,438] - INFO - Add a flow entry pair (client 10.0.0.4 --> server 10.0.0.6)
+[2021-07-27 16:00:48,438] - INFO - Forward packet 10.0.0.4 --> 10.0.0.6
+[2021-07-27 16:00:48,443] - INFO - Has an ARP (10.0.0.1 asking for 10.1.2.3)
+[2021-07-27 16:00:48,448] - INFO - Get a client packet from 10.0.0.1 --> 10.1.2.3
+[2021-07-27 16:00:48,452] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.5)
+[2021-07-27 16:00:48,454] - INFO - Forward packet 10.0.0.1 --> 10.0.0.5
+[2021-07-27 16:00:48,464] - INFO - Has an ARP (10.0.0.2 asking for 10.1.2.3)
+[2021-07-27 16:00:48,466] - INFO - Get a client packet from 10.0.0.2 --> 10.1.2.3
+[2021-07-27 16:00:48,467] - INFO - Add a flow entry pair (client 10.0.0.2 --> server 10.0.0.6)
+[2021-07-27 16:00:48,468] - INFO - Forward packet 10.0.0.2 --> 10.0.0.6
+[2021-07-27 16:00:58,482] - INFO - Get a server packet from 10.0.0.5 --> 10.0.0.3
+[2021-07-27 16:00:58,483] - INFO - Forward packet 10.1.2.3 --> 10.0.0.3
+[2021-07-27 16:00:58,486] - INFO - Has an ARP (10.0.0.3 asking for 10.1.2.3)
+[2021-07-27 16:00:58,488] - INFO - Get a client packet from 10.0.0.3 --> 10.1.2.3
+[2021-07-27 16:00:58,489] - INFO - Add a flow entry pair (client 10.0.0.3 --> server 10.0.0.5)
+[2021-07-27 16:00:58,490] - INFO - Forward packet 10.0.0.3 --> 10.0.0.6
+[2021-07-27 16:01:08,494] - INFO - Get a server packet from 10.0.0.5 --> 10.0.0.4
+[2021-07-27 16:01:08,495] - INFO - Forward packet 10.1.2.3 --> 10.0.0.4
+[2021-07-27 16:01:08,497] - INFO - Has an ARP (10.0.0.4 asking for 10.1.2.3)
+[2021-07-27 16:01:08,501] - INFO - Get a client packet from 10.0.0.4 --> 10.1.2.3
+[2021-07-27 16:01:08,501] - INFO - Add a flow entry pair (client 10.0.0.4 --> server 10.0.0.6)
+[2021-07-27 16:01:08,505] - INFO - Forward packet 10.0.0.4 --> 10.0.0.5
+[2021-07-27 16:01:08,524] - INFO - Has an ARP (10.0.0.5 asking for 10.0.0.6)
+[2021-07-27 16:01:08,526] - INFO - Get a server packet from 10.0.0.5 --> 10.0.0.6
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.6'
+[2021-07-27 16:01:18,538] - INFO - Has an ARP (10.0.0.5 asking for 10.0.0.7)
+[2021-07-27 16:01:18,541] - INFO - Get a server packet from 10.0.0.5 --> 10.0.0.7
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.7'
+[2021-07-27 16:01:28,560] - INFO - Has an ARP (10.0.0.5 asking for 10.0.0.8)
+[2021-07-27 16:01:28,562] - INFO - Get a server packet from 10.0.0.5 --> 10.0.0.8
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.8'
+[2021-07-27 16:01:38,649] - INFO - Get a server packet from 10.0.0.6 --> 10.0.0.1
+[2021-07-27 16:01:38,649] - INFO - Forward packet 10.1.2.3 --> 10.0.0.1
+[2021-07-27 16:01:38,651] - INFO - Get a client packet from 10.0.0.1 --> 10.1.2.3
+[2021-07-27 16:01:38,651] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.6)
+[2021-07-27 16:01:38,652] - INFO - Forward packet 10.0.0.1 --> 10.0.0.5
+[2021-07-27 16:01:43,761] - INFO - Has an ARP (10.0.0.1 asking for 10.1.2.3)
+[2021-07-27 16:01:43,762] - INFO - Has an ARP (10.0.0.6 asking for 10.0.0.1)
+[2021-07-27 16:01:48,658] - INFO - Get a server packet from 10.0.0.6 --> 10.0.0.2
+[2021-07-27 16:01:48,658] - INFO - Forward packet 10.1.2.3 --> 10.0.0.2
+[2021-07-27 16:01:48,659] - INFO - Get a client packet from 10.0.0.2 --> 10.1.2.3
+[2021-07-27 16:01:48,660] - INFO - Add a flow entry pair (client 10.0.0.2 --> server 10.0.0.5)
+[2021-07-27 16:01:48,661] - INFO - Forward packet 10.0.0.2 --> 10.0.0.6
+[2021-07-27 16:01:48,674] - INFO - Get a server packet from 10.0.0.6 --> 10.0.0.3
+[2021-07-27 16:01:48,674] - INFO - Forward packet 10.1.2.3 --> 10.0.0.3
+[2021-07-27 16:01:48,675] - INFO - Get a client packet from 10.0.0.3 --> 10.1.2.3
+[2021-07-27 16:01:48,676] - INFO - Add a flow entry pair (client 10.0.0.3 --> server 10.0.0.6)
+[2021-07-27 16:01:48,677] - INFO - Forward packet 10.0.0.3 --> 10.0.0.6
+[2021-07-27 16:01:48,689] - INFO - Get a server packet from 10.0.0.6 --> 10.0.0.4
+[2021-07-27 16:01:48,691] - INFO - Forward packet 10.1.2.3 --> 10.0.0.4
+[2021-07-27 16:01:48,692] - INFO - Get a client packet from 10.0.0.4 --> 10.1.2.3
+[2021-07-27 16:01:48,696] - INFO - Add a flow entry pair (client 10.0.0.4 --> server 10.0.0.6)
+[2021-07-27 16:01:48,697] - INFO - Forward packet 10.0.0.4 --> 10.0.0.5
+[2021-07-27 16:01:53,751] - INFO - Has an ARP (10.0.0.6 asking for 10.0.0.4)
+[2021-07-27 16:01:53,753] - INFO - Has an ARP (10.0.0.6 asking for 10.0.0.3)
+[2021-07-27 16:01:53,756] - INFO - Has an ARP (10.0.0.6 asking for 10.0.0.2)
+[2021-07-27 16:01:53,758] - INFO - Has an ARP (10.0.0.4 asking for 10.1.2.3)
+[2021-07-27 16:01:53,759] - INFO - Has an ARP (10.0.0.3 asking for 10.1.2.3)
+[2021-07-27 16:01:53,761] - INFO - Has an ARP (10.0.0.2 asking for 10.1.2.3)
+[2021-07-27 16:01:58,700] - INFO - Has an ARP (10.0.0.6 asking for 10.0.0.5)
+[2021-07-27 16:01:58,707] - INFO - Get a server packet from 10.0.0.6 --> 10.0.0.5
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.5'
+[2021-07-27 16:02:08,732] - INFO - Has an ARP (10.0.0.6 asking for 10.0.0.7)
+[2021-07-27 16:02:08,733] - INFO - Get a server packet from 10.0.0.6 --> 10.0.0.7
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.7'
+[2021-07-27 16:02:18,746] - INFO - Has an ARP (10.0.0.6 asking for 10.0.0.8)
+[2021-07-27 16:02:18,756] - INFO - Get a server packet from 10.0.0.6 --> 10.0.0.8
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.8'
+[2021-07-27 16:02:28,761] - INFO - Has an ARP (10.0.0.7 asking for 10.0.0.1)
+[2021-07-27 16:02:28,762] - INFO - Get a server packet from 10.0.0.7 --> 10.0.0.1
+[2021-07-27 16:02:28,762] - INFO - Forward packet 10.1.2.4 --> 10.0.0.1
+[2021-07-27 16:02:28,763] - INFO - Has an ARP (10.0.0.1 asking for 10.1.2.4)
+[2021-07-27 16:02:28,765] - INFO - Get a client packet from 10.0.0.1 --> 10.1.2.4
+[2021-07-27 16:02:28,765] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.8)
+[2021-07-27 16:02:28,766] - INFO - Forward packet 10.0.0.1 --> 10.0.0.7
+[2021-07-27 16:02:28,772] - INFO - Has an ARP (10.0.0.7 asking for 10.0.0.2)
+[2021-07-27 16:02:28,773] - INFO - Get a server packet from 10.0.0.7 --> 10.0.0.2
+[2021-07-27 16:02:28,780] - INFO - Forward packet 10.1.2.4 --> 10.0.0.2
+[2021-07-27 16:02:28,783] - INFO - Has an ARP (10.0.0.2 asking for 10.1.2.4)
+[2021-07-27 16:02:28,786] - INFO - Get a client packet from 10.0.0.2 --> 10.1.2.4
+[2021-07-27 16:02:28,787] - INFO - Add a flow entry pair (client 10.0.0.2 --> server 10.0.0.8)
+[2021-07-27 16:02:28,788] - INFO - Forward packet 10.0.0.2 --> 10.0.0.7
+[2021-07-27 16:02:28,801] - INFO - Has an ARP (10.0.0.7 asking for 10.0.0.3)
+[2021-07-27 16:02:28,804] - INFO - Get a server packet from 10.0.0.7 --> 10.0.0.3
+[2021-07-27 16:02:28,804] - INFO - Forward packet 10.1.2.4 --> 10.0.0.3
+[2021-07-27 16:02:28,806] - INFO - Has an ARP (10.0.0.3 asking for 10.1.2.4)
+[2021-07-27 16:02:28,807] - INFO - Get a client packet from 10.0.0.3 --> 10.1.2.4
+[2021-07-27 16:02:28,807] - INFO - Add a flow entry pair (client 10.0.0.3 --> server 10.0.0.8)
+[2021-07-27 16:02:28,808] - INFO - Forward packet 10.0.0.3 --> 10.0.0.8
+[2021-07-27 16:02:38,810] - INFO - Has an ARP (10.0.0.7 asking for 10.0.0.4)
+[2021-07-27 16:02:38,825] - INFO - Get a server packet from 10.0.0.7 --> 10.0.0.4
+[2021-07-27 16:02:38,825] - INFO - Forward packet 10.1.2.4 --> 10.0.0.4
+[2021-07-27 16:02:38,827] - INFO - Has an ARP (10.0.0.4 asking for 10.1.2.4)
+[2021-07-27 16:02:38,833] - INFO - Get a client packet from 10.0.0.4 --> 10.1.2.4
+[2021-07-27 16:02:38,837] - INFO - Add a flow entry pair (client 10.0.0.4 --> server 10.0.0.7)
+[2021-07-27 16:02:38,840] - INFO - Forward packet 10.0.0.4 --> 10.0.0.7
+[2021-07-27 16:02:38,845] - INFO - Has an ARP (10.0.0.7 asking for 10.0.0.5)
+[2021-07-27 16:02:38,846] - INFO - Get a server packet from 10.0.0.7 --> 10.0.0.5
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.5'
+[2021-07-27 16:02:48,848] - INFO - Has an ARP (10.0.0.7 asking for 10.0.0.6)
+[2021-07-27 16:02:48,850] - INFO - Get a server packet from 10.0.0.7 --> 10.0.0.6
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.6'
+[2021-07-27 16:02:58,856] - INFO - Has an ARP (10.0.0.7 asking for 10.0.0.8)
+[2021-07-27 16:02:58,858] - INFO - Get a server packet from 10.0.0.7 --> 10.0.0.8
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.8'
+[2021-07-27 16:03:08,864] - INFO - Has an ARP (10.0.0.8 asking for 10.0.0.1)
+[2021-07-27 16:03:08,866] - INFO - Get a server packet from 10.0.0.8 --> 10.0.0.1
+[2021-07-27 16:03:08,866] - INFO - Forward packet 10.1.2.4 --> 10.0.0.1
+[2021-07-27 16:03:08,868] - INFO - Get a client packet from 10.0.0.1 --> 10.1.2.4
+[2021-07-27 16:03:08,869] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.8)
+[2021-07-27 16:03:08,869] - INFO - Forward packet 10.0.0.1 --> 10.0.0.7
+[2021-07-27 16:03:13,873] - INFO - Has an ARP (10.0.0.1 asking for 10.1.2.4)
+[2021-07-27 16:03:18,871] - INFO - Has an ARP (10.0.0.8 asking for 10.0.0.2)
+[2021-07-27 16:03:18,872] - INFO - Get a server packet from 10.0.0.8 --> 10.0.0.2
+[2021-07-27 16:03:18,872] - INFO - Forward packet 10.1.2.4 --> 10.0.0.2
+[2021-07-27 16:03:18,874] - INFO - Get a client packet from 10.0.0.2 --> 10.1.2.4
+[2021-07-27 16:03:18,875] - INFO - Add a flow entry pair (client 10.0.0.2 --> server 10.0.0.7)
+[2021-07-27 16:03:18,876] - INFO - Forward packet 10.0.0.2 --> 10.0.0.8
+[2021-07-27 16:03:18,889] - INFO - Has an ARP (10.0.0.8 asking for 10.0.0.3)
+[2021-07-27 16:03:18,890] - INFO - Get a server packet from 10.0.0.8 --> 10.0.0.3
+[2021-07-27 16:03:18,890] - INFO - Forward packet 10.1.2.4 --> 10.0.0.3
+[2021-07-27 16:03:18,892] - INFO - Get a client packet from 10.0.0.3 --> 10.1.2.4
+[2021-07-27 16:03:18,895] - INFO - Add a flow entry pair (client 10.0.0.3 --> server 10.0.0.7)
+[2021-07-27 16:03:18,897] - INFO - Forward packet 10.0.0.3 --> 10.0.0.8
+[2021-07-27 16:03:18,909] - INFO - Has an ARP (10.0.0.8 asking for 10.0.0.4)
+[2021-07-27 16:03:18,910] - INFO - Get a server packet from 10.0.0.8 --> 10.0.0.4
+[2021-07-27 16:03:18,910] - INFO - Forward packet 10.1.2.4 --> 10.0.0.4
+[2021-07-27 16:03:18,912] - INFO - Get a client packet from 10.0.0.4 --> 10.1.2.4
+[2021-07-27 16:03:18,912] - INFO - Add a flow entry pair (client 10.0.0.4 --> server 10.0.0.7)
+[2021-07-27 16:03:18,913] - INFO - Forward packet 10.0.0.4 --> 10.0.0.7
+[2021-07-27 16:03:24,117] - INFO - Has an ARP (10.0.0.4 asking for 10.1.2.4)
+[2021-07-27 16:03:24,119] - INFO - Has an ARP (10.0.0.3 asking for 10.1.2.4)
+[2021-07-27 16:03:24,121] - INFO - Has an ARP (10.0.0.2 asking for 10.1.2.4)
+[2021-07-27 16:03:28,913] - INFO - Has an ARP (10.0.0.8 asking for 10.0.0.5)
+[2021-07-27 16:03:28,914] - INFO - Get a server packet from 10.0.0.8 --> 10.0.0.5
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.5'
+[2021-07-27 16:03:38,934] - INFO - Has an ARP (10.0.0.8 asking for 10.0.0.6)
+[2021-07-27 16:03:38,937] - INFO - Get a server packet from 10.0.0.8 --> 10.0.0.6
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.6'
+[2021-07-27 16:03:48,954] - INFO - Has an ARP (10.0.0.8 asking for 10.0.0.7)
+[2021-07-27 16:03:48,957] - INFO - Get a server packet from 10.0.0.8 --> 10.0.0.7
+LoadBalancer: Exception occurred during handler processing. Backtrace from offending handler [packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 434, in packet_in_handler
+    self.__multiplexer(dp, in_port, pkt, eth.ethertype)
+  File "/home/skytech/Documents/RyuSdnLB/Apptesis-03-lb.py", line 394, in __multiplexer
+    dst_mac = self._client_ip_mac_mapping[dst_ip]
+KeyError: '10.0.0.7'
+[2021-07-27 16:07:13,194] - INFO - Get a client packet from 10.0.0.1 --> 10.1.2.3
+[2021-07-27 16:07:13,194] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.6)
+[2021-07-27 16:07:13,195] - INFO - Forward packet 10.0.0.1 --> 10.0.0.6
+[2021-07-27 16:07:14,225] - INFO - Get a client packet from 10.0.0.1 --> 10.1.2.3
+[2021-07-27 16:07:14,226] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.6)
+[2021-07-27 16:07:14,227] - INFO - Forward packet 10.0.0.1 --> 10.0.0.5
+[2021-07-27 16:07:16,245] - INFO - Get a client packet from 10.0.0.1 --> 10.1.2.3
+[2021-07-27 16:07:16,248] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.6)
+[2021-07-27 16:07:16,251] - INFO - Forward packet 10.0.0.1 --> 10.0.0.6
+[2021-07-27 16:07:18,355] - INFO - Has an ARP (10.0.0.1 asking for 10.1.2.3)
+[2021-07-27 16:07:20,403] - INFO - Get a client packet from 10.0.0.1 --> 10.1.2.3
+[2021-07-27 16:07:20,405] - INFO - Add a flow entry pair (client 10.0.0.1 --> server 10.0.0.5)
+[2021-07-27 16:07:20,407] - INFO - Forward packet 10.0.0.1 --> 10.0.0.5
