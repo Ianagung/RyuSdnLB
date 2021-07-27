@@ -242,35 +242,41 @@ class loadBalancer13(app_manager.RyuApp):
                 datapath.send_msg(flowMod2)
 
                 self.logger.info("\n Added flow for Server to Host condition------->")
+                
+                self.logger.info("\n Round Robin Server Pick Algorithm")
+                ############Server Count increment
+                #Increase count so the next server will serve the next TCP connection from different or same host 
+                #(When it completes the current TCP session with current TCP server)
+                self.serverCount+=1
+                if(self.serverCount>2):
+                    self.serverCount=1
 
-            # if dst in self.mac_to_port[dpid]:
-            #     out_port = self.mac_to_port[dpid][dst]
-            # else:
-            #     out_port = ofproto.OFPP_FLOOD
+        elif(dst!="192.168.147.100"):
+            self.logger.info("\n Reached outside of  TCP - IP protocol &&  IP virtual switch check-------->")
+            if dst in self.mac_to_port[dpid]:
+                out_port = self.mac_to_port[dpid][dst]
+            else:
+                out_port = ofproto.OFPP_FLOOD
 
-            # actions = [parser.OFPActionOutput(out_port)]
+            actions = [parser.OFPActionOutput(out_port)]
 
-            # # install a flow to avoid packet_in next time
-            # if out_port != ofproto.OFPP_FLOOD:
-            #     match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
-            #     # verify if we have a valid buffer_id, if yes avoid to send both
-            #     # flow_mod & packet_out
-            #     if msg.buffer_id != ofproto.OFP_NO_BUFFER:
-            #         self.add_flow(datapath, 1, match, actions, msg.buffer_id)
-            #         return
-            #     else:
-            #         self.add_flow(datapath, 1, match, actions)
-            # data = None
-            # if msg.buffer_id == ofproto.OFP_NO_BUFFER:
-            #     data = msg.data
+            # install a flow to avoid packet_in next time
+            if out_port != ofproto.OFPP_FLOOD:
+                match = parser.OFPMatch(in_port=in_port, eth_dst=dst, eth_src=src)
+                # verify if we have a valid buffer_id, if yes avoid to send both
+                # flow_mod & packet_out
+                if msg.buffer_id != ofproto.OFP_NO_BUFFER:
+                    self.add_flow(datapath, 10, match, actions, msg.buffer_id)
+                    return
+                else:
+                    self.add_flow(datapath, 10, match, actions)
+            data = None
+            if msg.buffer_id == ofproto.OFP_NO_BUFFER:
+                data = msg.data
 
-            # out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
-            #                           in_port=in_port, actions=actions, data=data)
-            # datapath.send_msg(out)
-        ############Server Count increment
-        #Increase count so the next server will serve the next TCP connection from different or same host (When it completes the current TCP session with current TCP server)
+            out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
+                                      in_port=in_port, actions=actions, data=data)
+            datapath.send_msg(out)
 
-        self.serverCount+=1
-        if(self.serverCount>2):
-            self.serverCount=1
+
        
