@@ -349,6 +349,7 @@ class loadBalancer13(app_manager.RyuApp):
                     serverOutport = self.mac_to_port[dpid][serverMac]
                 else:
                     self.logger.info("Tidak ada serverMac")
+                serverOutport = 4
                 actions1=[parser.OFPActionSetField(ipv4_src=self.lbIP),parser.OFPActionSetField(eth_dst=serverMac),
                     parser.OFPActionSetField(ipv4_dst=serverIP),parser.OFPActionOutput(serverOutport)]
 
