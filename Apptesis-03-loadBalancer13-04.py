@@ -347,6 +347,8 @@ class loadBalancer13(app_manager.RyuApp):
                 #get mac to port
                 if serverMac in self.mac_to_port[dpid]:
                     serverOutport = self.mac_to_port[dpid][serverMac]
+                else:
+                    self.logger.info("Tidak ada serverMac")
                 actions1=[parser.OFPActionSetField(ipv4_src=self.lbIP),parser.OFPActionSetField(eth_dst=serverMac),
                     parser.OFPActionSetField(ipv4_dst=serverIP),parser.OFPActionOutput(serverOutport)]
 
@@ -376,9 +378,9 @@ class loadBalancer13(app_manager.RyuApp):
                     ipv4_dst=self.lbIP,tcp_src=tcpContents.dst_port,tcp_dst=tcpContents.src_port)
 
                 #Send server TCP segments to host using source host port connected to controller
-                #get mac to port
-                if serverMac in self.mac_to_port[dpid]:
-                    serverOutport = self.mac_to_port[dpid][serverMac]
+                # #get mac to port
+                # if serverMac in self.mac_to_port[dpid]:
+                #     serverOutport = self.mac_to_port[dpid][serverMac]
                 actions2=[parser.OFPActionSetField(eth_src="11:22:33:ab:cd:ef"),
                     parser.OFPActionSetField(ipv4_src=self.lbIP),
                     parser.OFPActionSetField(eth_dst=eth.src),parser.OFPActionSetField(ipv4_dst=ipContents.src),
