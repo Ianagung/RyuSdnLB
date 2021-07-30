@@ -23,7 +23,7 @@ class Fuzzy:
         # Membership functions
         cpu_verylow = fuzz.trapmf(x_cpu, [-20, -10, 10, 40 ])
         cpu_low = fuzz.trapmf(x_cpu, [-10, 20, 30, 60 ])
-        cpu_medium = fuzz.trapmf(x_cpu, [10, 45, 55, 90 ])
+        cpu_medium = fuzz.trapmf(x_cpu, [15, 45, 55, 85 ])
         cpu_high = fuzz.trapmf(x_cpu, [40, 70, 80, 110 ])
         cpu_veryhigh = fuzz.trapmf(x_cpu, [60, 90, 105, 110 ])
 
