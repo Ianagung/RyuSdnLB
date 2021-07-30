@@ -10,11 +10,13 @@
 # -hitung value window_load_current = window_load_current + window_load_change
 # -memutuskan nilai window_load_current terbesar
 # -mengkorelasikan dengan alamat server
+
 # -mempublish server mana dengan load terkecil= window_load_terbesar
 #In the next step of the fuzzy system design process, the fuzzy rules base is defined (Table 2). 
 #The rules are constructed to indicate that greater consumable resources cause higher load; 
 #therefore, the size of the window should be smaller. 
 #The opposite of this is true as well.
+
 # -add timer to start looping data fuzzy - done
 #!/usr/bin/env python3
 import paho.mqtt.client as mqtt

@@ -29,15 +29,15 @@ class Fuzzy:
 
         mem_verylow = fuzz.trapmf(x_mem, [-20, -10, 10, 40 ])
         mem_low = fuzz.trapmf(x_mem, [-10, 20, 30, 60 ])
-        mem_medium = fuzz.trapmf(x_mem, [10, 45, 55, 90 ])
+        mem_medium = fuzz.trapmf(x_mem, [15, 45, 55, 85 ])
         mem_high = fuzz.trapmf(x_mem, [40, 70, 80, 110 ])
         mem_veryhigh = fuzz.trapmf(x_mem, [60, 90, 105, 110 ])
 
-        truput_low = fuzz.trapmf(x_rsptmstddev, [-0.1, -0.01, 20, 60 ])
-        truput_medium = fuzz.trapmf(x_rsptmstddev, [10, 40, 60, 100 ])
-        truput_high = fuzz.trapmf(x_rsptmstddev, [40, 80, 100, 110 ])
+        truput_low = fuzz.trapmf(x_rsptmstddev, [-40, -10, 20, 60 ])
+        truput_medium = fuzz.trapmf(x_rsptmstddev, [10, 40, 60, 90 ])
+        truput_high = fuzz.trapmf(x_rsptmstddev, [50, 40, 90, 110 ])
 
-        load_extdec = fuzz.trapmf(x_load, [-0.7, -0.65, 0.55, 0.5 ])
+        load_extdec = fuzz.trapmf(x_load, [-0.7, -0.65, -0.55, -0.5 ])
         load_veryfastdec = fuzz.trimf(x_load, [ -0.6, -0.5, -0.4 ])
         load_fastdec = fuzz.trimf(x_load, [ -0.5, -0.4, -0.3 ])
         load_dec = fuzz.trimf(x_load, [ -0.4, -0.3, -0.2 ])
@@ -107,7 +107,7 @@ class Fuzzy:
 
         # Apply Fuzzy Rule
         #extremely decrease load window value change
-        ed_degree = np.fmin(cpu_veryhigh_degree,mem_veryhigh_degree)
+        ed_degree1 = np.fmin(cpu_veryhigh_degree,mem_veryhigh_degree)
         #very fast decrease load window value change
         vfd_degree1 = np.fmin(cpu_veryhigh_degree, mem_high_degree)
         #fast decrease load window value change
@@ -160,9 +160,14 @@ class Fuzzy:
         #fast increase load window value change
         fi_degree5 = np.fmin(cpu_verylow_degree, mem_low_degree)
         #very fast increase load window value change
-        vfi_degree = np.fmin(cpu_verylow_degree, mem_verylow_degree)
+        vfi_degree5 = np.fmin(cpu_verylow_degree, mem_verylow_degree)
 
-        #ed_degree = np.fmin(ed_degree)
+        ed_degree6 = thruput_low_degree
+        inc_degree6 = thruput_medium_degree
+        vfi_degree6 = thruput_high_degree
+
+
+        ed_degree = np.fmin(ed_degree1, ed_degree6)
         vfd_degree = np.fmin(vfd_degree1, vfd_degree2)
         fd_degree = np.fmin(fd_degree1, np.fmin(fd_degree2, fd_degree3))
         dec_degree = np.fmin(dec_degree1, np.fmin(dec_degree2, np.fmin(dec_degree3, dec_degree4)))
@@ -170,9 +175,9 @@ class Fuzzy:
         vsd_degree = np.fmin(vsd_degree2, vsd_degree5)
         #nc_degree = np.fmin(nc_degree)
         si_degree = np.fmin(si_degree3, si_degree4)
-        inc_degree = np.fmin(inc_degree3, np.fmin(inc_degree4, inc_degree5))
+        inc_degree = np.fmin(inc_degree3, np.fmin(inc_degree4, np.fmin(inc_degree6,inc_degree5)))
         fi_degree = np.fmin(fi_degree4, fi_degree5)
-        #vfi_degree = np.fmin(vfi_degree)
+        vfi_degree = np.fmin(vfi_degree5, vfi_degree6)
 
         # Apply IMPLICATION or ACTIVATION
         activation_extdec = np.fmin(ed_degree, load_extdec)
