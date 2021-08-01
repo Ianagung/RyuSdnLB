@@ -5,6 +5,7 @@
 #import multitimer
 #import time
 #from matplotlib import pyplot as plt
+import sys
 
 sys.path.append(".")
 from fuzzyMam3inCMT import Fuzzy
