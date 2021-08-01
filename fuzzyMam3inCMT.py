@@ -195,21 +195,27 @@ class Fuzzy:
         # AGGREGATION
         # Apply the rules:
         # * max for aggregation, like or the cases
-        aggregated1 = np.fmax(
-            activation_extdec,
-            np.fmax(activation_veryfastdec, activation_fastdec))
-        aggregated2 = np.fmax(
-            activation_dec,
-            np.fmax(activation_smalldec, activation_verysmalldec))
-        aggregated3 = np.fmax(
-            activation_nochange,
-            np.fmax(activation_smallinc, activation_increase))
-        aggregated4 = np.fmax(
-            activation_fastinc,
-            np.fmax(activation_veryfastinc, aggregated1))
-        aggregated5 = np.fmax(
-            aggregated2,
-            np.fmax(aggregated3, aggregated4))
+        # aggregated1 = np.fmax(
+        #     activation_extdec,
+        #     np.fmax(activation_veryfastdec, activation_fastdec))
+        # aggregated2 = np.fmax(
+        #     activation_dec,
+        #     np.fmax(activation_smalldec, activation_verysmalldec))
+        # aggregated3 = np.fmax(
+        #     activation_nochange,
+        #     np.fmax(activation_smallinc, activation_increase))
+        # aggregated4 = np.fmax(
+        #     activation_fastinc,
+        #     np.fmax(activation_veryfastinc, aggregated1))
+        # aggregated5 = np.fmax(
+        #     aggregated2,
+        #     np.fmax(aggregated3, aggregated4))
+
+        aggregated = np.fmax(activation_veryfastinc, np.fmax(activation_fastinc, 
+            np.fmax(activation_increase, np.fmax(activation_smallinc, 
+            np.fmax(activation_nochange, np.fmax(activation_verysmalldec, 
+            np.fmax(activation_smalldec, np.fmax(activation_dec, 
+            np.fmax( activation_fastdec, np.fmax(activation_extdec, activation_veryfastdec))))))))))
 
         # Defuzzification
         # skfuzzy.defuzz(x, mfx, mode)[source]
@@ -226,11 +232,11 @@ class Fuzzy:
         # Defuzzification of a membership function, returning a defuzzified value of the function at x, using various defuzzification methods.
         # Returns:  u : float or int Defuzzified result.
 
-        self.tip_centroid = fuzz.defuzz(x_load, aggregated5, 'centroid')
-        self.tip_bisector = fuzz.defuzz(x_load, aggregated5, 'bisector')
-        self.tip_mom = fuzz.defuzz(x_load, aggregated5, "mom")
-        self.tip_som = fuzz.defuzz(x_load, aggregated5, "som")
-        self.tip_lom = fuzz.defuzz(x_load, aggregated5, "lom")
+        self.tip_centroid = fuzz.defuzz(x_load, aggregated, 'centroid')
+        self.tip_bisector = fuzz.defuzz(x_load, aggregated, 'bisector')
+        self.tip_mom = fuzz.defuzz(x_load, aggregated, "mom")
+        self.tip_som = fuzz.defuzz(x_load, aggregated, "som")
+        self.tip_lom = fuzz.defuzz(x_load, aggregated, "lom")
 
         # print(tip_centroid)
         # print(tip_bisector)
