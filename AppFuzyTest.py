@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import paho.mqtt.client as mqtt
-import numpy as np
-import skfuzzy as fuzz
-import multitimer
-import time
-from matplotlib import pyplot as plt
+#import paho.mqtt.client as mqtt
+#import numpy as np
+#import skfuzzy as fuzz
+#import multitimer
+#import time
+#from matplotlib import pyplot as plt
 
 sys.path.append(".")
 from fuzzyMam3inCMT import Fuzzy
