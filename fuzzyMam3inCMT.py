@@ -33,9 +33,9 @@ class Fuzzy:
         mem_high = fuzz.trapmf(x_mem, [40, 70, 80, 110 ])
         mem_veryhigh = fuzz.trapmf(x_mem, [60, 90, 105, 110 ])
 
-        truput_low = fuzz.trapmf(x_rsptmstddev, [-40, -10, 20, 60 ])
-        truput_medium = fuzz.trapmf(x_rsptmstddev, [10, 40, 60, 90 ])
-        truput_high = fuzz.trapmf(x_rsptmstddev, [50, 40, 90, 110 ])
+        truput_low = fuzz.trapmf(x_truput, [-40, -10, 20, 60 ])
+        truput_medium = fuzz.trapmf(x_truput, [10, 40, 60, 90 ])
+        truput_high = fuzz.trapmf(x_truput, [50, 40, 90, 110 ])
 
         load_extdec = fuzz.trapmf(x_load, [-0.7, -0.65, -0.55, -0.5 ])
         load_veryfastdec = fuzz.trimf(x_load, [ -0.6, -0.5, -0.4 ])
