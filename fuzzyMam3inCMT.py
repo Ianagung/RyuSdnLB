@@ -162,9 +162,9 @@ class Fuzzy:
         #very fast increase load window value change
         vfi_degree5 = np.fmin(cpu_verylow_degree, mem_verylow_degree)
 
-        ed_degree6 = thruput_low_degree
+        vfi_degree6 = thruput_low_degree
         inc_degree6 = thruput_medium_degree
-        vfi_degree6 = thruput_high_degree
+        ed_degree6 = thruput_high_degree
 
 
         ed_degree = np.fmin(ed_degree1, ed_degree6)
