@@ -1,6 +1,6 @@
 import numpy as np
 import skfuzzy as fuzz
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
 
 class Fuzzy:
     def __init__(self, cpu_val, mem_val, truput_val):
