@@ -20,12 +20,12 @@
 # -add timer to start looping data fuzzy - done
 #!/usr/bin/env python3
 import paho.mqtt.client as mqtt
-import numpy as np
-import skfuzzy as fuzz
+#import numpy as np
+#import skfuzzy as fuzz
 import multitimer
 import time
-from matplotlib import pyplot as plt
-
+#from matplotlib import pyplot as plt
+import sys
 sys.path.append(".")
 from fuzzyMam3inCMT import Fuzzy
 
@@ -56,6 +56,7 @@ thruput03 = 10 #throughput=kbps
 listserver = [1,2]
 window_load = [50,50]
 max_window_load_server = 1
+max_truput_server = 1000000000 #max = 1 GBytes/sec
 # getting length of list
 lengths = len(listserver)
 
@@ -282,6 +283,60 @@ def job2():
     
 # This timer will run job() five times, one second apart
 timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
+# Also, this timer would run indefinitely...
+timer2.start()
+
+#fungsi tes
+def job3():
+    global max_truput_server
+    cpu01 = 30
+    cpu02 = 30
+    cpu03 = 30
+    mem01 = 30
+    mem02 = 50
+    mem03 = 50
+    #time01 = 10
+    #time02 = 10
+    #time03 = 10
+    #rsptm01 = 1
+    #rsptm02 = 1
+    #rsptm03 = 1
+    #rspstd01 = 1
+    #rspstd02 = 1
+    #rspstd03 = 1
+    thruput01 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen
+    thruput02 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen
+    thruput03 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen    
+    # message you send to server
+    msg = cpu01
+    client.publish(topic="sdn/cpu01", payload=msg, qos=0, retain=False)
+    # message you send to server
+    msg = cpu02
+    client.publish(topic="sdn/cpu02", payload=msg, qos=0, retain=False)
+    # message you send to server
+    msg = cpu03
+    client.publish(topic="sdn/cpu03", payload=msg, qos=0, retain=False)
+    # message you send to server
+    msg = mem01
+    client.publish(topic="sdn/mem01", payload=msg, qos=0, retain=False)
+    # message you send to server
+    msg = mem02
+    client.publish(topic="sdn/mem02", payload=msg, qos=0, retain=False)
+    # message you send to server
+    msg = mem03
+    client.publish(topic="sdn/mem03", payload=msg, qos=0, retain=False)
+    # message you send to server
+    msg = truput01
+    client.publish(topic="sdn/thruput01", payload=msg, qos=0, retain=False)
+    # message you send to server
+    msg = truput02
+    client.publish(topic="sdn/thruput02", payload=msg, qos=0, retain=False)
+    # message you send to server
+    msg = truput03
+    client.publish(topic="sdn/thruput03", payload=msg, qos=0, retain=False)
+    
+# This timer will run job() five times, one second apart
+timer2 = multitimer.MultiTimer(interval=10, function=job3, count=1)
 # Also, this timer would run indefinitely...
 timer2.start()
 
