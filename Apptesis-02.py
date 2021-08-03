@@ -363,7 +363,7 @@ timer3 = multitimer.MultiTimer(interval=10, function=job3, count=1)
 #fungsi tes
 def job4():
     max_truput_server = max(truput_server01)
-    print("Maksimal truput: "+ bytes2human(max_truput_server)+"B/s")  
+    print("Maksimal truput: "+ bytes2human(int(max_truput_server))+"/s")  
     
 # This timer will run job() five times, one second apart
 timer4 = multitimer.MultiTimer(interval=1, function=job4, count=-1)
