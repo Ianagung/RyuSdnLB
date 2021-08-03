@@ -133,9 +133,6 @@ def on_message_from_thruput01(client, userdata, message):
     thruput01 = message.payload.decode()
     print("Value thruput 01: "+ thruput01)
     truput_server01.append(thruput01)
-    max_truput_server = max(truput_server01)
-    print("Maksimal truput: "+ bytes2human(max_truput_server))
-
 
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
@@ -341,7 +338,16 @@ def job3():
     client.publish(topic="sdn/thruput03", payload=msg, qos=0, retain=False)
     
 # This timer will run job() five times, one second apart
-timer2 = multitimer.MultiTimer(interval=10, function=job3, count=1)
+timer3 = multitimer.MultiTimer(interval=10, function=job3, count=1)
 # Also, this timer would run indefinitely...
-#timer2.start()
+#timer3.start()
 
+#fungsi tes
+def job4():
+    max_truput_server = max(truput_server01)
+    print("Maksimal truput: "+ bytes2human(max_truput_server))  
+    
+# This timer will run job() five times, one second apart
+timer4 = multitimer.MultiTimer(interval=10, function=job4, count=-1)
+# Also, this timer would run indefinitely...
+timer4.start()
