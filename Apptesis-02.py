@@ -150,7 +150,7 @@ def on_message_from_thruput01(client, userdata, message):
     global thruput01
     thruput01 = message.payload.decode()
     print("Value thruput 01: "+ thruput01)
-    truput_server01.append(int(thruput01))
+    truput_server01.append(float(thruput01))
 
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
@@ -253,7 +253,9 @@ def job1():
     global thruput02
     global window_load
     global max_window_load_server
-    
+    cpu_val = 10
+    mem_val = 10
+    truput_val = 10
     # Iterating the index
     # same as 'for i in range(len(list))'
     for i in range(lengths):
