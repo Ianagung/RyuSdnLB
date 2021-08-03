@@ -32,9 +32,9 @@ from fuzzyMam3inCMT import Fuzzy
 
 broker_url = "127.0.0.1"
 broker_port = 1883
-add01 = 'http://192.168.56.101'
-add02 = 'http://192.168.56.109'
-add03 = 'http://192.168.56.103'
+add01 = 'http://192.168.147.1'
+add02 = 'http://192.168.147.3'
+add03 = 'http://192.168.147.5'
 cpu01 = 10
 cpu02 = 10
 cpu03 = 10
@@ -57,6 +57,7 @@ listserver = [1,2]
 window_load = [50,50]
 max_window_load_server = 1
 max_truput_server = 1000000000 #max = 1 GBytes/sec
+truput_server01 = [1]
 # getting length of list
 lengths = len(listserver)
 
@@ -130,7 +131,11 @@ def on_message_from_rspstd03(client, userdata, message):
 def on_message_from_thruput01(client, userdata, message):
     global thruput01
     thruput01 = message.payload.decode()
-    print("Value thruput 01: "+message.payload.decode())
+    print("Value thruput 01: "+ thruput01)
+    truput_server01.append(thruput01)
+    max_truput_server = max(truput_server01)
+    print("Maksimal truput: "+ bytes2human(max_truput_server))
+
 
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
@@ -270,7 +275,7 @@ def job1():
 # This timer will run job() five times, one second apart
 timer1 = multitimer.MultiTimer(interval=5, function=job1, count=-1)
 # Also, this timer would run indefinitely...
-timer1.start()
+#timer1.start()
 
 #publish data ke mqtt broker
 #data = which server has max window load
@@ -284,7 +289,7 @@ def job2():
 # This timer will run job() five times, one second apart
 timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
 # Also, this timer would run indefinitely...
-timer2.start()
+#timer2.start()
 
 #fungsi tes
 def job3():

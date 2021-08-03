@@ -105,19 +105,21 @@ def refresh_window(tot_before, tot_after, pnic_before, pnic_after):
         stats_after = pnic_after[name]
         templ = "%-15s %15s %15s"
         printl(templ % (name, "TOTAL", "PER-SEC"), highlight=True)
-        truput = stats_after.bytes_sent - stats_before.bytes_sent
+        truput1 = stats_after.bytes_sent - stats_before.bytes_sent
+        truput2 = stats_after.bytes_recv - stats_before.bytes_recv
         printl(templ % (
             "bytes-sent",
             bytes2human(stats_after.bytes_sent),
             bytes2human(
                 #stats_after.bytes_sent - stats_before.bytes_sent) + '/s',
-                truput) + '/s',
+                truput1) + '/s',
         ))
         printl(templ % (
             "bytes-recv",
             bytes2human(stats_after.bytes_recv),
             bytes2human(
-                stats_after.bytes_recv - stats_before.bytes_recv) + '/s',
+                #stats_after.bytes_recv - stats_before.bytes_recv
+                truput2) + '/s',
         ))
         printl(templ % (
             "pkts-sent",
@@ -131,7 +133,7 @@ def refresh_window(tot_before, tot_after, pnic_before, pnic_after):
         ))
         if name == "enp0s3":
         #   msg = bytes2human(stats_after.bytes_sent - stats_before.bytes_sent)
-           msg = truput
+           msg = truput2
         #   kirim data ke mqtt broker
         #   data dikirim dalam bentuk byte
            client.publish(topic="sdn/thruput01", payload=msg, qos=0, retain=False)
