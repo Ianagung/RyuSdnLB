@@ -309,9 +309,9 @@ def job3():
     #rspstd01 = 1
     #rspstd02 = 1
     #rspstd03 = 1
-    thruput01 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen
-    thruput02 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen
-    thruput03 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen    
+    truput01 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen
+    truput02 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen
+    truput03 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen    
     # message you send to server
     msg = cpu01
     client.publish(topic="sdn/cpu01", payload=msg, qos=0, retain=False)
@@ -343,5 +343,5 @@ def job3():
 # This timer will run job() five times, one second apart
 timer2 = multitimer.MultiTimer(interval=10, function=job3, count=1)
 # Also, this timer would run indefinitely...
-timer2.start()
+#timer2.start()
 
