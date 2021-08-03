@@ -55,7 +55,7 @@ thruput03 = 10 #throughput=kbps
 listserver = [1,2]
 window_load = [50,50]
 max_window_load_server = 1
-max_truput_server = 1000000000 #max = 1 GBytes/sec
+max_truput_server = 2741560 #max = 2741560 /s 2.6MB/s
 truput_server01 = [1]
 # getting length of list
 lengths = len(listserver)
