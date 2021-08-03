@@ -28,8 +28,6 @@ import time
 import sys
 sys.path.append(".")
 from fuzzyMam3inCMT import Fuzzy
-import psutil
-
 
 broker_url = "127.0.0.1"
 broker_port = 1883
@@ -62,6 +60,25 @@ truput_server01 = [1]
 # getting length of list
 lengths = len(listserver)
 
+def bytes2human(n):
+    # http://code.activestate.com/recipes/578019
+    # >>> bytes2human(10000)
+    # '9.8K'
+    # >>> bytes2human(100001221)
+    # '95.4M'
+    symbols = ('K', 'M', 'G', 'T', 'P', 'E', 'Z', 'Y')
+    prefix = {}
+    for i, s in enumerate(symbols):
+        prefix[s] = 1 << (i + 1) * 10
+    for s in reversed(symbols):
+        if n >= prefix[s]:
+            value = float(n) / prefix[s]
+            return '%.1f%s' % (value, s)
+    return "%sB" % n
+
+# total = 1024
+# print(total)
+# print(bytes2human(total))
 def on_connect(client, userdata, flags, rc):
     print("Connected With Result Code " ,rc)
     if rc==0:
@@ -346,7 +363,7 @@ timer3 = multitimer.MultiTimer(interval=10, function=job3, count=1)
 #fungsi tes
 def job4():
     max_truput_server = max(truput_server01)
-    print("Maksimal truput: "+ psutil.bytes2human(max_truput_server))  
+    print("Maksimal truput: "+ bytes2human(max_truput_server)+"B/s")  
     
 # This timer will run job() five times, one second apart
 timer4 = multitimer.MultiTimer(interval=1, function=job4, count=-1)
