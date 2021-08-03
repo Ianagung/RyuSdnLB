@@ -257,7 +257,7 @@ def job1():
     # Iterating the index
     # same as 'for i in range(len(list))'
     for i in range(lengths):
-        print("Perhitungan Fuzzy - Perubahan Load Window server-", list[i])
+        print("Perhitungan Fuzzy - Perubahan Load Window server-", listserver[i])
         if i == 1:
             cpu_val = cpu01
             mem_val = mem01
@@ -326,9 +326,9 @@ def job3():
     #rspstd01 = 1
     #rspstd02 = 1
     #rspstd03 = 1
-    truput01 = (1000000 / max_truput_server) * 100 #throughput=Bytes/s dalam satuan persen
-    truput02 = (1000000 / max_truput_server) * 100 #throughput=Bytes/s dalam satuan persen
-    truput03 = (1000000 / max_truput_server) * 100 #throughput=Bytes/s dalam satuan persen    
+    truput01 = round(((1000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
+    truput02 = round(((1000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
+    truput03 = round(((1000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen    
     # message you send to server
     msg = cpu01
     client.publish(topic="sdn/cpu01", payload=msg, qos=0, retain=False)
