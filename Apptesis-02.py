@@ -77,47 +77,47 @@ def on_message(client, userdata, message):
 def on_message_from_cpu01(client, userdata, message):
     global cpu01
     cpu01 = message.payload.decode()
-    print("Value Cpu01: "+message.payload.decode())
+    print("Value Cpu01: "+cpu01)
 
 def on_message_from_cpu02(client, userdata, message):
     global cpu02
     cpu02 = message.payload.decode()
-    print("Value Cpu02: "+message.payload.decode())
+    print("Value Cpu02: "+cpu02)
 
 def on_message_from_cpu03(client, userdata, message):
     global cpu03
     cpu03 = message.payload.decode()
-    print("Value Cpu03: "+message.payload.decode())
+    print("Value Cpu03: "+cpu03)
 
 def on_message_from_mem01(client, userdata, message):
     global mem01
     mem01 = message.payload.decode()
-    print("Value mem01: "+message.payload.decode())
+    print("Value mem01: "+mem01)
 
 def on_message_from_mem02(client, userdata, message):
     global mem02
     mem02 = message.payload.decode()
-    print("Value mem02: "+message.payload.decode())
+    print("Value mem02: "+mem02)
 
 def on_message_from_mem03(client, userdata, message):
     global mem03
     mem03 = message.payload.decode()
-    print("Value mem03: "+message.payload.decode())
+    print("Value mem03: "+mem03)
 
 def on_message_from_rsptm01(client, userdata, message):
     global rsptm01
     rsptm01 = message.payload.decode()
-    print("Value rsp time 01: "+message.payload.decode())
+    print("Value rsp time 01: "+rsptm01)
 
 def on_message_from_rsptm02(client, userdata, message):
     global rsptm02
     rsptm02 = message.payload.decode()
-    print("Value rsp time 02: "+message.payload.decode())
+    print("Value rsp time 02: "+rsptm02)
 
 def on_message_from_rsptm03(client, userdata, message):
     global rsptm03
     rsptm03 = message.payload.decode()
-    print("Value rsp time 03: "+message.payload.decode())
+    print("Value rsp time 03: "+rsptm03)
 
 def on_message_from_rspstd01(client, userdata, message):
     print("Value rsp std 01: "+message.payload.decode())
@@ -140,12 +140,12 @@ def on_message_from_thruput01(client, userdata, message):
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
     thruput02 = message.payload.decode()
-    print("Value thruput 02: "+message.payload.decode())
+    print("Value thruput 02: "+thruput02)
 
 def on_message_from_thruput03(client, userdata, message):
     global thruput03
     thruput03 = message.payload.decode()
-    print("Value thruput 03: "+message.payload.decode())
+    print("Value thruput 03: "+thruput03)
 
 client = mqtt.Client()
 client.on_connect = on_connect
