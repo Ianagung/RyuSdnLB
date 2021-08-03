@@ -288,8 +288,14 @@ def job1():
     ## index of maximum element
     #update global value window load
     #max_window_load_server = 1
-    max_window_load_server = window_load.index(max(window_load))
-    print (max_window_load_server)       
+    max_window_load_server = window_load.index(max(window_load)) + 1 
+    # jika index = 0 maka server1
+    # jika index = 1 maka server2
+    #print ("Server dg Load window terbesar "+max_window_load_server)
+    # message you send to server
+    msg = str(max_window_load_server)
+    print("Server dg max window load =", msg)
+    client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
 
 # This timer will run job() five times, one second apart
 timer1 = multitimer.MultiTimer(interval=5, function=job1, count=-1)
@@ -298,17 +304,17 @@ timer1.start()
 
 #publish data ke mqtt broker
 #data = which server has max window load
-def job2():
+# def job2():
     
-    # message you send to server
-    msg = max_window_load_server
-    print("Server dg max window load =", msg)
-    client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
+#     # message you send to server
+#     msg = max_window_load_server
+#     print("Server dg max window load =", msg)
+#     client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
     
 # This timer will run job() five times, one second apart
-timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
+#timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
 # Also, this timer would run indefinitely...
-timer2.start()
+#timer2.start()
 
 #fungsi tes
 def job3():
