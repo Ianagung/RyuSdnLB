@@ -149,18 +149,18 @@ def on_message_from_rspstd03(client, userdata, message):
 def on_message_from_thruput01(client, userdata, message):
     global thruput01
     thruput01 = message.payload.decode()
-    print("Value thruput 01: "+ thruput01)
-    truput_server01.append(float(thruput01))
+    print("Nilai thruput 01: "+ thruput01)
+    #truput_server01.append(float(thruput01))
 
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
     thruput02 = message.payload.decode()
-    print("Value thruput 02: "+thruput02)
+    print("Nilai thruput 02: "+thruput02)
 
 def on_message_from_thruput03(client, userdata, message):
     global thruput03
     thruput03 = message.payload.decode()
-    print("Value thruput 03: "+thruput03)
+    print("Nilai thruput 03: "+thruput03)
 
 client = mqtt.Client()
 client.on_connect = on_connect
