@@ -150,7 +150,7 @@ def on_message_from_thruput01(client, userdata, message):
     global thruput01
     thruput01 = message.payload.decode()
     print("Value thruput 01: "+ thruput01)
-    truput_server01.append(thruput01)
+    truput_server01.append(int(thruput01))
 
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
@@ -363,7 +363,7 @@ timer3 = multitimer.MultiTimer(interval=10, function=job3, count=1)
 #fungsi tes
 def job4():
     max_truput_server = max(truput_server01)
-    print("Maksimal truput: "+ bytes2human(int(max_truput_server))+"/s")  
+    print("Maksimal truput: "+ bytes2human(max_truput_server)+"/s")  
     
 # This timer will run job() five times, one second apart
 timer4 = multitimer.MultiTimer(interval=1, function=job4, count=-1)
