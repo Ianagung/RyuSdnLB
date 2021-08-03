@@ -1,0 +1,451 @@
+skytech@skytech-VirtualBox:~/Documents/RyuSdnLB$ python3 Apptesis-02.py
+setting  password
+Do Something else
+Connected With Result Code  0
+connected OK Returned code= 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Server dg max window load = 1
+Value Cpu01: 30
+Value Cpu02: 30
+Value Cpu03: 30
+Value mem01: 30
+Value mem02: 50
+Value mem03: 50
+Value thruput 01: 36.48
+Value thruput 02: 36.48
+Value thruput 03: 36.48
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.03
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 36.48
+Perubahan Load Window Server-2 is -0.02
+Load Window Server-2 is 49.98
+0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.06
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.97
+0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.08
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.96
+0
+Server dg max window load = 0
+Value Cpu01: 30
+Value Cpu02: 30
+Value Cpu03: 30
+Value mem01: 30
+Value mem02: 50
+Value mem03: 50
+Value thruput 01: 36.48
+Value thruput 02: 36.48
+Value thruput 03: 36.48
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.11
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.95
+0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.14
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.94
+0
+Server dg max window load = 0
+Value Cpu01: 30
+Value Cpu02: 30
+Value Cpu03: 30
+Value mem01: 30
+Value mem02: 50
+Value mem03: 50
+Value thruput 01: 36.48
+Value thruput 02: 36.48
+Value thruput 03: 36.48
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.17
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.93
+0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+Server dg max window load = 0
+Value thruput 01: 0
+^CException ignored in: <module 'threading' from '/usr/lib/python3.8/threading.py'>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 1388, in _shutdown
+    lock.acquire()
+KeyboardInterrupt: 
+skytech@skytech-VirtualBox:~/Documents/RyuSdnLB$ python3 Apptesis-02.py
+setting  password
+Do Something else
+Connected With Result Code  0
+connected OK Returned code= 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Value Cpu01: 30
+Value Cpu02: 30
+Value Cpu03: 30
+Value mem01: 30
+Value mem02: 50
+Value mem03: 50
+Value thruput 01: 36.48
+Value thruput 02: 36.48
+Value thruput 03: 36.48
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.03
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 36.48
+Perubahan Load Window Server-2 is -0.02
+Load Window Server-2 is 49.98
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.06
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.97
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Value Cpu01: 30
+Value Cpu02: 30
+Value Cpu03: 30
+Value mem01: 30
+Value mem02: 50
+Value mem03: 50
+Value thruput 01: 36.48
+Value thruput 02: 36.48
+Value thruput 03: 36.48
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.08
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 36.48
+Perubahan Load Window Server-2 is -0.02
+Load Window Server-2 is 49.94
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.11
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.93
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Value Cpu01: 30
+Value Cpu02: 30
+Value Cpu03: 30
+Value mem01: 30
+Value mem02: 50
+Value mem03: 50
+Value thruput 01: 36.48
+Value thruput 02: 36.48
+Value thruput 03: 36.48
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.14
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 36.48
+Perubahan Load Window Server-2 is -0.02
+Load Window Server-2 is 49.91
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.17
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.90
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Value Cpu01: 30
+Value Cpu02: 30
+Value Cpu03: 30
+Value mem01: 30
+Value mem02: 50
+Value mem03: 50
+Value thruput 01: 36.48
+Value thruput 02: 36.48
+Value thruput 03: 36.48
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.19
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 36.48
+Perubahan Load Window Server-2 is -0.02
+Load Window Server-2 is 49.87
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.22
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.86
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Value Cpu01: 30
+Value Cpu02: 30
+Value Cpu03: 30
+Value mem01: 30
+Value mem02: 50
+Value mem03: 50
+Value thruput 01: 36.48
+Value thruput 02: 36.48
+Value thruput 03: 36.48
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.25
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 36.48
+Perubahan Load Window Server-2 is -0.02
+Load Window Server-2 is 49.84
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.28
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.83
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.30
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.82
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.33
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.81
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.36
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.80
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.39
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.79
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.41
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.78
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.44
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.77
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.47
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.76
+Server dg max window load = 1
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Value thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 10 Mem Val 10 Thruput Val 10
+Perubahan Load Window Server-1 is 0.03
+Load Window Server-1 is 50.50
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 30 Thruput Val 0
+Perubahan Load Window Server-2 is -0.01
+Load Window Server-2 is 49.75
+Server dg max window load = 1
+^CException ignored in: <module 'threading' from '/usr/lib/python3.8/threading.py'>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 1388, in _shutdown
+    lock.acquire()
+KeyboardInterrupt: 
