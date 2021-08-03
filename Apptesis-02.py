@@ -266,12 +266,14 @@ def job1():
             cpu_val = cpu02
             mem_val = mem02
             truput_val = thruput02
-        #do fuzzy untuk setiap server  
+        #do fuzzy untuk setiap server
+        print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
         myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
         delta_ld_window = myFuzzy.get_fuzzy()
         print("Perubahan Load Window Server-%s is %.2f" % ( listserver[i], delta_ld_window))
         #hitung total workload
         window_load[i] += delta_ld_window
+        print("Load Window Server-%s is %.2f" % ( listserver[i], window_load[i]))
         #reset jika sudah kena threshold atas dan bawah
         #reset window_load
         if window_load[i] > 100:
@@ -290,7 +292,7 @@ def job1():
 # This timer will run job() five times, one second apart
 timer1 = multitimer.MultiTimer(interval=5, function=job1, count=-1)
 # Also, this timer would run indefinitely...
-#timer1.start()
+timer1.start()
 
 #publish data ke mqtt broker
 #data = which server has max window load
@@ -304,7 +306,7 @@ def job2():
 # This timer will run job() five times, one second apart
 timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
 # Also, this timer would run indefinitely...
-#timer2.start()
+timer2.start()
 
 #fungsi tes
 def job3():
@@ -324,9 +326,9 @@ def job3():
     #rspstd01 = 1
     #rspstd02 = 1
     #rspstd03 = 1
-    truput01 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen
-    truput02 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen
-    truput03 = (1000 / max_truput_server) * 100 #throughput=Bps dalam satuan persen    
+    truput01 = (1000000 / max_truput_server) * 100 #throughput=Bytes/s dalam satuan persen
+    truput02 = (1000000 / max_truput_server) * 100 #throughput=Bytes/s dalam satuan persen
+    truput03 = (1000000 / max_truput_server) * 100 #throughput=Bytes/s dalam satuan persen    
     # message you send to server
     msg = cpu01
     client.publish(topic="sdn/cpu01", payload=msg, qos=0, retain=False)
@@ -356,16 +358,16 @@ def job3():
     client.publish(topic="sdn/thruput03", payload=msg, qos=0, retain=False)
     
 # This timer will run job() five times, one second apart
-timer3 = multitimer.MultiTimer(interval=10, function=job3, count=1)
+timer3 = multitimer.MultiTimer(interval=10, function=job3, count=5)
 # Also, this timer would run indefinitely...
-#timer3.start()
+timer3.start()
 
 #fungsi tes
 def job4():
     max_truput_server = max(truput_server01)
-    print("Maksimal truput: "+str(max_truput_server)+" /s "+ bytes2human(max_truput_server)+"/s")  
+    print("Maksimal truput: "+str(max_truput_server)+" /s "+ bytes2human(max_truput_server)+"Bytes/s")  
     
 # This timer will run job() five times, one second apart
-timer4 = multitimer.MultiTimer(interval=1, function=job4, count=-1)
+#timer4 = multitimer.MultiTimer(interval=1, function=job4, count=-1)
 # Also, this timer would run indefinitely...
-timer4.start()
+#timer4.start()
