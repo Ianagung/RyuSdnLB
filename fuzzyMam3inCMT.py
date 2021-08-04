@@ -106,23 +106,6 @@ class Fuzzy:
         # 11) vfi_degree <-> loadchange_vfi
 
         # Apply Fuzzy Rule
-        #extremely decrease load window value change
-        ed_degree1 = np.fmax(cpu_veryhigh_degree,mem_veryhigh_degree)
-        #very fast decrease load window value change
-        vfd_degree1 = np.fmax(cpu_veryhigh_degree, mem_high_degree)
-        #fast decrease load window value change
-        fd_degree1 = np.fmax(cpu_veryhigh_degree, mem_medium_degree)
-        #decrease load window value change
-        dec_degree1 = np.fmax(cpu_veryhigh_degree, mem_low_degree)
-        #slow decrease load window value change
-        sd_degree1 = np.fmax(cpu_veryhigh_degree, mem_verylow_degree)
-
-
-
-
-
-        
-
 
         #slow decrease load window value change
         sd_degree5 = np.fmax(cpu_verylow_degree, mem_veryhigh_degree)
@@ -167,6 +150,17 @@ class Fuzzy:
         sd_degree2 = np.fmax(cpu_high_degree, mem_low_degree)
         #very small decrease load window value change
         vsd_degree2 = np.fmax(cpu_high_degree, mem_verylow_degree)
+
+        #extremely decrease load window value change
+        ed_degree1 = np.fmax(cpu_veryhigh_degree,mem_veryhigh_degree)
+        #very fast decrease load window value change
+        vfd_degree1 = np.fmax(cpu_veryhigh_degree, mem_high_degree)
+        #fast decrease load window value change
+        fd_degree1 = np.fmax(cpu_veryhigh_degree, mem_medium_degree)
+        #decrease load window value change
+        dec_degree1 = np.fmax(cpu_veryhigh_degree, mem_low_degree)
+        #slow decrease load window value change
+        sd_degree1 = np.fmax(cpu_veryhigh_degree, mem_verylow_degree)
 
         vfi_degree6 = thruput_low_degree
         inc_degree6 = thruput_medium_degree
