@@ -27,19 +27,19 @@ import time
 #from matplotlib import pyplot as plt
 import sys
 sys.path.append(".")
-from fuzzyMam3inCMTv02 import Fuzzy
+from fuzzyMam3inCMT import Fuzzy
 
 broker_url = "127.0.0.1"
 broker_port = 1883
 add01 = 'http://192.168.147.1'
 add02 = 'http://192.168.147.3'
 add03 = 'http://192.168.147.5'
-cpu01 = 10
-cpu02 = 10
-cpu03 = 10
-mem01 = 10
-mem02 = 10
-mem03 = 10
+cpu01 = 30
+cpu02 = 30
+cpu03 = 30
+mem01 = 50
+mem02 = 50
+mem03 = 50
 time01 = 10
 time02 = 10
 time03 = 10
@@ -318,7 +318,7 @@ def job3():
     cpu01 = 30
     cpu02 = 30
     cpu03 = 30
-    mem01 = 30
+    mem01 = 50
     mem02 = 50
     mem03 = 50
     #time01 = 10
