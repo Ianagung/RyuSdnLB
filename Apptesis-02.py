@@ -27,7 +27,7 @@ import time
 #from matplotlib import pyplot as plt
 import sys
 sys.path.append(".")
-from fuzzyMam3inCMT import Fuzzy
+from fuzzyMam3inCMTv02 import Fuzzy
 
 broker_url = "127.0.0.1"
 broker_port = 1883
