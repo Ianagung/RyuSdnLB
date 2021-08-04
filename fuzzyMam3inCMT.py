@@ -172,12 +172,12 @@ class Fuzzy:
         fd_degree = np.fmax(fd_degree5, np.fmax(fd_degree4, fd_degree3)) 
         dec_degree = np.fmax(dec_degree5, np.fmax(dec_degree4, np.fmax(dec_degree3, dec_degree2)))
         sd_degree = np.fmax(sd_degree5, np.fmax(sd_degree4, np.fmax(sd_degree2, sd_degree1)))
-        vsd_degree = np.fmax(vsd_degree5, np.fmax(vsd_degree4, vsd_degree1))
+        vsd_degree = np.fmax(vsd_degree4, vsd_degree1)
         nc_degree = nc_degree3
-        si_degree = np.fmax(si_degree4, np.fmax(si_degree3,si_degree2))
-        inc_degree = np.fmax(inc_degree6, np.fmax(inc_degree5, np.fmax(inc_degree3,
-            np.fmax(inc_degree2,inc_degree1))))
-        fi_degree = np.fmax(fi_degree5, np.fmax(fi_degree2,fi_degree1))
+        si_degree = np.fmax(si_degree3,si_degree2)
+        inc_degree = np.fmax(inc_degree6, np.fmax(inc_degree3,
+            np.fmax(inc_degree2,inc_degree1)))
+        fi_degree = np.fmax(fi_degree2,fi_degree1)
         vfi_degree = np.fmax(vfi_degree6, vfi_degree1)
 
         # Apply IMPLICATION or ACTIVATION
