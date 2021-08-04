@@ -257,10 +257,11 @@ def job1():
     # same as 'for i in range(len(list))'
     for i in range(lengths):
         print("Perhitungan Fuzzy - Perubahan Load Window server-", listserver[i])
-        cpu_val = cpu01
-        mem_val = mem01
-        truput_val = thruput01
-        if i==2:
+        if i==1:
+            cpu_val = cpu01
+            mem_val = mem01
+            truput_val = thruput01
+        elif i==2:
             cpu_val = cpu02
             mem_val = mem02
             truput_val = thruput02
