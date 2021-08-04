@@ -175,7 +175,7 @@ class Fuzzy:
         sd_degree = sd_degree2
         vsd_degree = vsd_degree1
         nc_degree = np.fmax(nc_degree5, np.fmax(nc_degree4, 
-            fmax(nc_degree3, np.fmax(nc_degree2,nc_degree1))))
+            np.fmax(nc_degree3, np.fmax(nc_degree2,nc_degree1))))
         si_degree = si_degree4
         inc_degree = np.fmax(inc_degree5, 
             np.fmax(inc_degree4,np.fmax(inc_degree3, np.fmax(inc_degree2,inc_degree1))))
