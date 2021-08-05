@@ -255,40 +255,40 @@ def job1():
     global max_window_load_server
     # Iterating the index
     # same as 'for i in range(len(list))'
-    for i in range(lengths):
-        print("Perhitungan Fuzzy - Perubahan Load Window server-", listserver[i])
+    # for i in range(lengths):
+    #     print("Perhitungan Fuzzy - Perubahan Load Window server-", listserver[i])
 
-        if listserver[i]==1:
-            cpu_val = cpu01
-            mem_val = mem01
-            truput_val = thruput01
-            print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
-        elif listserver[i]==2:
-            cpu_val = cpu02
-            mem_val = mem02
-            truput_val = thruput02
-            print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
-        #do fuzzy untuk setiap server
-        #print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
-        myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
-        delta_ld_window = myFuzzy.get_fuzzy()
-        print("Perubahan Load Window Server-%s is %.3f" % ( listserver[i], delta_ld_window))
-        #hitung total workload
-        window_load[i] += delta_ld_window
-        print("Load Window Server-%s is %.3f" % ( listserver[i], window_load[i]))
-        #reset jika sudah kena threshold atas dan bawah
-        #reset window_load
-        if window_load[i] > 100:
-            window_load[i] = 90
-        if window_load[i] < 0:
-            window_load[i] = 10
+    #     if listserver[i]==1:
+    #         cpu_val = cpu01
+    #         mem_val = mem01
+    #         truput_val = thruput01
+    #         print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
+    #     elif listserver[i]==2:
+    #         cpu_val = cpu02
+    #         mem_val = mem02
+    #         truput_val = thruput02
+    #         print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
+    #     #do fuzzy untuk setiap server
+    #     #print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
+    #     myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
+    #     delta_ld_window = myFuzzy.get_fuzzy()
+    #     print("Perubahan Load Window Server-%s is %.3f" % ( listserver[i], delta_ld_window))
+    #     #hitung total workload
+    #     window_load[i] += delta_ld_window
+    #     print("Load Window Server-%s is %.3f" % ( listserver[i], window_load[i]))
+    #     #reset jika sudah kena threshold atas dan bawah
+    #     #reset window_load
+    #     if window_load[i] > 100:
+    #         window_load[i] = 90
+    #     if window_load[i] < 0:
+    #         window_load[i] = 10
         
-    #compare nilai window_load terbesar
-    #find index of maximum element
-    ## index of maximum element
-    #update global value window load
-    #max_window_load_server = 1
-    max_window_load_server = window_load.index(max(window_load)) + 1 
+    # #compare nilai window_load terbesar
+    # #find index of maximum element
+    # ## index of maximum element
+    # #update global value window load
+    # #max_window_load_server = 1
+    # max_window_load_server = window_load.index(max(window_load)) + 1 
     # jika index = 0 maka server1
     # jika index = 1 maka server2
     #print ("Server dg Load window terbesar "+max_window_load_server)
@@ -366,9 +366,9 @@ def job3():
     client.publish(topic="sdn/thruput03", payload=msg, qos=0, retain=False)
     
 # This timer will run job() five times, one second apart
-timer3 = multitimer.MultiTimer(interval=10, function=job3, count=5)
+#timer3 = multitimer.MultiTimer(interval=10, function=job3, count=5)
 # Also, this timer would run indefinitely...
-timer3.start()
+#timer3.start()
 
 #fungsi tes
 def job4():
