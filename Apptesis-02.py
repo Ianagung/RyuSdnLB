@@ -95,47 +95,47 @@ def on_message(client, userdata, message):
 def on_message_from_cpu01(client, userdata, message):
     global cpu01
     cpu01 = message.payload.decode()
-    print("Value Cpu01: "+cpu01)
+    #print("Value Cpu01: "+cpu01)
 
 def on_message_from_cpu02(client, userdata, message):
     global cpu02
     cpu02 = message.payload.decode()
-    print("Value Cpu02: "+cpu02)
+    #print("Value Cpu02: "+cpu02)
 
 def on_message_from_cpu03(client, userdata, message):
     global cpu03
     cpu03 = message.payload.decode()
-    print("Value Cpu03: "+cpu03)
+    #print("Value Cpu03: "+cpu03)
 
 def on_message_from_mem01(client, userdata, message):
     global mem01
     mem01 = message.payload.decode()
-    print("Value mem01: "+mem01)
+    #print("Value mem01: "+mem01)
 
 def on_message_from_mem02(client, userdata, message):
     global mem02
     mem02 = message.payload.decode()
-    print("Value mem02: "+mem02)
+    #print("Value mem02: "+mem02)
 
 def on_message_from_mem03(client, userdata, message):
     global mem03
     mem03 = message.payload.decode()
-    print("Value mem03: "+mem03)
+    #print("Value mem03: "+mem03)
 
 def on_message_from_rsptm01(client, userdata, message):
     global rsptm01
     rsptm01 = message.payload.decode()
-    print("Value rsp time 01: "+rsptm01)
+    #print("Value rsp time 01: "+rsptm01)
 
 def on_message_from_rsptm02(client, userdata, message):
     global rsptm02
     rsptm02 = message.payload.decode()
-    print("Value rsp time 02: "+rsptm02)
+    #print("Value rsp time 02: "+rsptm02)
 
 def on_message_from_rsptm03(client, userdata, message):
     global rsptm03
     rsptm03 = message.payload.decode()
-    print("Value rsp time 03: "+rsptm03)
+    #print("Value rsp time 03: "+rsptm03)
 
 def on_message_from_rspstd01(client, userdata, message):
     print("Value rsp std 01: "+message.payload.decode())
@@ -149,18 +149,18 @@ def on_message_from_rspstd03(client, userdata, message):
 def on_message_from_thruput01(client, userdata, message):
     global thruput01
     thruput01 = message.payload.decode()
-    print("Nilai thruput 01: "+ thruput01)
+    #print("Nilai thruput 01: "+ thruput01)
     #truput_server01.append(float(thruput01))
 
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
     thruput02 = message.payload.decode()
-    print("Nilai thruput 02: "+thruput02)
+    #print("Nilai thruput 02: "+thruput02)
 
 def on_message_from_thruput03(client, userdata, message):
     global thruput03
     thruput03 = message.payload.decode()
-    print("Nilai thruput 03: "+thruput03)
+    #print("Nilai thruput 03: "+thruput03)
 
 client = mqtt.Client()
 client.on_connect = on_connect
@@ -255,42 +255,42 @@ def job1():
     global max_window_load_server
     # Iterating the index
     # same as 'for i in range(len(list))'
-    # for i in range(lengths):
-    #     print("Perhitungan Fuzzy - Perubahan Load Window server-", listserver[i])
+    for i in range(lengths):
+        print("Perhitungan Fuzzy - Perubahan Load Window server-", listserver[i])
 
-    #     if listserver[i]==1:
-    #         cpu_val = cpu01
-    #         mem_val = mem01
-    #         truput_val = thruput01
-    #         print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
-    #     elif listserver[i]==2:
-    #         cpu_val = cpu02
-    #         mem_val = mem02
-    #         truput_val = thruput02
-    #         print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
-    #     #do fuzzy untuk setiap server
-    #     #print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
-    #     myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
-    #     delta_ld_window = myFuzzy.get_fuzzy()
-    #     print("Perubahan Load Window Server-%s is %.3f" % ( listserver[i], delta_ld_window))
-    #     #hitung total workload
-    #     window_load[i] += delta_ld_window
-    #     print("Load Window Server-%s is %.3f" % ( listserver[i], window_load[i]))
-    #     #reset jika sudah kena threshold atas dan bawah
-    #     #reset window_load
-    #     if window_load[i] > 100:
-    #         window_load[i] = 90
-    #     if window_load[i] < 0:
-    #         window_load[i] = 10
+        if listserver[i]==1:
+            cpu_val = cpu01
+            mem_val = mem01
+            truput_val = thruput01
+            print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
+        elif listserver[i]==2:
+            cpu_val = cpu02
+            mem_val = mem02
+            truput_val = thruput02
+            print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
+        #do fuzzy untuk setiap server
+        #print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
+        myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
+        delta_ld_window = myFuzzy.get_fuzzy()
+        print("Perubahan Load Window Server-%s is %.3f" % ( listserver[i], delta_ld_window))
+        #hitung total workload
+        window_load[i] += delta_ld_window
+        print("Load Window Server-%s is %.3f" % ( listserver[i], window_load[i]))
+        #reset jika sudah kena threshold atas dan bawah
+        #reset window_load
+        if window_load[i] > 100:
+            window_load[i] = 90
+        if window_load[i] < 0:
+            window_load[i] = 10
         
-    # #compare nilai window_load terbesar
-    # #find index of maximum element
-    # ## index of maximum element
-    # #update global value window load
-    # #max_window_load_server = 1
-    # max_window_load_server = window_load.index(max(window_load)) + 1 
-    # jika index = 0 maka server1
-    # jika index = 1 maka server2
+    #compare nilai window_load terbesar
+    #find index of maximum element
+    ## index of maximum element
+    #update global value window load
+    #max_window_load_server = 1
+    max_window_load_server = window_load.index(max(window_load)) + 1 
+    jika index = 0 maka server1
+    jika index = 1 maka server2
     #print ("Server dg Load window terbesar "+max_window_load_server)
     # message you send to server
     msg = str(max_window_load_server)
