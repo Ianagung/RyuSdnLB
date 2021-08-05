@@ -263,15 +263,15 @@ def job1():
             mem_val = mem01
             #truput_val = thruput01
             truput_val = round(((thruput01 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
-            print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
+            #print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
         elif listserver[i]==2:
             cpu_val = cpu02
             mem_val = mem02
             #truput_val = thruput02
             truput_val = round(((thruput02 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
-            print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
+            #print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
         #do fuzzy untuk setiap server
-        #print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
+        print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
         myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
         delta_ld_window = myFuzzy.get_fuzzy()
         print("Perubahan Load Window Server-%s is %.3f" % ( listserver[i], delta_ld_window))

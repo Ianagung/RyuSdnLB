@@ -3,10 +3,11 @@ import skfuzzy as fuzz
 #from matplotlib import pyplot as plt
 
 class Fuzzy:
-    def __init__(self, cpu_val, mem_val, truput_val):
-        self.cpu_val = cpu_val
-        self.mem_val = mem_val
-        self.truput_val = truput_val
+    def __init__(self, cpu_value, mem_value, truput_value):
+        self.cpu_val = cpu_value
+        self.mem_val = mem_value
+        self.truput_val = truput_value
+        print("Cpu val "+str(cpu_value)+" Mem Val "+str(mem_value)+" Thruput Val "+ str(truput_value))
         # all input valur in integer
         # input : Cpu Val, RAM mem val, throughput Value
         # cpu val range : 0 - 100%
@@ -247,5 +248,6 @@ class Fuzzy:
 
     def get_fuzzy(self):
         defuzz_val = self.tip_centroid
+        print("Hasil deFuzzy = "+ str(self.tip_centroid))
         # return float or int
         return defuzz_val
