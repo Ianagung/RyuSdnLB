@@ -22,18 +22,14 @@ class Fuzzy:
 
 
         # Membership functions
-        cpu_verylow = fuzz.trapmf(x_cpu, [-20, -10, 10, 40 ])
-        cpu_low = fuzz.trapmf(x_cpu, [-10, 20, 30, 60 ])
-        cpu_medium = fuzz.trapmf(x_cpu, [15, 45, 55, 85 ])
-        cpu_high = fuzz.trapmf(x_cpu, [40, 70, 80, 110 ])
-        cpu_veryhigh = fuzz.trapmf(x_cpu, [60, 90, 105, 110 ])
+        cpu_low = fuzz.trapmf(x_truput, [-40, -10, 20, 60 ])
+        cpu_medium = fuzz.trapmf(x_truput, [10, 40, 60, 90 ])
+        cpu_high = fuzz.trapmf(x_truput, [40, 80, 110, 140 ])
 
-        mem_verylow = fuzz.trapmf(x_mem, [-20, -10, 10, 40 ])
-        mem_low = fuzz.trapmf(x_mem, [-10, 20, 30, 60 ])
-        mem_medium = fuzz.trapmf(x_mem, [15, 45, 55, 85 ])
-        mem_high = fuzz.trapmf(x_mem, [40, 70, 80, 110 ])
-        mem_veryhigh = fuzz.trapmf(x_mem, [60, 90, 105, 110 ])
-
+        mem_low = fuzz.trapmf(x_truput, [-40, -10, 20, 60 ])
+        mem_medium = fuzz.trapmf(x_truput, [10, 40, 60, 90 ])
+        mem_high = fuzz.trapmf(x_truput, [40, 80, 110, 140 ])
+        
         truput_low = fuzz.trapmf(x_truput, [-40, -10, 20, 60 ])
         truput_medium = fuzz.trapmf(x_truput, [10, 40, 60, 90 ])
         truput_high = fuzz.trapmf(x_truput, [40, 80, 110, 140 ])
