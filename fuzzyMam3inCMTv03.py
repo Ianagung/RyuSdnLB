@@ -51,27 +51,19 @@ class Fuzzy:
         mem_score = self.mem_val
         truput_score = self.truput_val
 
-        cpu_verylow_degree = fuzz.interp_membership(
-            x_cpu, cpu_verylow, cpu_score)
         cpu_low_degree = fuzz.interp_membership(
             x_cpu, cpu_low, cpu_score)
         cpu_medium_degree = fuzz.interp_membership(
             x_cpu, cpu_medium, cpu_score)
         cpu_high_degree = fuzz.interp_membership(
             x_cpu, cpu_high, cpu_score)
-        cpu_veryhigh_degree = fuzz.interp_membership(
-            x_cpu, cpu_veryhigh, cpu_score)
 
-        mem_verylow_degree = fuzz.interp_membership(
-            x_mem, mem_verylow, mem_score)
         mem_low_degree = fuzz.interp_membership(
             x_mem, mem_low, mem_score)
         mem_medium_degree = fuzz.interp_membership(
             x_mem, mem_medium, mem_score)
         mem_high_degree = fuzz.interp_membership(
             x_mem, mem_high, mem_score)
-        mem_veryhigh_degree = fuzz.interp_membership(
-            x_mem, mem_veryhigh, mem_score)
 
         thruput_low_degree = fuzz.interp_membership(
             x_truput, truput_low, truput_score)
@@ -103,79 +95,26 @@ class Fuzzy:
         # 11) vfi_degree <-> loadchange_vfi
 
         # Apply Fuzzy Rule
-
-        #slow decrease load window value change
-        sd_degree1 = np.fmax(cpu_verylow_degree, mem_veryhigh_degree)
-        #very slow decrease load window value change
-        vsd_degree1 = np.fmax(cpu_verylow_degree, mem_high_degree)
-        #increase load window value change
-        inc_degree1 = np.fmax(cpu_verylow_degree, mem_medium_degree)
-        #fast increase load window value change
-        fi_degree1 = np.fmax(cpu_verylow_degree, mem_low_degree)
-        #very fast increase load window value change
-        vfi_degree1 = np.fmax(cpu_verylow_degree, mem_verylow_degree)
-
-        #decrease load window value change
-        dec_degree2 = np.fmax(cpu_low_degree, mem_veryhigh_degree)
-        #slow decrease load window value change
-        sd_degree2 = np.fmax(cpu_low_degree, mem_high_degree)
-        #small increas load window value change
-        si_degree2 = np.fmax(cpu_low_degree, mem_medium_degree)
-        #increase load window value change
-        inc_degree2 = np.fmax(cpu_low_degree, mem_low_degree)
-        #fast increase load window value change
-        fi_degree2 = np.fmax(cpu_low_degree, mem_verylow_degree)
-
-        #fast decrease load window value change
-        fd_degree3 = np.fmax(cpu_medium_degree, mem_veryhigh_degree)
-        #decrease load window value change
-        dec_degree3 = np.fmax(cpu_medium_degree, mem_high_degree)
-        #no change load window value change
-        nc_degree3 = np.fmax(cpu_medium_degree, mem_medium_degree)
-        #small increase load window value change
-        si_degree3 = np.fmax(cpu_medium_degree, mem_low_degree)
-        #increase load window value change
-        inc_degree3 = np.fmax(cpu_medium_degree, mem_verylow_degree)
-
-        #very fast decrease load window value change
-        vfd_degree4 = np.fmax(cpu_high_degree, mem_veryhigh_degree)
-        #fast decrease load window value change
-        fd_degree4 = np.fmax(cpu_high_degree, mem_high_degree)
-        #decrease load window value change
-        dec_degree4 = np.fmax(cpu_high_degree, mem_medium_degree)
-        #slow decrease load window value change
-        sd_degree4 = np.fmax(cpu_high_degree, mem_low_degree)
-        #very small decrease load window value change
-        vsd_degree4 = np.fmax(cpu_high_degree, mem_verylow_degree)
-
-        #extremely decrease load window value change
-        ed_degree5 = np.fmax(cpu_veryhigh_degree,mem_veryhigh_degree)
-        #very fast decrease load window value change
-        vfd_degree5 = np.fmax(cpu_veryhigh_degree, mem_high_degree)
-        #fast decrease load window value change
-        fd_degree5 = np.fmax(cpu_veryhigh_degree, mem_medium_degree)
-        #decrease load window value change
-        dec_degree5 = np.fmax(cpu_veryhigh_degree, mem_low_degree)
-        #slow decrease load window value change
-        sd_degree5 = np.fmax(cpu_veryhigh_degree, mem_verylow_degree)
-
-        vfi_degree6 = thruput_low_degree
-        inc_degree6 = thruput_medium_degree
-        ed_degree6 = thruput_high_degree
-
-
-        ed_degree = np.fmax(ed_degree6, ed_degree5)
-        vfd_degree = np.fmax(vfd_degree5, vfd_degree4)
-        fd_degree = np.fmax(fd_degree5, np.fmax(fd_degree4, fd_degree3)) 
-        dec_degree = np.fmax(dec_degree5, np.fmax(dec_degree4, np.fmax(dec_degree3, dec_degree2)))
-        sd_degree = np.fmax(sd_degree5, np.fmax(sd_degree4, np.fmax(sd_degree2, sd_degree1)))
-        vsd_degree = np.fmax(vsd_degree4, vsd_degree1)
-        nc_degree = nc_degree3
-        si_degree = np.fmax(si_degree3,si_degree2)
-        inc_degree = np.fmax(inc_degree6, np.fmax(inc_degree3,
-            np.fmax(inc_degree2,inc_degree1)))
-        fi_degree = np.fmax(fi_degree2,fi_degree1)
-        vfi_degree = np.fmax(vfi_degree6, vfi_degree1)
+        vfi_degree = np.fmax(cpu_low_degree, 
+            np.fmax(mem_low_degree, thruput_low_degree))
+        fi_degree = np.fmax(cpu_low_degree, 
+            np.fmax(mem_medium_degree, thruput_low_degree))
+        sd_degree = np.fmax(cpu_low_degree, 
+            np.fmax(mem_high_degree, thruput_high_degree))
+        inc_degree = np.fmax(cpu_medium_degree, 
+            np.fmax(mem_low_degree, thruput_low_degree))
+        si_degree = np.fmax(cpu_medium_degree, 
+            np.fmax(mem_medium_degree, thruput_low_degree))
+        nc_degree = np.fmax(cpu_medium_degree, 
+            np.fmax(mem_medium_degree, thruput_medium_degree))
+        dec_degree = np.fmax(cpu_medium_degree, 
+            np.fmax(mem_high_degree, thruput_high_degree))
+        fd_degree = np.fmax(cpu_high_degree, 
+            np.fmax(mem_low_degree, thruput_high_degree))
+        vfd_degree = np.fmax(cpu_high_degree, 
+            np.fmax(mem_medium_degree, thruput_medium_degree))
+        ed_degree = np.fmax(cpu_high_degree, 
+            np.fmax(mem_high_degree, thruput_high_degree))
 
         # Apply IMPLICATION or ACTIVATION
         activation_extdec = np.fmin(ed_degree, load_extdec)
@@ -183,7 +122,7 @@ class Fuzzy:
         activation_fastdec = np.fmin(fd_degree, load_fastdec)
         activation_dec = np.fmin(dec_degree, load_dec)
         activation_smalldec = np.fmin(sd_degree, load_smalldec)
-        activation_verysmalldec = np.fmin(vsd_degree, load_verysmalldec)
+        #activation_verysmalldec = np.fmin(vsd_degree, load_verysmalldec)
         activation_nochange = np.fmin(nc_degree, load_nochange)
         activation_smallinc = np.fmin(si_degree, load_smallincrease)
         activation_increase = np.fmin(inc_degree, load_increase)
@@ -211,9 +150,10 @@ class Fuzzy:
 
         aggregated = np.fmax(activation_veryfastinc, np.fmax(activation_fastinc, 
             np.fmax(activation_increase, np.fmax(activation_smallinc, 
-            np.fmax(activation_nochange, np.fmax(activation_verysmalldec, 
+            #np.fmax(activation_nochange, np.fmax(activation_verysmalldec, 
+            np.fmax(activation_nochange,
             np.fmax(activation_smalldec, np.fmax(activation_dec, 
-            np.fmax( activation_fastdec, np.fmax(activation_extdec, activation_veryfastdec))))))))))
+            np.fmax( activation_fastdec, np.fmax(activation_extdec, activation_veryfastdec)))))))))
 
         # Defuzzification
         # skfuzzy.defuzz(x, mfx, mode)[source]
@@ -244,6 +184,6 @@ class Fuzzy:
 
     def get_fuzzy(self):
         defuzz_val = self.tip_centroid
-        print("Hasil deFuzzy = "+ str(self.tip_centroid))
+        print("Hasil deFuzzy = "+ str(self.tip_bisector))
         # return float or int
         return defuzz_val
