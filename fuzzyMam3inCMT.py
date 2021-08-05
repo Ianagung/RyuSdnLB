@@ -51,9 +51,9 @@ class Fuzzy:
         load_veryfastincrease = fuzz.trapmf(x_load, [0.3, 0.35, 0.45, 0.5 ])
 
         # Input: score
-        cpu_score = cpu_val 
-        mem_score = mem_val
-        truput_score = truput_val
+        cpu_score = self.cpu_val 
+        mem_score = self.mem_val
+        truput_score = self.truput_val
 
         cpu_verylow_degree = fuzz.interp_membership(
             x_cpu, cpu_verylow, cpu_score)
