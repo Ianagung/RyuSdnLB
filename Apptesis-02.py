@@ -289,8 +289,8 @@ def job1():
     #update global value window load
     #max_window_load_server = 1
     max_window_load_server = window_load.index(max(window_load)) + 1 
-    jika index = 0 maka server1
-    jika index = 1 maka server2
+    #jika index = 0 maka server1
+    #jika index = 1 maka server2
     #print ("Server dg Load window terbesar "+max_window_load_server)
     # message you send to server
     msg = str(max_window_load_server)
