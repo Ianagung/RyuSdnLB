@@ -299,24 +299,66 @@ def job1():
     print("Server yang punya max window load =", msg)
     client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
 
+#publish data ke mqtt broker
+#data = which server has max window load
+#Random Algorithm
+def job1Random():
+    
+    # message you send to server
+    msg = max_window_load_server
+    print("Server dg max window load =", msg)
+    client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
+
+#publish data ke mqtt broker
+#data = which server has max window load
+#Round Robin Algorithm
+def job1RR():
+    
+    # message you send to server
+    msg = max_window_load_server
+    print("Server dg max window load =", msg)
+    client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
+
+#publish data ke mqtt broker
+#data = which server has max window load
+# Minimum Response Time Algorithm
+def job1MinRT():
+    
+    # message you send to server
+    msg = max_window_load_server
+    print("Server dg max window load =", msg)
+    client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
 # This timer will run job() five times, one second apart
 timer1 = multitimer.MultiTimer(interval=5, function=job1, count=-1)
 # Also, this timer would run indefinitely...
 timer1.start()
 
-#publish data ke mqtt broker
-#data = which server has max window load
-# def job2():
-    
-#     # message you send to server
-#     msg = max_window_load_server
-#     print("Server dg max window load =", msg)
-#     client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
+#Start getting Server Response From Here
+def job2():
+    global time01
+    global add01
+    c = pycurl.Curl()
+    buffer = BytesIO()
+    #c.setopt(c.URL, 'http://pycurl.io/')
+    now1 = datetime.datetime.now() # time object
+    print("now =", now1)
+    print("do curl")    
+    c.setopt(c.URL, add01)
+    c.setopt(c.WRITEDATA, buffer)
+    c.perform()
+    c.close()
+    now2 = datetime.datetime.now() # time object
+    selisih = now2 - now1
+    #print("selisih :", selisih)
+    #hasil dalam seconds
+    hasil = selisih.seconds + (selisih.microseconds/1000000)
+    print("Server1 Respons time =", hasil)
+    time01 = float(hasil)
     
 # This timer will run job() five times, one second apart
-#timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
+timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
 # Also, this timer would run indefinitely...
-#timer2.start()
+timer2.start()
 
 #fungsi tes
 def job3():
