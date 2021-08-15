@@ -38,9 +38,9 @@ except ImportError:
 
 broker_url = "127.0.0.1"
 broker_port = 1883
-add01 = 'http://192.168.147.1'
-add02 = 'http://192.168.147.3'
-add03 = 'http://192.168.147.5'
+add01 = 'http://192.168.146.4:85'
+add02 = 'http://192.168.146.6:85'
+add03 = 'http://192.168.146.7:85'
 alamat_ip = [add01, add02, add03]
 cpu01 = 30
 cpu02 = 30
@@ -375,7 +375,7 @@ def job2():
         #print("selisih :", selisih)
         #hasil dalam seconds
         hasil = selisih.seconds + (selisih.microseconds/1000000)
-        print("Server-" + i +" Respons time = ", hasil)
+        print("Server-" + str(i) +" Respons time = ", str(hasil))
         respon_time[i] = float(hasil)
     
 # This timer will run job() five times, one second apart
