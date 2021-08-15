@@ -24,16 +24,24 @@ import paho.mqtt.client as mqtt
 #import skfuzzy as fuzz
 import multitimer
 import time
+import datetime
 #from matplotlib import pyplot as plt
 import sys
 sys.path.append(".")
 from fuzzyMam3inCMT import Fuzzy
+import random
+import pycurl
+try:
+    from io import BytesIO
+except ImportError:
+    from StringIO import StringIO as BytesIO
 
 broker_url = "127.0.0.1"
 broker_port = 1883
 add01 = 'http://192.168.147.1'
 add02 = 'http://192.168.147.3'
 add03 = 'http://192.168.147.5'
+alamat_ip = [add01, add02, add03]
 cpu01 = 30
 cpu02 = 30
 cpu03 = 30
@@ -52,14 +60,15 @@ rspstd03 = 1
 thruput01 = 10 #throughput=kbps
 thruput02 = 10 #throughput=kbps
 thruput03 = 10 #throughput=kbps
-listserver = [1,2]
-window_load = [50,50]
+listserver = [1,2,3]
+window_load = [0.1,0.1]
+respon_time =[1,1,1]
 max_window_load_server = 1
 max_truput_server = 2741560 #max = 2741560 /s 2.6MB/s
 truput_server01 = [1]
 # getting length of list
 lengths = len(listserver)
-
+serverCount = 1
 def bytes2human(n):
     # http://code.activestate.com/recipes/578019
     # >>> bytes2human(10000)
@@ -275,15 +284,18 @@ def job1():
         myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
         delta_ld_window = myFuzzy.get_fuzzy()
         print("Perubahan Load Window Server-%s is %.3f" % ( listserver[i], delta_ld_window))
+        #nilai load window diambil per detik ketika dihitung, hasil dari fuzzy direct
+        #bukan kumulatif
+        window_load[i] = round(delta_ld_window * 1000)
         #hitung total workload
-        window_load[i] += delta_ld_window
-        print("Load Window Server-%s is %.3f" % ( listserver[i], window_load[i]))
-        #reset jika sudah kena threshold atas dan bawah
-        #reset window_load
-        if window_load[i] > 100:
-            window_load[i] = 90
-        if window_load[i] < 0:
-            window_load[i] = 10
+        # window_load[i] += delta_ld_window
+        # print("Load Window Server-%s is %.3f" % ( listserver[i], window_load[i]))
+        # #reset jika sudah kena threshold atas dan bawah
+        # #reset window_load
+        # if window_load[i] > 100:
+        #     window_load[i] = 90
+        # if window_load[i] < 0:
+        #     window_load[i] = 10
         
     #compare nilai window_load terbesar
     #find index of maximum element
@@ -294,7 +306,7 @@ def job1():
     #jika index = 0 maka server1
     #jika index = 1 maka server2
     #print ("Server dg Load window terbesar "+max_window_load_server)
-    # message you send to server
+    #Publish data to MQTT Broker
     msg = str(max_window_load_server)
     print("Server yang punya max window load =", msg)
     client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
@@ -304,56 +316,67 @@ def job1():
 #Random Algorithm
 def job1Random():
     
-    # message you send to server
-    msg = max_window_load_server
-    print("Server dg max window load =", msg)
+    server_count = random.randint(1, 3)
+    #Publish data to MQTT Broker
+    msg = server_count
+    print("Random - Server = ", msg)
     client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
 
 #publish data ke mqtt broker
 #data = which server has max window load
 #Round Robin Algorithm
-def job1RR():
-    
-    # message you send to server
-    msg = max_window_load_server
-    print("Server dg max window load =", msg)
-    client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
+# def job1RR():
+#     global serverCount 
+         
+#     serverCount+=1
+#     if(serverCount>3):
+#         serverCount=1
+#     #Publish data to MQTT Broker
+#     msg = serverCount
+#     print("Round Robin Server =", msg)
+#     client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
 
 #publish data ke mqtt broker
 #data = which server has max window load
 # Minimum Response Time Algorithm
 def job1MinRT():
     
-    # message you send to server
-    msg = max_window_load_server
-    print("Server dg max window load =", msg)
+    #Publish data to MQTT Broker
+    min_RspTime = respon_time.index(min(respon_time)) + 1
+    msg = min_RspTime
+    print("Server dg min Respon Time =", msg)
     client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
+    
+	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
+	#client.publish(topic="sdn/rsptm03", payload=rsp_tm_s3, qos=0, retain=False)
 # This timer will run job() five times, one second apart
-timer1 = multitimer.MultiTimer(interval=5, function=job1, count=-1)
+timer1 = multitimer.MultiTimer(interval=5, function=job1MinRT, count=-1)
 # Also, this timer would run indefinitely...
 timer1.start()
 
 #Start getting Server Response From Here
 def job2():
-    global time01
-    global add01
-    c = pycurl.Curl()
-    buffer = BytesIO()
-    #c.setopt(c.URL, 'http://pycurl.io/')
-    now1 = datetime.datetime.now() # time object
-    print("now =", now1)
-    print("do curl")    
-    c.setopt(c.URL, add01)
-    c.setopt(c.WRITEDATA, buffer)
-    c.perform()
-    c.close()
-    now2 = datetime.datetime.now() # time object
-    selisih = now2 - now1
-    #print("selisih :", selisih)
-    #hasil dalam seconds
-    hasil = selisih.seconds + (selisih.microseconds/1000000)
-    print("Server1 Respons time =", hasil)
-    time01 = float(hasil)
+    #global time01
+    global alamat_ip
+    global respon_time
+    for i in range(lengths):
+        c = pycurl.Curl()
+        buffer = BytesIO()
+        #c.setopt(c.URL, 'http://pycurl.io/')
+        now1 = datetime.datetime.now() # time object
+        #print("now =", now1)
+        #print("do curl")    
+        c.setopt(c.URL, alamat_ip[i])
+        c.setopt(c.WRITEDATA, buffer)
+        c.perform()
+        c.close()
+        now2 = datetime.datetime.now() # time object
+        selisih = now2 - now1
+        #print("selisih :", selisih)
+        #hasil dalam seconds
+        hasil = selisih.seconds + (selisih.microseconds/1000000)
+        print("Server-" + i +" Respons time = ", hasil)
+        respon_time[i] = float(hasil)
     
 # This timer will run job() five times, one second apart
 timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
@@ -381,31 +404,31 @@ def job3():
     truput01 = round(((1000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
     truput02 = round(((2000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
     truput03 = round(((1000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen    
-    # message you send to server
+    #Publish data to MQTT Broker
     msg = cpu01
     client.publish(topic="sdn/cpu01", payload=msg, qos=0, retain=False)
-    # message you send to server
+    #Publish data to MQTT Broker
     msg = cpu02
     client.publish(topic="sdn/cpu02", payload=msg, qos=0, retain=False)
-    # message you send to server
+    #Publish data to MQTT Broker
     msg = cpu03
     client.publish(topic="sdn/cpu03", payload=msg, qos=0, retain=False)
-    # message you send to server
+    #Publish data to MQTT Broker
     msg = mem01
     client.publish(topic="sdn/mem01", payload=msg, qos=0, retain=False)
-    # message you send to server
+    #Publish data to MQTT Broker
     msg = mem02
     client.publish(topic="sdn/mem02", payload=msg, qos=0, retain=False)
-    # message you send to server
+    #Publish data to MQTT Broker
     msg = mem03
     client.publish(topic="sdn/mem03", payload=msg, qos=0, retain=False)
-    # message you send to server
+    #Publish data to MQTT Broker
     msg = truput01
     client.publish(topic="sdn/thruput01", payload=msg, qos=0, retain=False)
-    # message you send to server
+    #Publish data to MQTT Broker
     msg = truput02
     client.publish(topic="sdn/thruput02", payload=msg, qos=0, retain=False)
-    # message you send to server
+    #Publish data to MQTT Broker
     msg = truput03
     client.publish(topic="sdn/thruput03", payload=msg, qos=0, retain=False)
     
