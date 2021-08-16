@@ -84,17 +84,17 @@ class loadBalancer13(app_manager.RyuApp):
         #client.loop_forever()
         self.client.loop_start()
         
-    def on_connect(client, userdata, flags, rc):
+    def on_connect(self, client, userdata, flags, rc):
         print("Connected With Result Code " ,rc)
         if rc==0:
             print("connected OK Returned code=",rc)
         else:
             print("Bad connection Returned code=",rc)
 
-    def on_disconnect(client, userdata, rc):
+    def on_disconnect(self, client, userdata, rc):
         print("Client Got Disconnected")
 
-    def on_message(client, userdata, message):
+    def on_message(self, client, userdata, message):
         print("Message Recieved from Others: "+message.payload.decode())
 
     def on_message_from_serverno(self, client, userdata, message):
