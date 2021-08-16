@@ -99,7 +99,8 @@ class loadBalancer13(app_manager.RyuApp):
 
     def on_message_from_serverno(self, client, userdata, message):
         self.serverCount = int(message.payload.decode())
-        print("Value serverCount: "+ self.serverCount)
+        print("Value serverCount: "+ str(self.serverCount))
+        
         
     @set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
     def switch_features_handler(self, ev):
