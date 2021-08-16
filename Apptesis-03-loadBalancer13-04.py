@@ -47,11 +47,11 @@ class loadBalancer13(app_manager.RyuApp):
         self.mac_to_port = {}
 ############Assigning IP address to TCP servers (H1, H2, and H3)
         self.serverIP1="192.168.146.4"
-        self.serverMac1="08:00:27:4E:58:A6"
+        self.serverMac1="08:00:27:ce:06:23"
         self.serverIP2="192.168.146.6"
-        self.serverMac2="08:00:27:55:6b:96"
+        self.serverMac2="08:00:27:ca:71:99"
         self.serverIP3="192.168.146.7"
-        self.serverMac3="08:00:27:55:6b:96"
+        self.serverMac3="08:00:27:44:ff:84"
         # self.serverIP1="10.0.0.1"
         # self.serverMac1="00:00:00:00:00:01"
         # self.serverIP2="10.0.0.2"
@@ -99,7 +99,7 @@ class loadBalancer13(app_manager.RyuApp):
 
     def on_message_from_serverno(self, client, userdata, message):
         self.serverCount = int(message.payload.decode())
-        print("Value serverCount: "+ str(self.serverCount))
+        #print("Value serverCount: "+ str(self.serverCount))
         
         
     @set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
