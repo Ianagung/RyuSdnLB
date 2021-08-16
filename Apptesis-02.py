@@ -309,7 +309,7 @@ def job1():
     #Publish data to MQTT Broker
     msg = str(max_window_load_server)
     print("Server yang punya max window load =", msg)
-    client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
+    client.publish(topic="sdn/serverno", payload=msg, qos=0, retain=False)
 
 #publish data ke mqtt broker
 #data = which server has max window load
@@ -320,7 +320,7 @@ def job1Random():
     #Publish data to MQTT Broker
     msg = server_count
     print("Random - Server = ", msg)
-    client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
+    client.publish(topic="sdn/serverno", payload=msg, qos=0, retain=False)
 
 #publish data ke mqtt broker
 #data = which server has max window load
@@ -345,12 +345,12 @@ def job1MinRT():
     min_RspTime = respon_time.index(min(respon_time)) + 1
     msg = min_RspTime
     print("Server dg min Respon Time =", msg)
-    client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
+    client.publish(topic="sdn/serverno", payload=msg, qos=0, retain=False)
     
 	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
 	#client.publish(topic="sdn/rsptm03", payload=rsp_tm_s3, qos=0, retain=False)
 # This timer will run job() five times, one second apart
-timer1 = multitimer.MultiTimer(interval=5, function=job1MinRT, count=-1)
+timer1 = multitimer.MultiTimer(interval=5, function=job1Random, count=-1)
 # Also, this timer would run indefinitely...
 timer1.start()
 
@@ -375,7 +375,7 @@ def job2():
         #print("selisih :", selisih)
         #hasil dalam seconds
         hasil = selisih.seconds + (selisih.microseconds/1000000)
-        print("Server-" + str(i) +" Respons time = ", str(hasil))
+        #print("Server-" + str(i) +" Respons time = ", str(hasil))
         respon_time[i] = float(hasil)
     
 # This timer will run job() five times, one second apart

@@ -18,6 +18,7 @@
 #limitations under the License.
 
 import random
+import paho.mqtt.client as mqtt
 from ryu.lib import dpid as dpid_lib
 from ryu.base import app_manager
 from ryu.controller import ofp_event
@@ -46,10 +47,12 @@ class loadBalancer13(app_manager.RyuApp):
         self.mac_to_port = {}
 
 ############Assigning IP address to TCP servers (H1, H2, and H3)
-        self.serverIP1="192.168.147.6"
+        self.serverIP1="192.168.146.4"
         self.serverMac1="08:00:27:4E:58:A6"
-        self.serverIP2="192.168.147.5"
+        self.serverIP2="192.168.146.6"
         self.serverMac2="08:00:27:55:6b:96"
+        self.serverIP3="192.168.146.7"
+        self.serverMac3="08:00:27:55:6b:96"
         # self.serverIP1="10.0.0.1"
         # self.serverMac1="00:00:00:00:00:01"
         # self.serverIP2="10.0.0.2"
@@ -60,9 +63,43 @@ class loadBalancer13(app_manager.RyuApp):
 ############Count to indicate which server to use for TCP session. H1=1, H2=2, H3=3
 
         self.serverCount=1
-        self.lbIP="192.168.147.100"
+        self.lbIP="192.168.146.10"
         # self.lbIP="10.0.0.100"
+        self.broker_url = "127.0.0.1"
+        self.broker_port = 1883
+        
+        self.client = mqtt.Client()
+        self.client.on_connect = self.on_connect
+        self.client.on_disconnect = self.on_disconnect
+        #To Process Every Other Message
+        self.client.on_message = self.on_message
+        # edit code for passwords
+        print("setting  password")
+        self.client.username_pw_set(username="user01",password="mqtt")
 
+        self.client.connect(broker_url, broker_port)
+
+        self.client.subscribe("sdn/serverno", qos=1)
+
+        self.client.message_callback_add("sdn/serverno", self.on_message_from_serverno)
+
+    def on_connect(client, userdata, flags, rc):
+        print("Connected With Result Code " ,rc)
+        if rc==0:
+            print("connected OK Returned code=",rc)
+        else:
+            print("Bad connection Returned code=",rc)
+
+    def on_disconnect(client, userdata, rc):
+        print("Client Got Disconnected")
+
+    def on_message(client, userdata, message):
+        print("Message Recieved from Others: "+message.payload.decode())
+
+    def on_message_from_serverno(self, client, userdata, message):
+        self.serverCount = int(message.payload.decode())
+        print("Value serverCount: "+ self.serverCount)
+    
     @set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
     def switch_features_handler(self, ev):
         # install table-miss flow entry
