@@ -61,7 +61,15 @@ class loadBalancer13(app_manager.RyuApp):
 ############Count to indicate which server to use for TCP session. H1=1, H2=2, H3=3
 
         self.serverCount=1
+        self.algoritma = 0
+        #algoritma = 0, roundrobin
+        #algoritma = 1, random
+        #algoritma = 2, Min Response Time
+        #algoritma = 3, Fuzzy
         self.lbIP="192.168.146.10"
+        self.bridgeSwitch = 1
+        #bridgeSiwtch = 0, no bridge , self mininet network link
+        #bridgeSwitch = 1, bridge OpenvSwitch S1 with VBox Host Only Network via internal ethernet
         # self.lbIP="10.0.0.100"
         self.broker_url = "127.0.0.1"
         self.broker_port = 1883
@@ -98,8 +106,9 @@ class loadBalancer13(app_manager.RyuApp):
         print("Message Recieved from Others: "+message.payload.decode())
 
     def on_message_from_serverno(self, client, userdata, message):
-        self.serverCount = int(message.payload.decode())
-        #print("Value serverCount: "+ str(self.serverCount))
+        if self.algoritma != 0 :
+            self.serverCount = int(message.payload.decode())
+            print("Value serverCount: "+ str(self.serverCount))
         
         
     @set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
@@ -388,7 +397,9 @@ class loadBalancer13(app_manager.RyuApp):
                     serverOutport = self.mac_to_port[dpid][serverMac]
                 else:
                     self.logger.info("Tidak ada serverMac")
-                serverOutport = 4
+                if self.bridgeSwitch == 1 :
+                    #serverOutport diarahkan ke enp0s8 yg sudah dimasukkan ke add-port switch S1
+                    serverOutport = 5
                 actions1=[parser.OFPActionSetField(ipv4_src=self.lbIP),parser.OFPActionSetField(eth_dst=serverMac),
                     parser.OFPActionSetField(ipv4_dst=serverIP),parser.OFPActionOutput(serverOutport)]
 
@@ -447,9 +458,10 @@ class loadBalancer13(app_manager.RyuApp):
                 ############Server Count increment
                 #Increase count so the next server will serve the next TCP connection from different or same host 
                 #(When it completes the current TCP session with current TCP server)
-                self.serverCount+=1
-                if(self.serverCount>2):
-                    self.serverCount=1
+                if self.algoritma == 0 :
+                    self.serverCount+=1
+                    if(self.serverCount>2):
+                        self.serverCount=1
 
         if((eth.ethertype!=0x0806) and (eth.ethertype!=0x0800)):
             #ethertype==0x0806==ARP
