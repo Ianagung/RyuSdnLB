@@ -77,7 +77,7 @@ class loadBalancer13(app_manager.RyuApp):
         print("setting  password")
         self.client.username_pw_set(username="user01",password="mqtt")
 
-        self.client.connect(broker_url, broker_port)
+        self.client.connect(self.broker_url, self.broker_port)
 
         self.client.subscribe("sdn/serverno", qos=1)
 
