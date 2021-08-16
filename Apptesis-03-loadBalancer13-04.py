@@ -42,27 +42,9 @@ from ryu.ofproto import ofproto_v1_3
 class loadBalancer13(app_manager.RyuApp):
     OFP_VERSIONS = [ofproto_v1_3.OFP_VERSION]
 
-    def on_connect(client, userdata, flags, rc):
-        print("Connected With Result Code " ,rc)
-        if rc==0:
-            print("connected OK Returned code=",rc)
-        else:
-            print("Bad connection Returned code=",rc)
-
-    def on_disconnect(client, userdata, rc):
-        print("Client Got Disconnected")
-
-    def on_message(client, userdata, message):
-        print("Message Recieved from Others: "+message.payload.decode())
-
-    def on_message_from_serverno(self, client, userdata, message):
-        self.serverCount = int(message.payload.decode())
-        print("Value serverCount: "+ self.serverCount)
-
     def __init__(self, *args, **kwargs):
         super(loadBalancer13, self).__init__(*args, **kwargs)
         self.mac_to_port = {}
-
 ############Assigning IP address to TCP servers (H1, H2, and H3)
         self.serverIP1="192.168.146.4"
         self.serverMac1="08:00:27:4E:58:A6"
@@ -76,7 +58,6 @@ class loadBalancer13(app_manager.RyuApp):
         # self.serverMac2="00:00:00:00:00:02"
         #self.serverIP3="10.0.0.3"
         #self.serverMac3="00:00:00:00:00:03"
-
 ############Count to indicate which server to use for TCP session. H1=1, H2=2, H3=3
 
         self.serverCount=1
@@ -98,8 +79,28 @@ class loadBalancer13(app_manager.RyuApp):
 
         self.client.subscribe("sdn/serverno", qos=1)
 
-        self.client.message_callback_add("sdn/serverno", self.on_message_from_serverno)   
-    
+        self.client.message_callback_add("sdn/serverno", self.on_message_from_serverno)
+        
+        #client.loop_forever()
+        self.client.loop_start()
+        
+    def on_connect(client, userdata, flags, rc):
+        print("Connected With Result Code " ,rc)
+        if rc==0:
+            print("connected OK Returned code=",rc)
+        else:
+            print("Bad connection Returned code=",rc)
+
+    def on_disconnect(client, userdata, rc):
+        print("Client Got Disconnected")
+
+    def on_message(client, userdata, message):
+        print("Message Recieved from Others: "+message.payload.decode())
+
+    def on_message_from_serverno(self, client, userdata, message):
+        self.serverCount = int(message.payload.decode())
+        print("Value serverCount: "+ self.serverCount)
+        
     @set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
     def switch_features_handler(self, ev):
         # install table-miss flow entry
