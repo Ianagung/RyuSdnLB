@@ -42,6 +42,23 @@ from ryu.ofproto import ofproto_v1_3
 class loadBalancer13(app_manager.RyuApp):
     OFP_VERSIONS = [ofproto_v1_3.OFP_VERSION]
 
+    def on_connect(client, userdata, flags, rc):
+        print("Connected With Result Code " ,rc)
+        if rc==0:
+            print("connected OK Returned code=",rc)
+        else:
+            print("Bad connection Returned code=",rc)
+
+    def on_disconnect(client, userdata, rc):
+        print("Client Got Disconnected")
+
+    def on_message(client, userdata, message):
+        print("Message Recieved from Others: "+message.payload.decode())
+
+    def on_message_from_serverno(self, client, userdata, message):
+        self.serverCount = int(message.payload.decode())
+        print("Value serverCount: "+ self.serverCount)
+
     def __init__(self, *args, **kwargs):
         super(loadBalancer13, self).__init__(*args, **kwargs)
         self.mac_to_port = {}
@@ -81,24 +98,7 @@ class loadBalancer13(app_manager.RyuApp):
 
         self.client.subscribe("sdn/serverno", qos=1)
 
-        self.client.message_callback_add("sdn/serverno", self.on_message_from_serverno)
-
-    def on_connect(client, userdata, flags, rc):
-        print("Connected With Result Code " ,rc)
-        if rc==0:
-            print("connected OK Returned code=",rc)
-        else:
-            print("Bad connection Returned code=",rc)
-
-    def on_disconnect(client, userdata, rc):
-        print("Client Got Disconnected")
-
-    def on_message(client, userdata, message):
-        print("Message Recieved from Others: "+message.payload.decode())
-
-    def on_message_from_serverno(self, client, userdata, message):
-        self.serverCount = int(message.payload.decode())
-        print("Value serverCount: "+ self.serverCount)
+        self.client.message_callback_add("sdn/serverno", self.on_message_from_serverno)   
     
     @set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
     def switch_features_handler(self, ev):
