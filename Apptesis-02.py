@@ -35,6 +35,8 @@ try:
     from io import BytesIO
 except ImportError:
     from StringIO import StringIO as BytesIO
+# Import writer class from csv module
+from csv import writer
 
 broker_url = "127.0.0.1"
 broker_port = 1883
@@ -69,6 +71,8 @@ truput_server01 = [1]
 # getting length of list
 lengths = len(listserver)
 serverCount = 1
+togglestartstoptes = 2
+
 def bytes2human(n):
     # http://code.activestate.com/recipes/578019
     # >>> bytes2human(10000)
@@ -171,6 +175,11 @@ def on_message_from_thruput03(client, userdata, message):
     thruput03 = int(message.payload.decode())
     #print("Nilai thruput 03: "+thruput03)
 
+def on_message_from_toggleuji(client, userdata, message):
+    global togglestartstoptes
+    togglestartstoptes = int(message.payload.decode())
+    
+
 client = mqtt.Client()
 client.on_connect = on_connect
 client.on_disconnect = on_disconnect
@@ -241,6 +250,10 @@ client.message_callback_add("sdn/thruput02", on_message_from_thruput02)
 client.subscribe("sdn/thruput03", qos=1)
 
 client.message_callback_add("sdn/thruput03", on_message_from_thruput03)
+
+client.subscribe("sdn/startstoptes", qos=1)
+
+client.message_callback_add("sdn/startstoptes", on_message_from_toggleuji)
 
 #myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
 #print(mycar.get_fuzzy())
@@ -384,58 +397,83 @@ timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
 timer2.start()
 
 #fungsi tes
-def job3():
-    global max_truput_server
-    cpu01 = 30
-    cpu02 = 90
-    cpu03 = 30
-    mem01 = 50
-    mem02 = 90
-    mem03 = 50
-    #time01 = 10
-    #time02 = 10
-    #time03 = 10
-    #rsptm01 = 1
-    #rsptm02 = 1
-    #rsptm03 = 1
-    #rspstd01 = 1
-    #rspstd02 = 1
-    #rspstd03 = 1
-    truput01 = round(((1000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
-    truput02 = round(((2000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
-    truput03 = round(((1000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen    
-    #Publish data to MQTT Broker
-    msg = cpu01
-    client.publish(topic="sdn/cpu01", payload=msg, qos=0, retain=False)
-    #Publish data to MQTT Broker
-    msg = cpu02
-    client.publish(topic="sdn/cpu02", payload=msg, qos=0, retain=False)
-    #Publish data to MQTT Broker
-    msg = cpu03
-    client.publish(topic="sdn/cpu03", payload=msg, qos=0, retain=False)
-    #Publish data to MQTT Broker
-    msg = mem01
-    client.publish(topic="sdn/mem01", payload=msg, qos=0, retain=False)
-    #Publish data to MQTT Broker
-    msg = mem02
-    client.publish(topic="sdn/mem02", payload=msg, qos=0, retain=False)
-    #Publish data to MQTT Broker
-    msg = mem03
-    client.publish(topic="sdn/mem03", payload=msg, qos=0, retain=False)
-    #Publish data to MQTT Broker
-    msg = truput01
-    client.publish(topic="sdn/thruput01", payload=msg, qos=0, retain=False)
-    #Publish data to MQTT Broker
-    msg = truput02
-    client.publish(topic="sdn/thruput02", payload=msg, qos=0, retain=False)
-    #Publish data to MQTT Broker
-    msg = truput03
-    client.publish(topic="sdn/thruput03", payload=msg, qos=0, retain=False)
-    
+# def job3():
+#     global max_truput_server
+#     cpu01 = 30
+#     cpu02 = 90
+#     cpu03 = 30
+#     mem01 = 50
+#     mem02 = 90
+#     mem03 = 50
+#     #time01 = 10
+#     #time02 = 10
+#     #time03 = 10
+#     #rsptm01 = 1
+#     #rsptm02 = 1
+#     #rsptm03 = 1
+#     #rspstd01 = 1
+#     #rspstd02 = 1
+#     #rspstd03 = 1
+#     truput01 = round(((1000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
+#     truput02 = round(((2000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
+#     truput03 = round(((1000000 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen    
+#     #Publish data to MQTT Broker
+#     msg = cpu01
+#     client.publish(topic="sdn/cpu01", payload=msg, qos=0, retain=False)
+#     #Publish data to MQTT Broker
+#     msg = cpu02
+#     client.publish(topic="sdn/cpu02", payload=msg, qos=0, retain=False)
+#     #Publish data to MQTT Broker
+#     msg = cpu03
+#     client.publish(topic="sdn/cpu03", payload=msg, qos=0, retain=False)
+#     #Publish data to MQTT Broker
+#     msg = mem01
+#     client.publish(topic="sdn/mem01", payload=msg, qos=0, retain=False)
+#     #Publish data to MQTT Broker
+#     msg = mem02
+#     client.publish(topic="sdn/mem02", payload=msg, qos=0, retain=False)
+#     #Publish data to MQTT Broker
+#     msg = mem03
+#     client.publish(topic="sdn/mem03", payload=msg, qos=0, retain=False)
+#     #Publish data to MQTT Broker
+#     msg = truput01
+#     client.publish(topic="sdn/thruput01", payload=msg, qos=0, retain=False)
+#     #Publish data to MQTT Broker
+#     msg = truput02
+#     client.publish(topic="sdn/thruput02", payload=msg, qos=0, retain=False)
+#     #Publish data to MQTT Broker
+#     msg = truput03
+#     client.publish(topic="sdn/thruput03", payload=msg, qos=0, retain=False)
+
+#fungsi tes
+def job3Uji():
+    global togglestartstoptes
+    global cpu01, cpu02, cpu03
+    global mem01, mem02, mem03
+    global thruput01, thruput02, thruput03
+    if togglestartstoptes == 1 :
+        # List 
+        List=[cpu01,cpu02,cpu03,mem01,mem02,mem03,thruput01,thruput02,thruput03]
+        # Open our existing CSV file in append mode
+        # Create a file object for this file
+        with open('HasilUji01-RoundRobin01.csv', 'a') as f_object:
+        
+            # Pass this file object to csv.writer()
+            # and get a writer object
+            writer_object = writer(f_object)
+        
+            # Pass the list as an argument into
+            # the writerow()
+            writer_object.writerow(List)
+        
+            #Close the file object
+            f_object.close()
+    elif togglestartstoptes == 0:
+        print("Pengujian berhenti")   
 # This timer will run job() five times, one second apart
-#timer3 = multitimer.MultiTimer(interval=10, function=job3, count=5)
+timer3 = multitimer.MultiTimer(interval=1, function=job3Uji, count=-1)
 # Also, this timer would run indefinitely...
-#timer3.start()
+timer3.start()
 
 #fungsi tes
 def job4():
