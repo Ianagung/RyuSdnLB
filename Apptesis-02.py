@@ -37,6 +37,8 @@ except ImportError:
     from StringIO import StringIO as BytesIO
 # Import writer class from csv module
 from csv import writer
+# Importing the statistics module
+from statistics import mean
 
 broker_url = "127.0.0.1"
 broker_port = 1883
@@ -68,6 +70,24 @@ respon_time =[1,1,1]
 max_window_load_server = 1
 max_truput_server = 2741560 #max = 2741560 /s 2.6MB/s
 truput_server01 = [1]
+truput_server02 = [1]
+truput_server03 = [1]
+cpu_server01 = [1]
+cpu_server02 = [1]
+cpu_server03 = [1]
+mem_server01 = [1]
+mem_server02 = [1]
+mem_server03 = [1]
+mean_truput_server01 = 1
+mean_truput_server02 = 1
+mean_truput_server03 = 1
+mean_cpu_server01 = 1
+mean_cpu_server02 = 1
+mean_cpu_server03 = 1
+mean_mem_server01 = 1
+mean_mem_server02 = 1
+mean_mem_server03 = 1
+
 # getting length of list
 lengths = len(listserver)
 serverCount = 1
@@ -451,9 +471,52 @@ def job3Uji():
     global cpu01, cpu02, cpu03
     global mem01, mem02, mem03
     global thruput01, thruput02, thruput03
+    global cpu_server01
+    global cpu_server02
+    global cpu_server03
+    global mem_server01
+    global mem_server02
+    global mem_server03
+    global truput_server01
+    global truput_server02
+    global truput_server03
+    global mean_cpu_server01
+    global mean_cpu_server02
+    global mean_cpu_server03
+    global mean_mem_server01
+    global mean_mem_server02
+    global mean_mem_server03
+    global mean_truput_server01
+    global mean_truput_server02
+    global mean_truput_server03
+    
     if togglestartstoptes == 1 :
+        cpu_server01.append(float(cpu01))
+        cpu_server02.append(float(cpu02))
+        cpu_server03.append(float(cpu03))
+        mem_server01.append(float(mem01))
+        mem_server02.append(float(mem02))
+        mem_server03.append(float(mem03))
+        truput_server01.append(float(thruput01))
+        truput_server02.append(float(thruput02))
+        truput_server03.append(float(thruput03))
+    
+    elif togglestartstoptes == 0:
+        print("Pengujian berhenti")
+        mean_cpu_server01 = mean(cpu_server01)
+        mean_cpu_server02 = mean(cpu_server02)
+        mean_cpu_server03 = mean(cpu_server03)
+        mean_mem_server01 = mean(mem_server01)
+        mean_mem_server02 = mean(mem_server02)
+        mean_mem_server03 = mean(mem_server03)
+        mean_truput_server01 = mean(truput_server01)
+        mean_truput_server02 = mean(truput_server02)
+        mean_truput_server03 = mean(truput_server03)
+        #str(max_truput_server)
         # List 
-        List=[cpu01,cpu02,cpu03,mem01,mem02,mem03,thruput01,thruput02,thruput03]
+        List=[mean_cpu_server01,mean_cpu_server02,mean_cpu_server03,
+              mean_mem_server01,mean_mem_server02,mean_mem_server03,
+              mean_truput_server01,mean_truput_server02,mean_truput_server03]
         # Open our existing CSV file in append mode
         # Create a file object for this file
         with open('HasilUji01-RoundRobin01.csv', 'a') as f_object:
@@ -467,18 +530,16 @@ def job3Uji():
             writer_object.writerow(List)
         
             #Close the file object
-            f_object.close()
-    elif togglestartstoptes == 0:
-        print("Pengujian berhenti")   
+            f_object.close()   
 # This timer will run job() five times, one second apart
-timer3 = multitimer.MultiTimer(interval=3, function=job3Uji, count=-1)
+timer3 = multitimer.MultiTimer(interval=1, function=job3Uji, count=-1)
 # Also, this timer would run indefinitely...
 timer3.start()
 
 #fungsi tes
-def job4():
-    max_truput_server = max(truput_server01)
-    print("Maksimal truput: "+str(max_truput_server)+" /s "+ bytes2human(max_truput_server)+"Bytes/s")  
+# def job4():
+#     max_truput_server = max(truput_server01)
+#     print("Maksimal truput: "+str(max_truput_server)+" /s "+ bytes2human(max_truput_server)+"Bytes/s")  
     
 # This timer will run job() five times, one second apart
 #timer4 = multitimer.MultiTimer(interval=1, function=job4, count=-1)
