@@ -471,7 +471,7 @@ def job3Uji():
     elif togglestartstoptes == 0:
         print("Pengujian berhenti")   
 # This timer will run job() five times, one second apart
-timer3 = multitimer.MultiTimer(interval=1, function=job3Uji, count=-1)
+timer3 = multitimer.MultiTimer(interval=3, function=job3Uji, count=-1)
 # Also, this timer would run indefinitely...
 timer3.start()
 
