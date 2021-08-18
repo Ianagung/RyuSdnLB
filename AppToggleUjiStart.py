@@ -1,10 +1,11 @@
+#Aplikasinya jalan di host mininet
 #!/usr/bin/env python3
 import paho.mqtt.client as mqtt
 #import numpy as np
 #import skfuzzy as fuzz
 import multitimer
 
-broker_url = "127.0.0.1"
+broker_url = "192.168.146.8"
 broker_port = 1883
 
 def on_connect(client, userdata, flags, rc):
