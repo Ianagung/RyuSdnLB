@@ -65,7 +65,7 @@ thruput01 = 10 #throughput=kbps
 thruput02 = 10 #throughput=kbps
 thruput03 = 10 #throughput=kbps
 listserver = [1,2,3]
-window_load = [0.1,0.1]
+window_load = [0.1,0.1,0.1]
 respon_time =[1,1,1]
 max_window_load_server = 1
 max_truput_server = 2741560 #max = 2741560 /s 2.6MB/s
@@ -327,10 +327,10 @@ def job1Fuzzy():
         print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
         myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
         delta_ld_window = myFuzzy.get_fuzzy()
-        print("Perubahan Load Window Server-%s is %.3f" % ( listserver[i], delta_ld_window))
+        print("Perubahan Load Window Server-%s is %.5f" % ( listserver[i], delta_ld_window))
         #nilai load window diambil per detik ketika dihitung, hasil dari fuzzy direct
         #bukan kumulatif
-        window_load[i] = round(delta_ld_window * 1000)
+        window_load[i] = round(delta_ld_window * 100000)
         #hitung total workload
         # window_load[i] += delta_ld_window
         # print("Load Window Server-%s is %.3f" % ( listserver[i], window_load[i]))

@@ -65,7 +65,7 @@ thruput01 = 10 #throughput=kbps
 thruput02 = 10 #throughput=kbps
 thruput03 = 10 #throughput=kbps
 listserver = [1,2,3]
-window_load = [0.1,0.1]
+window_load = [0.1,0.1,0.1]
 respon_time =[1,1,1]
 max_window_load_server = 1
 max_truput_server = 2741560 #max = 2741560 /s 2.6MB/s
