@@ -356,7 +356,7 @@ def job1Random():
     server_count = random.randint(1, 3)
     #Publish data to MQTT Broker
     msg = server_count
-    #print("Random - Server = ", msg)
+    print("Random - Server = ", msg)
     client.publish(topic="sdn/serverno", payload=msg, qos=0, retain=False)
 
 #publish data ke mqtt broker
