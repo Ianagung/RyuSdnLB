@@ -330,6 +330,7 @@ def job1Fuzzy():
         print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
         myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
         delta_ld_window = myFuzzy.get_fuzzy()
+        print("delta load window "+ delta_ld_window)
         print("Perubahan Load Window Server-%s is %.3f" % ( listserver[i], delta_ld_window))
         #nilai load window diambil per detik ketika dihitung, hasil dari fuzzy direct
         #bukan kumulatif
