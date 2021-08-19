@@ -68,6 +68,7 @@ class loadBalancer13(app_manager.RyuApp):
         #algoritma = 3, Fuzzy
         self.lbIP="192.168.146.10"
         self.bridgeSwitch = 1
+        self.bridgePort = 3
         #bridgeSiwtch = 0, no bridge , self mininet network link
         #bridgeSwitch = 1, bridge OpenvSwitch S1 with VBox Host Only Network via internal ethernet
         # self.lbIP="10.0.0.100"
@@ -399,7 +400,7 @@ class loadBalancer13(app_manager.RyuApp):
                     self.logger.info("Tidak ada serverMac")
                 if self.bridgeSwitch == 1 :
                     #serverOutport diarahkan ke enp0s8 yg sudah dimasukkan ke add-port switch S1
-                    serverOutport = 5
+                    serverOutport = self.bridgePort
                 actions1=[parser.OFPActionSetField(ipv4_src=self.lbIP),parser.OFPActionSetField(eth_dst=serverMac),
                     parser.OFPActionSetField(ipv4_dst=serverIP),parser.OFPActionOutput(serverOutport)]
 
