@@ -507,15 +507,15 @@ def job3Uji():
     
     elif togglestartstoptes == 0:
         
-        mean_cpu_server01 = mean(cpu_server01)
-        mean_cpu_server02 = mean(cpu_server02)
-        mean_cpu_server03 = mean(cpu_server03)
-        mean_mem_server01 = mean(mem_server01)
-        mean_mem_server02 = mean(mem_server02)
-        mean_mem_server03 = mean(mem_server03)
-        mean_truput_server01 = mean(truput_server01)
-        mean_truput_server02 = mean(truput_server02)
-        mean_truput_server03 = mean(truput_server03)
+        mean_cpu_server01 = round(mean(cpu_server01), 3)
+        mean_cpu_server02 = round(mean(cpu_server02), 3)
+        mean_cpu_server03 = round(mean(cpu_server03), 3)
+        mean_mem_server01 = round(mean(mem_server01), 3)
+        mean_mem_server02 = round(mean(mem_server02), 3)
+        mean_mem_server03 = round(mean(mem_server03), 3)
+        mean_truput_server01 = round(mean(truput_server01), 3)
+        mean_truput_server02 = round(mean(truput_server02), 3)
+        mean_truput_server03 = round(mean(truput_server03), 3)
         #str(max_truput_server)
         # List 
         List=[mean_cpu_server01,mean_cpu_server02,mean_cpu_server03,
