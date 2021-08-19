@@ -42,9 +42,9 @@ from statistics import mean
 
 broker_url = "127.0.0.1"
 broker_port = 1883
-add01 = 'http://192.168.146.4:85'
-add02 = 'http://192.168.146.6:85'
-add03 = 'http://192.168.146.7:85'
+add03 = 'http://192.168.146.4:85'
+add01 = 'http://192.168.146.6:85'
+add02 = 'http://192.168.146.7:85'
 alamat_ip = [add01, add02, add03]
 cpu01 = 30
 cpu02 = 30
@@ -394,7 +394,7 @@ def job1MinRT():
 	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
 	#client.publish(topic="sdn/rsptm03", payload=rsp_tm_s3, qos=0, retain=False)
 # This timer will run job() five times, one second apart
-timer1 = multitimer.MultiTimer(interval=2, function=job1MinRT, count=-1)
+timer1 = multitimer.MultiTimer(interval=2, function=job1Fuzzy, count=-1)
 # Also, this timer would run indefinitely...
 timer1.start()
 
@@ -423,9 +423,9 @@ def job2():
         respon_time[i] = float(hasil)
     
 # This timer will run job() five times, one second apart
-timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
+#timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
 # Also, this timer would run indefinitely...
-timer2.start()
+#timer2.start()
 
 #fungsi tes
 # def job3():
@@ -532,7 +532,7 @@ def job3Uji():
         print(','.join(map(str, List)))
         # Open our existing CSV file in append mode
         # Create a file object for this file
-        with open('MinRT01.csv', 'a') as f_object:
+        with open('Fuzzy01.csv', 'a') as f_object:
         
             # Pass this file object to csv.writer()
             # and get a writer object
