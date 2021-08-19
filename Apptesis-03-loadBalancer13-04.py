@@ -61,7 +61,7 @@ class loadBalancer13(app_manager.RyuApp):
 ############Count to indicate which server to use for TCP session. H1=1, H2=2, H3=3
 
         self.serverCount=1
-        self.algoritma = 3
+        self.algoritma = 1
         #algoritma = 0, roundrobin
         #algoritma = 1, random
         #algoritma = 2, Min Response Time
@@ -455,7 +455,7 @@ class loadBalancer13(app_manager.RyuApp):
 
                 self.logger.info("Added flow for Server to Host condition------->")
                 
-                self.logger.info("Round Robin Server Pick Algorithm")
+                self.logger.info("Server Pick Algorithm")
                 ############Server Count increment
                 #Increase count so the next server will serve the next TCP connection from different or same host 
                 #(When it completes the current TCP session with current TCP server)
