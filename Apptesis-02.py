@@ -288,7 +288,7 @@ client.loop_start()
 print("Do Something else")
 
 #Hitung fuzzy dan window_load
-def job1():
+def job1Fuzzy():
     global listserver
     global lengths
     global cpu01
@@ -316,6 +316,13 @@ def job1():
             #truput_val = thruput02
             truput_val = round(((thruput02 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
             #print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
+        elif listserver[i]==3:
+            cpu_val = cpu03
+            mem_val = mem03
+            #truput_val = thruput02
+            truput_val = round(((thruput03 / max_truput_server) * 100), 2) #throughput=Bytes/s dalam satuan persen
+            #print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
+
         #do fuzzy untuk setiap server
         print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
         myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
@@ -387,7 +394,7 @@ def job1MinRT():
 	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
 	#client.publish(topic="sdn/rsptm03", payload=rsp_tm_s3, qos=0, retain=False)
 # This timer will run job() five times, one second apart
-timer1 = multitimer.MultiTimer(interval=5, function=job1Random, count=-1)
+timer1 = multitimer.MultiTimer(interval=2, function=job1MinRT, count=-1)
 # Also, this timer would run indefinitely...
 timer1.start()
 
@@ -416,9 +423,9 @@ def job2():
         respon_time[i] = float(hasil)
     
 # This timer will run job() five times, one second apart
-#timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
+timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
 # Also, this timer would run indefinitely...
-#timer2.start()
+timer2.start()
 
 #fungsi tes
 # def job3():
@@ -525,7 +532,7 @@ def job3Uji():
         print(','.join(map(str, List)))
         # Open our existing CSV file in append mode
         # Create a file object for this file
-        with open('Random01.csv', 'a') as f_object:
+        with open('MinRT01.csv', 'a') as f_object:
         
             # Pass this file object to csv.writer()
             # and get a writer object
