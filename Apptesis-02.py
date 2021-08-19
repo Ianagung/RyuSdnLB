@@ -525,7 +525,7 @@ def job3Uji():
         print(','.join(map(str, List)))
         # Open our existing CSV file in append mode
         # Create a file object for this file
-        with open('RR01.csv', 'a') as f_object:
+        with open('Random01.csv', 'a') as f_object:
         
             # Pass this file object to csv.writer()
             # and get a writer object
