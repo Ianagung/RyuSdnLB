@@ -500,6 +500,7 @@ def job3Uji():
     global mean_truput_server01
     global mean_truput_server02
     global mean_truput_server03
+    global f_name
     
     if togglestartstoptes == 1 :
         cpu_server01.append(float(cpu01))
@@ -532,7 +533,7 @@ def job3Uji():
         print(','.join(map(str, List)))
         # Open our existing CSV file in append mode
         # Create a file object for this file
-        with open('Fuzzy01.csv', 'a') as f_object:
+        with open(f_name, 'a') as f_object:
         
             # Pass this file object to csv.writer()
             # and get a writer object
