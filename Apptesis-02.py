@@ -28,7 +28,7 @@ import datetime
 #from matplotlib import pyplot as plt
 import sys
 sys.path.append(".")
-from fuzzyMam3inCMT import Fuzzy
+from fuzzyMam3inCMTv03 import Fuzzy
 import random
 import pycurl
 try:
