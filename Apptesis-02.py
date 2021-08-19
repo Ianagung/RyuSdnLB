@@ -143,17 +143,17 @@ def on_message_from_cpu03(client, userdata, message):
 def on_message_from_mem01(client, userdata, message):
     global mem01
     mem01 = float(message.payload.decode())
-    print("Value mem01: "+str(mem01))
+    #print("Value mem01: "+str(mem01))
 
 def on_message_from_mem02(client, userdata, message):
     global mem02
     mem02 = float(message.payload.decode())
-    print("Value mem02: "+str(mem02))
+    #print("Value mem02: "+str(mem02))
 
 def on_message_from_mem03(client, userdata, message):
     global mem03
     mem03 = float(message.payload.decode())
-    print("Value mem03: "+str(mem03))
+    #print("Value mem03: "+str(mem03))
 
 def on_message_from_rsptm01(client, userdata, message):
     global rsptm01
@@ -182,18 +182,18 @@ def on_message_from_rspstd03(client, userdata, message):
 def on_message_from_thruput01(client, userdata, message):
     global thruput01
     thruput01 = int(message.payload.decode())
-    #print("Nilai thruput 01: "+ str(thruput01))
+    print("Nilai thruput 01: "+ str(thruput01))
     #truput_server01.append(float(thruput01))
 
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
     thruput02 = int(message.payload.decode())
-    #print("Nilai thruput 02: "+str(thruput02))
+    print("Nilai thruput 02: "+str(thruput02))
 
 def on_message_from_thruput03(client, userdata, message):
     global thruput03
     thruput03 = int(message.payload.decode())
-    #print("Nilai thruput 03: "+str(thruput03))
+    print("Nilai thruput 03: "+str(thruput03))
 
 def on_message_from_toggleuji(client, userdata, message):
     global togglestartstoptes
