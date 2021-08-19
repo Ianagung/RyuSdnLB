@@ -461,7 +461,7 @@ class loadBalancer13(app_manager.RyuApp):
                 #(When it completes the current TCP session with current TCP server)
                 if self.algoritma == 0 :
                     self.serverCount+=1
-                    if(self.serverCount>2):
+                    if(self.serverCount>3):
                         self.serverCount=1
 
         if((eth.ethertype!=0x0806) and (eth.ethertype!=0x0800)):
