@@ -534,7 +534,7 @@ def job3Uji():
             # Pass the list as an argument into
             # the writerow()
             writer_object.writerow(List)
-        
+            print("saved to csv")
             #Close the file object
             f_object.close()
         #reset toggle value
