@@ -182,18 +182,18 @@ def on_message_from_rspstd03(client, userdata, message):
 def on_message_from_thruput01(client, userdata, message):
     global thruput01
     thruput01 = int(message.payload.decode())
-    print("Nilai thruput 01: "+ str(thruput01))
+    #print("Nilai thruput 01: "+ str(thruput01))
     #truput_server01.append(float(thruput01))
 
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
     thruput02 = int(message.payload.decode())
-    print("Nilai thruput 02: "+str(thruput02))
+    #print("Nilai thruput 02: "+str(thruput02))
 
 def on_message_from_thruput03(client, userdata, message):
     global thruput03
     thruput03 = int(message.payload.decode())
-    print("Nilai thruput 03: "+str(thruput03))
+    #print("Nilai thruput 03: "+str(thruput03))
 
 def on_message_from_toggleuji(client, userdata, message):
     global togglestartstoptes
@@ -412,9 +412,9 @@ def job2():
         respon_time[i] = float(hasil)
     
 # This timer will run job() five times, one second apart
-timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
+#timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
 # Also, this timer would run indefinitely...
-timer2.start()
+#timer2.start()
 
 #fungsi tes
 # def job3():
