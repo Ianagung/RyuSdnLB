@@ -198,6 +198,10 @@ def on_message_from_thruput03(client, userdata, message):
 def on_message_from_toggleuji(client, userdata, message):
     global togglestartstoptes
     togglestartstoptes = int(message.payload.decode())
+    if togglestartstoptes == 1 :
+        print("Pengujian dimulai")
+    elif togglestartstoptes == 0 :
+        print("Pengujian berhenti")
     
 
 client = mqtt.Client()
@@ -352,7 +356,7 @@ def job1Random():
     server_count = random.randint(1, 3)
     #Publish data to MQTT Broker
     msg = server_count
-    print("Random - Server = ", msg)
+    #print("Random - Server = ", msg)
     client.publish(topic="sdn/serverno", payload=msg, qos=0, retain=False)
 
 #publish data ke mqtt broker
@@ -502,7 +506,7 @@ def job3Uji():
         truput_server03.append(float(thruput03))
     
     elif togglestartstoptes == 0:
-        print("Pengujian berhenti")
+        
         mean_cpu_server01 = mean(cpu_server01)
         mean_cpu_server02 = mean(cpu_server02)
         mean_cpu_server03 = mean(cpu_server03)
@@ -517,6 +521,8 @@ def job3Uji():
         List=[mean_cpu_server01,mean_cpu_server02,mean_cpu_server03,
               mean_mem_server01,mean_mem_server02,mean_mem_server03,
               mean_truput_server01,mean_truput_server02,mean_truput_server03]
+        
+        print(','.join(map(str, List)))
         # Open our existing CSV file in append mode
         # Create a file object for this file
         with open('HasilUji01-RoundRobin01.csv', 'a') as f_object:
@@ -530,7 +536,19 @@ def job3Uji():
             writer_object.writerow(List)
         
             #Close the file object
-            f_object.close()   
+            f_object.close()
+        #reset toggle value
+        togglestartstoptes = 2
+        #reset value
+        cpu_server01 = []
+        cpu_server02 = []
+        cpu_server03 = []
+        mem_server01 = []
+        mem_server02 = []
+        mem_server03 = []
+        truput_server01 = []
+        truput_server02 = []
+        truput_server03 = []
 # This timer will run job() five times, one second apart
 timer3 = multitimer.MultiTimer(interval=1, function=job3Uji, count=-1)
 # Also, this timer would run indefinitely...

@@ -15,7 +15,8 @@ for i in {0..1..1}
     # Output siege to terminal echo
     echo "selesai"
     # Load python toggle stop
-    python3 AppToggleUjiStop.py    
+    python3 AppToggleUjiStop.py
+    sleep 5    
  done
 # End loop
 
