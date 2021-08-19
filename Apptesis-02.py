@@ -507,15 +507,15 @@ def job3Uji():
     
     elif togglestartstoptes == 0:
         
-        mean_cpu_server01 = round(mean(cpu_server01), 3)
-        mean_cpu_server02 = round(mean(cpu_server02), 3)
-        mean_cpu_server03 = round(mean(cpu_server03), 3)
-        mean_mem_server01 = round(mean(mem_server01), 3)
-        mean_mem_server02 = round(mean(mem_server02), 3)
-        mean_mem_server03 = round(mean(mem_server03), 3)
-        mean_truput_server01 = round(mean(truput_server01), 3)
-        mean_truput_server02 = round(mean(truput_server02), 3)
-        mean_truput_server03 = round(mean(truput_server03), 3)
+        mean_cpu_server01 = round(mean(cpu_server01), 2)
+        mean_cpu_server02 = round(mean(cpu_server02), 2)
+        mean_cpu_server03 = round(mean(cpu_server03), 2)
+        mean_mem_server01 = round(mean(mem_server01), 2)
+        mean_mem_server02 = round(mean(mem_server02), 2)
+        mean_mem_server03 = round(mean(mem_server03), 2)
+        mean_truput_server01 = round(mean(truput_server01), 2)
+        mean_truput_server02 = round(mean(truput_server02), 2)
+        mean_truput_server03 = round(mean(truput_server03), 2)
         #str(max_truput_server)
         # List 
         List=[mean_cpu_server01,mean_cpu_server02,mean_cpu_server03,
@@ -540,15 +540,15 @@ def job3Uji():
         #reset toggle value
         togglestartstoptes = 2
         #reset value
-        cpu_server01 = []
-        cpu_server02 = []
-        cpu_server03 = []
-        mem_server01 = []
-        mem_server02 = []
-        mem_server03 = []
-        truput_server01 = []
-        truput_server02 = []
-        truput_server03 = []
+        cpu_server01 = [1]
+        cpu_server02 = [1]
+        cpu_server03 = [1]
+        mem_server01 = [1]
+        mem_server02 = [1]
+        mem_server03 = [1]
+        truput_server01 = [1]
+        truput_server02 = [1]
+        truput_server03 = [1]
 # This timer will run job() five times, one second apart
 timer3 = multitimer.MultiTimer(interval=1, function=job3Uji, count=-1)
 # Also, this timer would run indefinitely...
