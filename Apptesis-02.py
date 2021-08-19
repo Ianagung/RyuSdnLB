@@ -128,32 +128,32 @@ def on_message(client, userdata, message):
 def on_message_from_cpu01(client, userdata, message):
     global cpu01
     cpu01 = float(message.payload.decode())
-    print("Value Cpu01: "+str(cpu01))
+    #print("Value Cpu01: "+str(cpu01))
 
 def on_message_from_cpu02(client, userdata, message):
     global cpu02
     cpu02 = float(message.payload.decode())
-    print("Value Cpu02: "+str(cpu02))
+    #print("Value Cpu02: "+str(cpu02))
 
 def on_message_from_cpu03(client, userdata, message):
     global cpu03
     cpu03 = float(message.payload.decode())
-    print("Value Cpu03: "+str(cpu03))
+    #print("Value Cpu03: "+str(cpu03))
 
 def on_message_from_mem01(client, userdata, message):
     global mem01
     mem01 = float(message.payload.decode())
-    #print("Value mem01: "+str(mem01))
+    print("Value mem01: "+str(mem01))
 
 def on_message_from_mem02(client, userdata, message):
     global mem02
     mem02 = float(message.payload.decode())
-    #print("Value mem02: "+str(mem02))
+    print("Value mem02: "+str(mem02))
 
 def on_message_from_mem03(client, userdata, message):
     global mem03
     mem03 = float(message.payload.decode())
-    #print("Value mem03: "+str(mem03))
+    print("Value mem03: "+str(mem03))
 
 def on_message_from_rsptm01(client, userdata, message):
     global rsptm01
