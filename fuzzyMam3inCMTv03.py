@@ -183,7 +183,7 @@ class Fuzzy:
         # print(tip_lom)
 
     def get_fuzzy(self):
-        defuzz_val = self.tip_bisector
-        print("Hasil deFuzzy = "+ str(self.tip_bisector))
+        defuzz_val = self.tip_centroid
+        print("Hasil deFuzzy = "+ str(self.tip_centroid))
         # return float or int
         return defuzz_val
