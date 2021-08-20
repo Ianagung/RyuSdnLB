@@ -467,6 +467,7 @@ class loadBalancer13(app_manager.RyuApp):
                     self.serverCount+=1
                     if(self.serverCount>3):
                         self.serverCount=1
+                    self.logger.info("Round Robin Server = "+ str(self.serverCount))
 
         if((eth.ethertype!=0x0806) and (eth.ethertype!=0x0800)):
             #ethertype==0x0806==ARP
