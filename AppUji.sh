@@ -1,6 +1,6 @@
 #!/bin/bash
 #defining a variable
-Kalimat="Pengujian Load Balancing dimulai - Uji Tanpa Beban Algoritma Fuzzy"
+Kalimat="Pengujian Load Balancing dimulai - Uji Tanpa Beban Algoritma Round Robin"
 echo $Kalimat |& tee Uji01-RR01.txt
 # for loop
 for i in {0..29..1}
