@@ -87,7 +87,7 @@ mean_cpu_server03 = 1
 mean_mem_server01 = 1
 mean_mem_server02 = 1
 mean_mem_server03 = 1
-f_name = 'Uji01-RT01.csv'
+f_name = 'Uji01-FZ01.csv'
 # getting length of list
 lengths = len(listserver)
 serverCount = 1
