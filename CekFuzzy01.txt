@@ -1,0 +1,6206 @@
+skytech@skytech-VirtualBox:~/Documents/RyuSdnLB$ python3 Apptesis-02.py 
+setting  password
+Do Something else
+Connected With Result Code  0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 30 Mem Val 50 Thruput Val 0.0
+Cpu val 30 Mem Val 50 Thruput Val 0.0
+connected OK Returned code= 0
+Hasil deFuzzy = -0.005087759833973991
+Perubahan Load Window Server-1 is -0.00509
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30 Mem Val 50 Thruput Val 0.0
+Cpu val 30 Mem Val 50 Thruput Val 0.0
+Hasil deFuzzy = -0.005087759833973991
+Perubahan Load Window Server-2 is -0.00509
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 30 Mem Val 50 Thruput Val 0.0
+Cpu val 30 Mem Val 50 Thruput Val 0.0
+Hasil deFuzzy = -0.005087759833973991
+Perubahan Load Window Server-3 is -0.00509
+Server yang punya max window load = 1
+Nilai thruput 02: 0
+Value Cpu01: 51.6
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 4.2
+Value mem03: 48.7
+Nilai thruput 02: 0
+Value Cpu01: 48.2
+Value mem01: 32.4
+Value Cpu02: 44.8
+Value mem02: 32.4
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 3.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004218129760028524
+Perubahan Load Window Server-1 is -0.00422
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 44.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008039863708959597
+Perubahan Load Window Server-2 is -0.00804
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 3.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 02: 0
+Value Cpu01: 44.6
+Value mem01: 32.4
+Value Cpu02: 45.6
+Value mem02: 32.4
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 6.3
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 44.8
+Value mem01: 32.4
+Value Cpu02: 46.8
+Value mem02: 32.4
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 44.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008039863708959597
+Perubahan Load Window Server-1 is -0.00804
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005757405242285813
+Perubahan Load Window Server-2 is -0.00576
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 5.0
+Cpu val 3.2 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 02: 0
+Value Cpu01: 46.7
+Value mem01: 32.4
+Value Cpu02: 48.2
+Value mem02: 32.4
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Value Cpu01: 45.8
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 52.6
+Value mem02: 32.4
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 5.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006891640189149749
+Perubahan Load Window Server-1 is -0.00689
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 52.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -7.919802830468059e-05
+Perubahan Load Window Server-2 is -0.00008
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.2 Mem Val 48.6 Thruput Val 5.0
+Cpu val 5.2 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 43.9
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 52.6
+Value mem02: 32.4
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 2.1
+Value mem03: 48.6
+Value Cpu01: 47.5
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 52.5
+Value mem02: 32.4
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-1 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00016054554102003585
+Perubahan Load Window Server-2 is -0.00016
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 5.0
+Cpu val 4.2 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 48.4
+Value mem02: 32.4
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Value Cpu01: 50.0
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 51.7
+Value mem02: 32.4
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000851542288007507
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 5.0
+Cpu val 4.2 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 45.5
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 50.9
+Value mem02: 32.4
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Value Cpu01: 45.0
+Value mem01: 32.4
+Value Cpu02: 43.9
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 0
+Nilai thruput 01: 0
+Value Cpu03: 5.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007809074922383287
+Perubahan Load Window Server-1 is -0.00781
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.009099413276553902
+Perubahan Load Window Server-2 is -0.00910
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.2 Mem Val 48.6 Thruput Val 0.0
+Cpu val 5.2 Mem Val 48.6 Thruput Val 0.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 43.1
+Value mem01: 32.4
+Value Cpu02: 52.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 55.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-1 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 55.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 55.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0022204861265241573
+Perubahan Load Window Server-2 is 0.00222
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 5.0
+Cpu val 3.2 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 50.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 6.3
+Value mem03: 48.6
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 47.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-1 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005195376343414848
+Perubahan Load Window Server-2 is -0.00520
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137138
+Nilai thruput 01: 0
+Value Cpu03: 6.4
+Value mem03: 48.6
+Value Cpu01: 46.7
+Value mem01: 32.4
+Value Cpu02: 42.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 6.4
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005870213711775848
+Perubahan Load Window Server-1 is -0.00587
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 42.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.011080560805486795
+Perubahan Load Window Server-2 is -0.01108
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 6.4
+Value mem03: 48.6
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 50.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 7.4
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0017062226452419626
+Perubahan Load Window Server-2 is -0.00171
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.4 Mem Val 48.6 Thruput Val 5.0
+Cpu val 7.4 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.8
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 48.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-1 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004218129760028524
+Perubahan Load Window Server-2 is -0.00422
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 52.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 6.3
+Value mem03: 48.6
+Value Cpu01: 48.1
+Value mem01: 32.4
+Value Cpu02: 44.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 5.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004316058470259789
+Perubahan Load Window Server-1 is -0.00432
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008271233156295306
+Perubahan Load Window Server-2 is -0.00827
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 45.8
+Value mem01: 32.4
+Value Cpu02: 43.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 5.5
+Value mem03: 48.6
+Value Cpu01: 50.9
+Value mem01: 32.4
+Value Cpu02: 48.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 6.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.001610891524179637
+Perubahan Load Window Server-1 is -0.00161
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0040225720980878975
+Perubahan Load Window Server-2 is -0.00402
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 55.4
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 590
+Value Cpu03: 6.5
+Value mem03: 48.6
+Value Cpu01: 54.2
+Value mem01: 32.5
+Value Cpu02: 43.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 54.2 Mem Val 32.5 Thruput Val 0.0
+Cpu val 54.2 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = 0.001232596470293257
+Perubahan Load Window Server-1 is 0.00123
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00988664545880703
+Perubahan Load Window Server-2 is -0.00989
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 49.2
+Value mem01: 32.5
+Value Cpu02: 42.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Nilai thruput 01: 0
+Value Cpu03: 7.3
+Value mem03: 48.6
+Value Cpu01: 44.1
+Value mem01: 32.5
+Value Cpu02: 45.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 44.1 Mem Val 32.5 Thruput Val 0.0
+Cpu val 44.1 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.008847654994508963
+Perubahan Load Window Server-1 is -0.00885
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00712014929670294
+Perubahan Load Window Server-2 is -0.00712
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 52.7
+Value mem01: 32.5
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 43.6
+Value mem01: 32.5
+Value Cpu02: 49.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 8.4
+Value mem03: 48.6
+Nilai thruput 01: 60
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 43.6 Mem Val 32.5 Thruput Val 0.0
+Cpu val 43.6 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.009487569914403015
+Perubahan Load Window Server-1 is -0.00949
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-2 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.4 Mem Val 48.6 Thruput Val 5.0
+Cpu val 8.4 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.5
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 6.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 47.5
+Value mem01: 32.5
+Value Cpu02: 46.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.5 Mem Val 32.5 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.004967110956258432
+Perubahan Load Window Server-1 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005983157537243642
+Perubahan Load Window Server-2 is -0.00598
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.5
+Value Cpu02: 51.9
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 54.0
+Value mem01: 32.5
+Value Cpu02: 46.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 7.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 54.0 Mem Val 32.5 Thruput Val 0.0
+Cpu val 54.0 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = 0.001068205312953463
+Perubahan Load Window Server-1 is 0.00107
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00632280604828768
+Perubahan Load Window Server-2 is -0.00632
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 7.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.5
+Value Cpu02: 49.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 56.1
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 7.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 56.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 56.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0027910326495891313
+Perubahan Load Window Server-1 is 0.00279
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000851542288007507
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.4 Mem Val 48.6 Thruput Val 5.0
+Cpu val 7.4 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 45.6
+Value mem01: 32.4
+Value Cpu02: 46.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 53.7
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 53.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 53.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0008179283674047521
+Perubahan Load Window Server-1 is 0.00082
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000851542288007507
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.0
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.9
+Value mem01: 32.4
+Value Cpu02: 53.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 9.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 45.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137138
+Value Cpu03: 6.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0050833699151369574
+Perubahan Load Window Server-1 is -0.00508
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007234614932795406
+Perubahan Load Window Server-2 is -0.00723
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.4
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 48.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-1 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004218129760028524
+Perubahan Load Window Server-2 is -0.00422
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.0
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 6.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 45.6
+Value mem01: 32.4
+Value Cpu02: 50.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00712014929670294
+Perubahan Load Window Server-1 is -0.00712
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0017062226452419626
+Perubahan Load Window Server-2 is -0.00171
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 53.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 48.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-1 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0040225720980878975
+Perubahan Load Window Server-2 is -0.00402
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 45.8
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006891640189149749
+Perubahan Load Window Server-1 is -0.00689
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-2 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 45.8
+Value mem01: 32.4
+Value Cpu02: 47.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 7.2
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 41.7
+Value mem01: 32.4
+Value Cpu02: 46.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 41.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 41.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.012020362204276259
+Perubahan Load Window Server-1 is -0.01202
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005983157537243642
+Perubahan Load Window Server-2 is -0.00598
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.0
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 51.7
+Value mem01: 32.4
+Value Cpu02: 57.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 6.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 46.4
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 6.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006209453212667894
+Perubahan Load Window Server-1 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-2 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Pengujian dimulai
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 46.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137078
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 44.6
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137569
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008271233156295306
+Perubahan Load Window Server-1 is -0.00827
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000851542288007507
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.02
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.02
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 45.6
+Value mem01: 32.4
+Value Cpu02: 53.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 53.7
+Value mem01: 32.4
+Value Cpu02: 52.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 982
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 53.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 53.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0008179283674047521
+Perubahan Load Window Server-1 is 0.00082
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00016054554102003585
+Perubahan Load Window Server-2 is -0.00016
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 0.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.8
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138060
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 46.3
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138126
+Value Cpu03: 5.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00632280604828768
+Perubahan Load Window Server-1 is -0.00632
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0033412359552081154
+Perubahan Load Window Server-2 is -0.00334
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 53.3
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138060
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 44.6
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008271233156295306
+Perubahan Load Window Server-1 is -0.00827
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.4 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.4 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.6
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138060
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 42.1
+Value mem01: 32.4
+Value Cpu02: 46.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138126
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 42.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01148211103586615
+Perubahan Load Window Server-1 is -0.01148
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005870213711775848
+Perubahan Load Window Server-2 is -0.00587
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 53.3
+Value mem01: 32.4
+Value Cpu02: 45.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 50.9
+Value mem01: 32.4
+Value Cpu02: 43.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138120
+Value Cpu03: 6.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.001610891524179637
+Perubahan Load Window Server-1 is -0.00161
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01015058894646691
+Perubahan Load Window Server-2 is -0.01015
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 43.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138060
+Value Cpu03: 8.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 53.4
+Value mem01: 32.4
+Value Cpu02: 45.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138060
+Value Cpu03: 6.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 53.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 53.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0005724719540244671
+Perubahan Load Window Server-1 is 0.00057
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007234614932795406
+Perubahan Load Window Server-2 is -0.00723
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 55.6
+Value mem01: 32.4
+Value Cpu02: 44.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137226
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 60.0
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 137276
+Value Cpu03: 6.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 60.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 60.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.005589548601157168
+Perubahan Load Window Server-1 is 0.00559
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0033412359552081154
+Perubahan Load Window Server-2 is -0.00334
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.01
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.01
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.4
+Value mem01: 32.4
+Value Cpu02: 45.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 03: 138126
+Value Cpu03: 5.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 41.5
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-1 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 41.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 41.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01229072645001128
+Perubahan Load Window Server-2 is -0.01229
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 53.3
+Value mem01: 32.4
+Value Cpu02: 46.6
+Value mem02: 32.4
+Nilai thruput 03: 138126
+Nilai thruput 02: 0
+Value Cpu03: 8.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 53.7
+Value mem01: 32.4
+Value Cpu02: 46.7
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 53.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 53.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0008179283674047521
+Perubahan Load Window Server-1 is 0.00082
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005870213711775848
+Perubahan Load Window Server-2 is -0.00587
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 46.4
+Value mem02: 32.4
+Nilai thruput 03: 138126
+Nilai thruput 02: 0
+Value Cpu03: 8.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-1 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-2 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 53.4
+Value mem02: 32.4
+Nilai thruput 03: 138126
+Nilai thruput 02: 0
+Value Cpu03: 8.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 52.4
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 9.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 52.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00024195938839441204
+Perubahan Load Window Server-1 is -0.00024
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0033412359552081154
+Perubahan Load Window Server-2 is -0.00334
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 9.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 9.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 50.9
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 6.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 47.3
+Value mem01: 32.4
+Value Cpu02: 53.3
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 8.8
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005195376343414848
+Perubahan Load Window Server-1 is -0.00520
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 53.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 53.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0004907876961471547
+Perubahan Load Window Server-2 is 0.00049
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.8 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.8 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 43.1
+Value mem02: 32.4
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 48.2
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 9.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004218129760028524
+Perubahan Load Window Server-1 is -0.00422
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 9.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 9.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 49.1
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 53.2
+Value mem01: 32.4
+Value Cpu02: 47.4
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 5.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 53.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 53.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0004091704355604686
+Perubahan Load Window Server-1 is 0.00041
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0050833699151369574
+Perubahan Load Window Server-2 is -0.00508
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 45.5
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 7.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 52.5
+Value mem01: 32.4
+Value Cpu02: 43.4
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 6.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00016054554102003585
+Perubahan Load Window Server-1 is -0.00016
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.009754963202031192
+Perubahan Load Window Server-2 is -0.00975
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 5.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-1 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 52.4
+Value mem01: 32.4
+Value Cpu02: 44.6
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 43.9
+Value mem01: 32.4
+Value Cpu02: 53.2
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 9.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 43.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.009099413276553902
+Perubahan Load Window Server-1 is -0.00910
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 53.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 53.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0004091704355604686
+Perubahan Load Window Server-2 is 0.00041
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 9.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 9.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 03: 138120
+Nilai thruput 02: 0
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 46.6
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 7.6
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005983157537243642
+Perubahan Load Window Server-1 is -0.00598
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000851542288007507
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Nilai thruput 01: 0
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 41.1
+Value mem02: 32.4
+Nilai thruput 03: 138192
+Nilai thruput 02: 0
+Value Cpu03: 9.8
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 7.6
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-1 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-2 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 01: 0
+Value Cpu01: 47.3
+Value mem01: 32.4
+Value Cpu02: 51.8
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.4
+Nilai thruput 03: 138192
+Nilai thruput 02: 0
+Value Cpu03: 8.6
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-1 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000851542288007507
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 01: 0
+Value Cpu01: 53.2
+Value mem01: 32.4
+Value Cpu02: 51.8
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 10.9
+Value mem03: 48.6
+Nilai thruput 01: 0
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 51.6
+Value mem02: 32.4
+Nilai thruput 03: 138650
+Nilai thruput 02: 0
+Value Cpu03: 8.7
+Value mem03: 48.7
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000946142595723393
+Perubahan Load Window Server-2 is -0.00095
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.7 Mem Val 48.7 Thruput Val 5.06
+Cpu val 8.7 Mem Val 48.7 Thruput Val 5.06
+Hasil deFuzzy = 0.011364510493821256
+Perubahan Load Window Server-3 is 0.01136
+Server yang punya max window load = 3
+Nilai thruput 01: 0
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 55.2
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 8.7
+Value mem03: 48.7
+Nilai thruput 01: 0
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 53.7
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 6.6
+Value mem03: 48.7
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-1 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 53.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 53.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0008179283674047521
+Perubahan Load Window Server-2 is 0.00082
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.6 Mem Val 48.7 Thruput Val 5.04
+Cpu val 6.6 Mem Val 48.7 Thruput Val 5.04
+Hasil deFuzzy = 0.011364510493821256
+Perubahan Load Window Server-3 is 0.01136
+Server yang punya max window load = 3
+Nilai thruput 01: 0
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 43.1
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 7.8
+Value mem03: 48.7
+Nilai thruput 01: 0
+Value Cpu01: 46.7
+Value mem01: 32.4
+Value Cpu02: 45.6
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 5.5
+Value mem03: 48.7
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005870213711775848
+Perubahan Load Window Server-1 is -0.00587
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00712014929670294
+Perubahan Load Window Server-2 is -0.00712
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.5 Mem Val 48.7 Thruput Val 5.04
+Cpu val 5.5 Mem Val 48.7 Thruput Val 5.04
+Hasil deFuzzy = 0.011364510493821256
+Perubahan Load Window Server-3 is 0.01136
+Server yang punya max window load = 3
+Nilai thruput 01: 0
+Value Cpu01: 51.8
+Value mem01: 32.4
+Value Cpu02: 42.9
+Value mem02: 32.4
+Nilai thruput 03: 1042
+Nilai thruput 02: 0
+Value Cpu03: 4.4
+Value mem03: 48.7
+Value Cpu01: 58.2
+Value mem01: 32.4
+Nilai thruput 01: 0
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.7
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 58.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 58.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.004287757662181724
+Perubahan Load Window Server-1 is 0.00429
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.4 Mem Val 48.7 Thruput Val 5.04
+Cpu val 5.4 Mem Val 48.7 Thruput Val 5.04
+Hasil deFuzzy = 0.011364510493821256
+Perubahan Load Window Server-3 is 0.01136
+Server yang punya max window load = 3
+Value Cpu01: 50.9
+Value mem01: 32.4
+Nilai thruput 01: 0
+Value Cpu02: 49.2
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 6.3
+Value mem03: 48.7
+Value Cpu01: 50.8
+Value mem01: 32.4
+Nilai thruput 01: 0
+Value Cpu02: 51.7
+Value mem02: 32.4
+Nilai thruput 03: 138060
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.7
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0017062226452419626
+Perubahan Load Window Server-1 is -0.00171
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000851542288007507
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.4 Mem Val 48.7 Thruput Val 5.04
+Cpu val 5.4 Mem Val 48.7 Thruput Val 5.04
+Hasil deFuzzy = 0.011364510493821256
+Perubahan Load Window Server-3 is 0.01136
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Nilai thruput 01: 0
+Value Cpu02: 45.9
+Value mem02: 32.4
+Pengujian berhenti
+Nilai thruput 03: 138862
+Nilai thruput 02: 0
+Value Cpu03: 6.6
+Value mem03: 48.7
+48.52,47.39,7.02,31.81,31.81,47.72,0.02,0.02,127664.64
+saved to csv
+Value Cpu01: 56.4
+Value mem01: 32.4
+Nilai thruput 01: 0
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 03: 0
+Nilai thruput 02: 0
+Value Cpu03: 1.0
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 56.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 56.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0030034364869906626
+Perubahan Load Window Server-1 is 0.00300
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 1.0 Mem Val 48.6 Thruput Val 0.0
+Cpu val 1.0 Mem Val 48.6 Thruput Val 0.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 51.9
+Value mem01: 32.4
+Value Cpu02: 43.1
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 03: 0
+Nilai thruput 02: 0
+Value Cpu03: 2.0
+Value mem03: 48.6
+Value Cpu01: 50.9
+Value mem01: 32.4
+Value Cpu02: 46.7
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 03: 0
+Nilai thruput 02: 0
+Value Cpu03: 1.0
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.001610891524179637
+Perubahan Load Window Server-1 is -0.00161
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005870213711775848
+Perubahan Load Window Server-2 is -0.00587
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 1.0 Mem Val 48.6 Thruput Val 0.0
+Cpu val 1.0 Mem Val 48.6 Thruput Val 0.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.6
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 0
+Nilai thruput 02: 0
+Value Cpu03: 2.1
+Value mem03: 48.6
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.5
+Nilai thruput 01: 0
+Pengujian dimulai
+Nilai thruput 03: 0
+Nilai thruput 02: 0
+Value Cpu03: 1.0
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0017062226452419626
+Perubahan Load Window Server-1 is -0.00171
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.3 Mem Val 32.5 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.004115955446174137
+Perubahan Load Window Server-2 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 1.0 Mem Val 48.6 Thruput Val 0.0
+Cpu val 1.0 Mem Val 48.6 Thruput Val 0.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 56.4
+Value mem01: 32.4
+Value Cpu02: 40.4
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 0
+Nilai thruput 02: 0
+Value Cpu03: 2.1
+Value mem03: 48.6
+Value Cpu01: 44.2
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 491
+Nilai thruput 02: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 44.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008735731709136378
+Perubahan Load Window Server-1 is -0.00874
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.5 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.004967110956258432
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.02
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.02
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.1
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Value Cpu01: 45.5
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007234614932795406
+Perubahan Load Window Server-1 is -0.00723
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0033412359552081154
+Perubahan Load Window Server-2 is -0.00334
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 44.6
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Value Cpu01: 53.6
+Value mem01: 32.4
+Value Cpu02: 50.8
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 590
+Value Cpu03: 3.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 53.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 53.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0007360421233706838
+Perubahan Load Window Server-1 is 0.00074
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.8 Mem Val 32.5 Thruput Val 0.02
+Cpu val 50.8 Mem Val 32.5 Thruput Val 0.02
+Hasil deFuzzy = -0.0017019837433121295
+Perubahan Load Window Server-2 is -0.00170
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 49.1
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 1048
+Nilai thruput 02: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Value Cpu01: 46.4
+Value mem01: 32.4
+Value Cpu02: 50.9
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006209453212667894
+Perubahan Load Window Server-1 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.9 Mem Val 32.5 Thruput Val 0.0
+Cpu val 50.9 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0016066567292274958
+Perubahan Load Window Server-2 is -0.00161
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 3.1
+Value mem03: 48.6
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 53.2
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 2.1
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 53.2 Mem Val 32.5 Thruput Val 0.0
+Cpu val 53.2 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = 0.00041335430892389666
+Perubahan Load Window Server-2 is 0.00041
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 2.1 Mem Val 48.6 Thruput Val 0.04
+Cpu val 2.1 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 60
+Value Cpu03: 3.1
+Value mem03: 48.6
+Value Cpu01: 45.8
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 1.1
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006891640189149749
+Perubahan Load Window Server-1 is -0.00689
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.5 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.004967110956258432
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 1.1 Mem Val 48.6 Thruput Val 0.04
+Cpu val 1.1 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Value Cpu01: 52.5
+Value mem01: 32.4
+Value Cpu02: 50.9
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00016054554102003585
+Perubahan Load Window Server-1 is -0.00016
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.9 Mem Val 32.5 Thruput Val 0.0
+Cpu val 50.9 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0016066567292274958
+Perubahan Load Window Server-2 is -0.00161
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 55.4
+Value mem01: 32.4
+Value Cpu02: 53.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 1048
+Nilai thruput 02: 0
+Value Cpu03: 7.4
+Value mem03: 48.6
+Value Cpu01: 43.1
+Value mem01: 32.4
+Value Cpu02: 42.1
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 43.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01015058894646691
+Perubahan Load Window Server-1 is -0.01015
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 42.1 Mem Val 32.5 Thruput Val 0.0
+Cpu val 42.1 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.011477404014567672
+Perubahan Load Window Server-2 is -0.01148
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.8
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 2.1
+Value mem03: 48.6
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 55.9
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 55.9 Mem Val 32.5 Thruput Val 0.0
+Cpu val 55.9 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = 0.0026411277797451227
+Perubahan Load Window Server-2 is 0.00264
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 45.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 1048
+Nilai thruput 02: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Value Cpu01: 47.6
+Value mem01: 32.4
+Value Cpu02: 46.4
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00485975264554574
+Perubahan Load Window Server-1 is -0.00486
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.4 Mem Val 32.5 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.006205010794818777
+Perubahan Load Window Server-2 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.6
+Value mem01: 32.4
+Value Cpu02: 53.3
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 5.2
+Value mem03: 48.6
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 5.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0024679539843438037
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 5.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 1048
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Value Cpu01: 46.8
+Value mem01: 32.4
+Value Cpu02: 52.4
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005757405242285813
+Perubahan Load Window Server-1 is -0.00576
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 52.4 Mem Val 32.5 Thruput Val 0.0
+Cpu val 52.4 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.00023778270306900468
+Perubahan Load Window Server-2 is -0.00024
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 58.1
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Value Cpu01: 46.4
+Value mem01: 32.4
+Value Cpu02: 56.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006209453212667894
+Perubahan Load Window Server-1 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 56.5 Mem Val 32.5 Thruput Val 0.0
+Cpu val 56.5 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = 0.003078640125099863
+Perubahan Load Window Server-2 is 0.00308
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.4
+Value mem01: 32.4
+Value Cpu02: 52.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Value Cpu01: 43.3
+Value mem01: 32.4
+Value Cpu02: 45.3
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 1048
+Nilai thruput 02: 0
+Value Cpu03: 5.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00988664545880703
+Perubahan Load Window Server-1 is -0.00989
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.3 Mem Val 32.5 Thruput Val 0.0
+Cpu val 45.3 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.007459468339542903
+Perubahan Load Window Server-2 is -0.00746
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 5.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Value Cpu01: 51.8
+Value mem01: 32.4
+Value Cpu02: 52.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 51.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0007570321550853971
+Perubahan Load Window Server-1 is -0.00076
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 52.5 Mem Val 32.5 Thruput Val 0.0
+Cpu val 52.5 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0001563722614203525
+Perubahan Load Window Server-2 is -0.00016
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.7
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Nilai thruput 02: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 46.7
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.7 Mem Val 32.5 Thruput Val 0.0
+Cpu val 46.7 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.005865787303445998
+Perubahan Load Window Server-2 is -0.00587
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.9
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 1048
+Value Cpu03: 5.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 44.6
+Value mem01: 32.4
+Value Cpu02: 51.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008271233156295306
+Perubahan Load Window Server-1 is -0.00827
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.6 Mem Val 32.5 Thruput Val 0.0
+Cpu val 51.6 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0009419362192048461
+Perubahan Load Window Server-2 is -0.00094
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.1
+Value mem01: 32.4
+Value Cpu02: 47.4
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.1
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 50.9
+Value mem01: 32.4
+Value Cpu02: 51.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 4.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.001610891524179637
+Perubahan Load Window Server-1 is -0.00161
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.6 Mem Val 32.5 Thruput Val 0.0
+Cpu val 51.6 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0009419362192048461
+Perubahan Load Window Server-2 is -0.00094
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.9
+Value mem01: 32.4
+Value Cpu02: 53.1
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 45.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 6.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-1 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.0 Mem Val 32.5 Thruput Val 0.0
+Cpu val 45.0 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.007804555427070826
+Perubahan Load Window Server-2 is -0.00780
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 6.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 42.1
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 2.1
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 50.9
+Value mem01: 32.4
+Value Cpu02: 51.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.1
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.001610891524179637
+Perubahan Load Window Server-1 is -0.00161
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.6 Mem Val 32.5 Thruput Val 0.0
+Cpu val 51.6 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0009419362192048461
+Perubahan Load Window Server-2 is -0.00094
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.1 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.1 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 45.8
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.1
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 52.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 52.6 Mem Val 32.5 Thruput Val 0.0
+Cpu val 52.6 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -7.502814611315065e-05
+Perubahan Load Window Server-2 is -0.00008
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 52.4
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0050833699151369574
+Perubahan Load Window Server-1 is -0.00508
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 52.4 Mem Val 32.5 Thruput Val 0.0
+Cpu val 52.4 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.00023778270306900468
+Perubahan Load Window Server-2 is -0.00024
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 46.7
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 5.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 43.9
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 6.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-1 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.9 Mem Val 32.5 Thruput Val 0.0
+Cpu val 43.9 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.009094829629992529
+Perubahan Load Window Server-2 is -0.00909
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 6.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.4
+Value mem01: 32.4
+Value Cpu02: 50.8
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 0
+Value Cpu03: 4.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 6.3
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.1 Mem Val 32.5 Thruput Val 0.0
+Cpu val 49.1 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.00333692535409356
+Perubahan Load Window Server-2 is -0.00334
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.3 Mem Val 48.6 Thruput Val 0.04
+Cpu val 6.3 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 49.1
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 2.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 52.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 4.1
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0017062226452419626
+Perubahan Load Window Server-1 is -0.00171
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 52.6 Mem Val 32.5 Thruput Val 0.0
+Cpu val 52.6 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -7.502814611315065e-05
+Perubahan Load Window Server-2 is -0.00008
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.1 Mem Val 48.6 Thruput Val 0.04
+Cpu val 4.1 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 55.8
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 4.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 43.9
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.1
+Value mem03: 48.6
+Pengujian berhenti
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-1 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.9 Mem Val 32.5 Thruput Val 0.0
+Cpu val 43.9 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.009094829629992529
+Perubahan Load Window Server-2 is -0.00909
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.1 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.1 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+47.75,48.63,3.72,31.81,31.9,47.7,0.02,12.28,906.11
+saved to csv
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 46.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 763
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 52.4
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 0
+Value Cpu03: 1.0
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0017062226452419626
+Perubahan Load Window Server-1 is -0.00171
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 52.4 Mem Val 32.5 Thruput Val 0.0
+Cpu val 52.4 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.00023778270306900468
+Perubahan Load Window Server-2 is -0.00024
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 1.0 Mem Val 48.6 Thruput Val 0.0
+Cpu val 1.0 Mem Val 48.6 Thruput Val 0.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 0
+Value Cpu03: 2.0
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 51.7
+Value mem01: 32.4
+Value Cpu02: 45.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 0
+Value Cpu03: 3.0
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000851542288007507
+Perubahan Load Window Server-1 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.6 Mem Val 32.5 Thruput Val 0.0
+Cpu val 45.6 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.007115663322602829
+Perubahan Load Window Server-2 is -0.00712
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.0 Mem Val 48.6 Thruput Val 0.0
+Cpu val 3.0 Mem Val 48.6 Thruput Val 0.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.2
+Value mem01: 32.4
+Value Cpu02: 47.4
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 0
+Value Cpu03: 2.1
+Value mem03: 48.6
+Nilai thruput 02: 0
+Pengujian dimulai
+Value Cpu01: 43.6
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 0
+Value Cpu03: 2.0
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 43.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.009492173450763086
+Perubahan Load Window Server-1 is -0.00949
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0024679539843438037
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 2.0 Mem Val 48.6 Thruput Val 0.0
+Cpu val 2.0 Mem Val 48.6 Thruput Val 0.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.3
+Value mem01: 32.4
+Value Cpu02: 47.4
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 491
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 5.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0050833699151369574
+Perubahan Load Window Server-1 is -0.00508
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0024679539843438037
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 5.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 54.5
+Value mem01: 32.4
+Value Cpu02: 52.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 4.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 4.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-1 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0024679539843438037
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.3
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 2.1
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 4.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-1 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0024679539843438037
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 4.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 51.7
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 5.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0050833699151369574
+Perubahan Load Window Server-1 is -0.00508
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.5 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0008473399247398931
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 48.2
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 4.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 43.9
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0017062226452419626
+Perubahan Load Window Server-1 is -0.00171
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.9 Mem Val 32.5 Thruput Val 0.0
+Cpu val 43.9 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.009094829629992529
+Perubahan Load Window Server-2 is -0.00909
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 51.8
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 46.8
+Value mem01: 32.4
+Value Cpu02: 54.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005757405242285813
+Perubahan Load Window Server-1 is -0.00576
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 54.5 Mem Val 32.5 Thruput Val 0.0
+Cpu val 54.5 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = 0.0014796975238101973
+Perubahan Load Window Server-2 is 0.00148
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Cpu val 3.2 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 57.1
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 52.7
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 117053
+Value Cpu03: 8.8
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 52.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 2.0833550355203733e-06
+Perubahan Load Window Server-1 is 0.00000
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0024679539843438037
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.8 Mem Val 48.6 Thruput Val 4.27
+Cpu val 8.8 Mem Val 48.6 Thruput Val 4.27
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 54.2
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 53.2
+Value mem01: 32.4
+Value Cpu02: 46.4
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 9.6
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 53.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 53.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0004091704355604686
+Perubahan Load Window Server-1 is 0.00041
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.4 Mem Val 32.5 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.006205010794818777
+Perubahan Load Window Server-2 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 9.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 9.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.2
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 6.7
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 45.8
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 8.6
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006891640189149749
+Perubahan Load Window Server-1 is -0.00689
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.3 Mem Val 32.5 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.004115955446174137
+Perubahan Load Window Server-2 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 52.6
+Value mem01: 32.4
+Value Cpu02: 46.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138120
+Value Cpu03: 8.6
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 55.0
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 55.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 55.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0018886686802526032
+Perubahan Load Window Server-1 is 0.00189
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.2 Mem Val 32.5 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.003239987598181497
+Perubahan Load Window Server-2 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 53.1
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 52.6
+Value mem01: 32.4
+Value Cpu02: 50.8
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 52.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -7.919802830468059e-05
+Perubahan Load Window Server-1 is -0.00008
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.8 Mem Val 32.5 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0017019837433121295
+Perubahan Load Window Server-2 is -0.00170
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 60.3
+Value mem01: 32.4
+Value Cpu02: 50.9
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.7
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 54.2
+Value mem01: 32.4
+Value Cpu02: 46.8
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 8.8
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 54.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 54.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0012283778945933576
+Perubahan Load Window Server-1 is 0.00123
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.8 Mem Val 32.5 Thruput Val 0.0
+Cpu val 46.8 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.005752984132121847
+Perubahan Load Window Server-2 is -0.00575
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.8 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.8 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 45.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.7
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 48.4
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.8
+Value mem03: 48.6
+Nilai thruput 02: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0040225720980878975
+Perubahan Load Window Server-1 is -0.00402
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.5 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0008473399247398931
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.8 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.8 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 54.4
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138126
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 46.4
+Value mem02: 32.5
+Nilai thruput 01: 92
+Nilai thruput 03: 138152
+Value Cpu03: 6.6
+Value mem03: 48.7
+Nilai thruput 02: 92
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-1 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.4 Mem Val 32.5 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.006205010794818777
+Perubahan Load Window Server-2 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.6 Mem Val 48.7 Thruput Val 5.04
+Cpu val 6.6 Mem Val 48.7 Thruput Val 5.04
+Hasil deFuzzy = 0.011364510493821256
+Perubahan Load Window Server-3 is 0.01136
+Server yang punya max window load = 3
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 45.8
+Value mem01: 32.4
+Value Cpu02: 45.6
+Value mem02: 32.5
+Nilai thruput 01: 184
+Nilai thruput 03: 138244
+Value Cpu03: 8.7
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.01
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.01
+Nilai thruput 02: 184
+Hasil deFuzzy = -0.006891640189149749
+Perubahan Load Window Server-1 is -0.00689
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.6 Mem Val 32.5 Thruput Val 0.01
+Cpu val 45.6 Mem Val 32.5 Thruput Val 0.01
+Hasil deFuzzy = -0.007115663322602829
+Perubahan Load Window Server-2 is -0.00712
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 52.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.6
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 54.2
+Value mem02: 32.5
+Nilai thruput 01: 92
+Nilai thruput 03: 138152
+Value Cpu03: 5.4
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0017062226452419626
+Perubahan Load Window Server-1 is -0.00171
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 54.2 Mem Val 32.5 Thruput Val 0.0
+Cpu val 54.2 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = 0.001232596470293257
+Perubahan Load Window Server-2 is 0.00123
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.04
+Nilai thruput 02: 92
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.3
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.5
+Value mem03: 48.6
+Nilai thruput 02: 0
+Value Cpu01: 45.5
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138126
+Value Cpu03: 4.4
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007234614932795406
+Perubahan Load Window Server-1 is -0.00723
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.5 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0008473399247398931
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.4 Mem Val 48.6 Thruput Val 5.04
+Cpu val 4.4 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 02: 0
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 247
+Nilai thruput 03: 1229
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 02: 247
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 44.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 8.5
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 44.6 Mem Val 32.5 Thruput Val 0.01
+Cpu val 44.6 Mem Val 32.5 Thruput Val 0.01
+Hasil deFuzzy = -0.008266690891475666
+Perubahan Load Window Server-2 is -0.00827
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 02: 0
+Value Cpu01: 53.0
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.5
+Nilai thruput 01: 247
+Nilai thruput 03: 138307
+Value Cpu03: 5.6
+Value mem03: 48.6
+Nilai thruput 02: 247
+Value Cpu01: 40.7
+Value mem01: 32.4
+Value Cpu02: 47.3
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 4.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 40.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 40.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.013380621875548383
+Perubahan Load Window Server-1 is -0.01338
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.3 Mem Val 32.5 Thruput Val 0.01
+Cpu val 47.3 Mem Val 32.5 Thruput Val 0.01
+Hasil deFuzzy = -0.005190981441636721
+Perubahan Load Window Server-2 is -0.00519
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.04
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 02: 0
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 51.8
+Value mem02: 32.5
+Nilai thruput 01: 247
+Nilai thruput 03: 138307
+Value Cpu03: 5.3
+Value mem03: 48.6
+Nilai thruput 02: 247
+Value Cpu01: 52.3
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 5.4
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 52.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00032343973297066855
+Perubahan Load Window Server-1 is -0.00032
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.3 Mem Val 32.5 Thruput Val 0.01
+Cpu val 48.3 Mem Val 32.5 Thruput Val 0.01
+Hasil deFuzzy = -0.004115955446174137
+Perubahan Load Window Server-2 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 02: 0
+Value Cpu01: 53.7
+Value mem01: 32.4
+Value Cpu02: 54.4
+Value mem02: 32.5
+Nilai thruput 01: 247
+Nilai thruput 03: 138307
+Value Cpu03: 6.5
+Value mem03: 48.6
+Value Cpu01: 52.2
+Value mem01: 32.4
+Nilai thruput 02: 247
+Value Cpu02: 43.9
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.7
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 52.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0004049867379559268
+Perubahan Load Window Server-1 is -0.00040
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.9 Mem Val 32.5 Thruput Val 0.01
+Cpu val 43.9 Mem Val 32.5 Thruput Val 0.01
+Hasil deFuzzy = -0.009094829629992529
+Perubahan Load Window Server-2 is -0.00909
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 02: 0
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 50.8
+Value mem02: 32.5
+Nilai thruput 01: 247
+Nilai thruput 03: 138307
+Value Cpu03: 7.6
+Value mem03: 48.6
+Value Cpu01: 27.9
+Value mem01: 32.4
+Nilai thruput 02: 247
+Value Cpu02: 51.8
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.7
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 27.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 27.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.02103571829765325
+Perubahan Load Window Server-1 is -0.02104
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.8 Mem Val 32.5 Thruput Val 0.01
+Cpu val 51.8 Mem Val 32.5 Thruput Val 0.01
+Hasil deFuzzy = -0.0007528337936035523
+Perubahan Load Window Server-2 is -0.00075
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 35.8
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 50.0
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.7
+Value mem03: 48.6
+Value Cpu01: 37.3
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 47.5
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.6
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 37.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 37.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01796850198450144
+Perubahan Load Window Server-1 is -0.01797
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.5 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.004967110956258432
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 37.3
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 55.6
+Value mem02: 32.5
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 5.4
+Value mem03: 48.6
+Value Cpu01: 40.6
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 35.8
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.6
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 40.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 40.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.013517824572535465
+Perubahan Load Window Server-1 is -0.01352
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 35.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 35.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01998958374020206
+Perubahan Load Window Server-2 is -0.01999
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 33.3
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 30.0
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 6.6
+Value mem03: 48.6
+Value Cpu01: 35.9
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 30.8
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 7.6
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 35.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 35.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.019880265081783293
+Perubahan Load Window Server-1 is -0.01988
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 30.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 30.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.023247237436054235
+Perubahan Load Window Server-2 is -0.02325
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 36.1
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 37.1
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 6.7
+Value mem03: 48.6
+Value Cpu01: 40.0
+Value mem01: 32.4
+Nilai thruput 02: 0
+Value Cpu02: 33.9
+Value mem02: 32.4
+Pengujian berhenti
+Nilai thruput 01: 0
+Nilai thruput 03: 137769
+Value Cpu03: 6.5
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 40.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 40.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.014345655879770181
+Perubahan Load Window Server-1 is -0.01435
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 33.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 33.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.022081731071842293
+Perubahan Load Window Server-2 is -0.02208
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.03
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.03
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+46.94,47.45,5.96,31.82,31.91,47.72,29.7,29.7,94468.22
+saved to csv
+Value Cpu01: 39.3
+Value mem01: 32.4
+Value Cpu02: 41.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.3
+Value mem03: 48.6
+Value Cpu01: 43.5
+Value mem01: 32.4
+Value Cpu02: 42.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.4
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 43.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00962347281142766
+Perubahan Load Window Server-1 is -0.00962
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 42.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.011080560805486795
+Perubahan Load Window Server-2 is -0.01108
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.0
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.0
+Value mem01: 32.4
+Value Cpu02: 37.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Nilai thruput 03: 137078
+Value Cpu03: 5.3
+Value mem03: 48.6
+Value Cpu01: 43.3
+Value mem01: 32.4
+Value Cpu02: 41.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Nilai thruput 03: 137078
+Value Cpu03: 6.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00988664545880703
+Perubahan Load Window Server-1 is -0.00989
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 41.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 41.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.012970311578940264
+Perubahan Load Window Server-2 is -0.01297
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 42.4
+Value mem01: 32.4
+Value Cpu02: 41.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Pengujian dimulai
+Nilai thruput 01: 0
+Nilai thruput 03: 0
+Value Cpu03: 6.3
+Value mem03: 48.6
+Value Cpu01: 46.7
+Value mem01: 32.4
+Value Cpu02: 42.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Nilai thruput 03: 137569
+Value Cpu03: 7.6
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005870213711775848
+Perubahan Load Window Server-1 is -0.00587
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 42.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.010813865053660155
+Perubahan Load Window Server-2 is -0.01081
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.02
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.02
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 45.2
+Value mem01: 32.4
+Value Cpu02: 41.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 6.7
+Value mem03: 48.6
+Value Cpu01: 44.1
+Value mem01: 32.4
+Value Cpu02: 43.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 6.5
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 44.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008852226211131525
+Perubahan Load Window Server-1 is -0.00885
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00962347281142766
+Perubahan Load Window Server-2 is -0.00962
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 45.0
+Value mem01: 32.4
+Value Cpu02: 38.9
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Nilai thruput 03: 138126
+Value Cpu03: 7.5
+Value mem03: 48.6
+Value Cpu01: 40.7
+Value mem01: 32.4
+Value Cpu02: 43.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu03: 6.6
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 40.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 40.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.013380621875548383
+Perubahan Load Window Server-1 is -0.01338
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00962347281142766
+Perubahan Load Window Server-2 is -0.00962
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 41.7
+Value mem01: 32.4
+Value Cpu02: 40.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 8.5
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Value Cpu01: 42.9
+Value mem01: 32.4
+Value Cpu02: 37.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 8.7
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 42.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01041531008779043
+Perubahan Load Window Server-1 is -0.01042
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 37.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 37.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.017421754277129643
+Perubahan Load Window Server-2 is -0.01742
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 41.0
+Value mem01: 32.4
+Value Cpu02: 44.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Value Cpu01: 40.3
+Value mem01: 32.4
+Value Cpu02: 48.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 5.5
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 40.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 40.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.013930744939515549
+Perubahan Load Window Server-1 is -0.01393
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0040225720980878975
+Perubahan Load Window Server-2 is -0.00402
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.4
+Value mem01: 32.4
+Value Cpu02: 42.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 9.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 44.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 6.7
+Value mem03: 48.6
+Nilai thruput 03: 138120
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 44.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008619385717392227
+Perubahan Load Window Server-2 is -0.00862
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 51.7
+Value mem01: 32.4
+Value Cpu02: 43.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 44.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-1 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 44.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008039863708959597
+Perubahan Load Window Server-2 is -0.00804
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 42.4
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 8.4
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Value Cpu01: 45.0
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007809074922383287
+Perubahan Load Window Server-1 is -0.00781
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-2 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.3
+Value mem01: 32.4
+Value Cpu02: 43.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 44.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 8.7
+Value mem03: 48.6
+Nilai thruput 03: 138126
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-1 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 44.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008619385717392227
+Perubahan Load Window Server-2 is -0.00862
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 42.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 8.5
+Value mem03: 48.6
+Nilai thruput 03: 137078
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 7.7
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-1 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-2 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 5.5
+Value mem03: 48.6
+Nilai thruput 03: 138126
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Value Cpu01: 44.4
+Value mem01: 32.4
+Value Cpu02: 44.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Nilai thruput 01: 0
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 03: 982
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 44.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008503187669368851
+Perubahan Load Window Server-1 is -0.00850
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 44.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008619385717392227
+Perubahan Load Window Server-2 is -0.00862
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 0.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.8
+Value mem01: 32.4
+Value Cpu02: 44.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.6
+Nilai thruput 01: 0
+Value mem03: 48.6
+Nilai thruput 03: 138126
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 45.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-1 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007234614932795406
+Perubahan Load Window Server-2 is -0.00723
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138126
+Value Cpu01: 43.1
+Value mem01: 32.4
+Value Cpu02: 41.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 8.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 43.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01015058894646691
+Perubahan Load Window Server-1 is -0.01015
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 41.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 41.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.012020362204276259
+Perubahan Load Window Server-2 is -0.01202
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 44.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 8.8
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 45.0
+Value mem01: 32.4
+Value Cpu02: 45.9
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007809074922383287
+Perubahan Load Window Server-1 is -0.00781
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00677759568286844
+Perubahan Load Window Server-2 is -0.00678
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 8.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 45.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007809074922383287
+Perubahan Load Window Server-2 is -0.00781
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.04
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.7
+Value mem01: 32.4
+Value Cpu02: 45.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 44.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-1 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 44.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008852226211131525
+Perubahan Load Window Server-2 is -0.00885
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 43.3
+Value mem01: 32.4
+Value Cpu02: 43.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 42.4
+Value mem01: 32.4
+Value Cpu02: 40.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 42.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.011080560805486795
+Perubahan Load Window Server-1 is -0.01108
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 40.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 40.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.014345655879770181
+Perubahan Load Window Server-2 is -0.01435
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.1
+Value mem01: 32.4
+Value Cpu02: 40.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 44.3
+Value mem01: 32.4
+Value Cpu02: 39.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 44.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008619385717392227
+Perubahan Load Window Server-1 is -0.00862
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 39.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 39.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01474059191698115
+Perubahan Load Window Server-2 is -0.01474
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.04
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 44.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 42.4
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 42.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.011080560805486795
+Perubahan Load Window Server-1 is -0.01108
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.6
+Value mem01: 32.4
+Value Cpu02: 44.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 46.0
+Value mem01: 32.4
+Value Cpu02: 43.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006663690523640572
+Perubahan Load Window Server-1 is -0.00666
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00988664545880703
+Perubahan Load Window Server-2 is -0.00989
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.4
+Value mem01: 32.4
+Value Cpu02: 43.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 45.8
+Value mem01: 32.4
+Value Cpu02: 48.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006891640189149749
+Perubahan Load Window Server-1 is -0.00689
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004218129760028524
+Perubahan Load Window Server-2 is -0.00422
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.8
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138126
+Value Cpu01: 54.1
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 54.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 54.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0011461516513734838
+Perubahan Load Window Server-1 is 0.00115
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-2 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.3
+Value mem01: 32.4
+Value Cpu02: 46.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 43.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0017062226452419626
+Perubahan Load Window Server-1 is -0.00171
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00988664545880703
+Perubahan Load Window Server-2 is -0.00989
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.6
+Value mem01: 32.4
+Value Cpu02: 53.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.1
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 46.4
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006209453212667894
+Perubahan Load Window Server-1 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000851542288007507
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.4
+Value mem01: 32.4
+Value Cpu02: 39.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Pengujian berhenti
+Value Cpu03: 7.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 137841
+45.39,44.18,6.59,31.81,31.81,47.7,0.02,0.02,127658.26
+saved to csv
+Value Cpu01: 48.2
+Value mem01: 32.4
+Value Cpu02: 50.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 137078
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004218129760028524
+Perubahan Load Window Server-1 is -0.00422
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0017062226452419626
+Perubahan Load Window Server-2 is -0.00171
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 42.9
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 137078
+Value Cpu01: 43.9
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 137078
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 43.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.009099413276553902
+Perubahan Load Window Server-1 is -0.00910
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.1
+Value mem01: 32.4
+Value Cpu02: 52.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 137078
+Value Cpu01: 46.4
+Value mem01: 32.4
+Value Cpu02: 46.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Pengujian dimulai
+Nilai thruput 01: 0
+Nilai thruput 03: 137078
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006209453212667894
+Perubahan Load Window Server-1 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006209453212667894
+Perubahan Load Window Server-2 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 46.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 137569
+Value Cpu01: 45.9
+Value mem01: 32.4
+Value Cpu02: 45.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 10.9
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00677759568286844
+Perubahan Load Window Server-1 is -0.00678
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007234614932795406
+Perubahan Load Window Server-2 is -0.00723
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 10.9 Mem Val 48.6 Thruput Val 5.04
+Cpu val 10.9 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.9
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138120
+Value Cpu01: 52.5
+Value mem01: 32.4
+Value Cpu02: 51.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00016054554102003585
+Perubahan Load Window Server-1 is -0.00016
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000946142595723393
+Perubahan Load Window Server-2 is -0.00095
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.04
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 43.4
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.4 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.4 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 137078
+Value Cpu01: 50.9
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 9.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.001610891524179637
+Perubahan Load Window Server-1 is -0.00161
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-2 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 9.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 9.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 49.1
+Value mem01: 32.4
+Value Cpu02: 54.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.8
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138126
+Value Cpu01: 47.3
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005195376343414848
+Perubahan Load Window Server-1 is -0.00520
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000851542288007507
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 55.4
+Value mem01: 32.4
+Value Cpu02: 52.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 50.0
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 982
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-1 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.7 Mem Val 48.6 Thruput Val 0.04
+Cpu val 7.7 Mem Val 48.6 Thruput Val 0.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.4
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 4.4
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 44.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.7
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-1 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 44.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008852226211131525
+Perubahan Load Window Server-2 is -0.00885
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 45.9
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 52.7
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 52.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 2.0833550355203733e-06
+Perubahan Load Window Server-1 is 0.00000
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 41.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.5
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 44.6
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008271233156295306
+Perubahan Load Window Server-1 is -0.00827
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-2 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 49.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 9.8
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 45.6
+Value mem01: 32.4
+Value Cpu02: 41.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 9.8
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00712014929670294
+Perubahan Load Window Server-1 is -0.00712
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 41.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 41.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01283397068429266
+Perubahan Load Window Server-2 is -0.01283
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 9.8 Mem Val 48.6 Thruput Val 5.04
+Cpu val 9.8 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.6
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 46.6
+Value mem01: 32.4
+Value Cpu02: 44.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005983157537243642
+Perubahan Load Window Server-1 is -0.00598
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 44.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008039863708959597
+Perubahan Load Window Server-2 is -0.00804
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 42.6
+Value mem01: 32.4
+Value Cpu02: 43.9
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Value Cpu01: 43.3
+Value mem01: 32.4
+Value Cpu02: 48.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.7
+Value mem03: 48.6
+Nilai thruput 01: 0
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00988664545880703
+Perubahan Load Window Server-1 is -0.00989
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0040225720980878975
+Perubahan Load Window Server-2 is -0.00402
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.8
+Value mem01: 32.4
+Value Cpu02: 45.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 8.7
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 45.8
+Value mem01: 32.4
+Value Cpu02: 46.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006891640189149749
+Perubahan Load Window Server-1 is -0.00689
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005983157537243642
+Perubahan Load Window Server-2 is -0.00598
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.6
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 8.8
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 49.1
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.7
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0033412359552081154
+Perubahan Load Window Server-1 is -0.00334
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 47.4
+Value mem01: 32.4
+Value Cpu02: 47.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 8.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004120301071255264
+Perubahan Load Window Server-1 is -0.00412
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0033412359552081154
+Perubahan Load Window Server-2 is -0.00334
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 46.7
+Value mem01: 32.4
+Value Cpu02: 47.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.7
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 46.7
+Value mem01: 32.4
+Value Cpu02: 46.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 8.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005870213711775848
+Perubahan Load Window Server-1 is -0.00587
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006209453212667894
+Perubahan Load Window Server-2 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 50.8
+Value mem01: 32.4
+Value Cpu02: 43.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 8.8
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 46.4
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006209453212667894
+Perubahan Load Window Server-1 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Nilai thruput 01: 0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-2 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 7.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 45.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.6
+Value mem03: 48.6
+Nilai thruput 03: 1048
+Nilai thruput 01: 0
+Value Cpu01: 42.9
+Value mem01: 32.4
+Value Cpu02: 45.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.5
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 42.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01041531008779043
+Perubahan Load Window Server-1 is -0.01042
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00712014929670294
+Perubahan Load Window Server-2 is -0.00712
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 01: 0
+Value Cpu01: 44.8
+Value mem01: 32.4
+Value Cpu02: 48.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 42.6
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 42.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.010813865053660155
+Perubahan Load Window Server-1 is -0.01081
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0024722261780433206
+Perubahan Load Window Server-2 is -0.00247
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.6 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 01: 0
+Value Cpu01: 46.7
+Value mem01: 32.4
+Value Cpu02: 52.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 8.7
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 51.8
+Value mem01: 32.4
+Value Cpu02: 44.6
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.6
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 51.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0007570321550853971
+Perubahan Load Window Server-1 is -0.00076
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008271233156295306
+Perubahan Load Window Server-2 is -0.00827
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.6 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.6 Mem Val 48.6 Thruput Val 5.04
+Nilai thruput 01: 0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 53.4
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 45.6
+Value mem01: 32.4
+Value Cpu02: 51.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00712014929670294
+Perubahan Load Window Server-1 is -0.00712
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.000851542288007507
+Perubahan Load Window Server-2 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.4 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 01: 590
+Value Cpu01: 50.9
+Value mem01: 32.5
+Value Cpu02: 50.9
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.3
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 53.2
+Value mem01: 32.5
+Value Cpu02: 42.3
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 53.2 Mem Val 32.5 Thruput Val 0.0
+Cpu val 53.2 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = 0.00041335430892389666
+Perubahan Load Window Server-1 is 0.00041
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 42.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.3 Mem Val 32.4 Thruput Val 0.0
+Nilai thruput 03: 138060
+Hasil deFuzzy = -0.01121420909477271
+Perubahan Load Window Server-2 is -0.01121
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.5 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 01: 0
+Value Cpu01: 50.9
+Value mem01: 32.5
+Value Cpu02: 45.9
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 55.0
+Value mem01: 32.5
+Value Cpu02: 48.2
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.7
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 55.0 Mem Val 32.5 Thruput Val 0.0
+Cpu val 55.0 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = 0.0018929156482574427
+Perubahan Load Window Server-1 is 0.00189
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004218129760028524
+Perubahan Load Window Server-2 is -0.00422
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Cpu val 6.7 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 49.1
+Value mem01: 32.5
+Value Cpu02: 53.7
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 3.3
+Value mem03: 48.6
+Nilai thruput 03: 138060
+Nilai thruput 01: 60
+Value Cpu01: 47.1
+Value mem01: 32.5
+Value Cpu02: 53.4
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.1 Mem Val 32.5 Thruput Val 0.0
+Cpu val 47.1 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.005415381800209753
+Perubahan Load Window Server-1 is -0.00542
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 53.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 53.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = 0.0005724719540244671
+Perubahan Load Window Server-2 is 0.00057
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.04
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 51.8
+Value mem01: 32.5
+Value Cpu02: 54.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.4
+Value mem03: 48.7
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 49.1
+Value mem01: 32.5
+Value Cpu02: 49.1
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 8.7
+Value mem03: 48.7
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.1 Mem Val 32.5 Thruput Val 0.0
+Cpu val 49.1 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.00333692535409356
+Perubahan Load Window Server-1 is -0.00334
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0033412359552081154
+Perubahan Load Window Server-2 is -0.00334
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.7 Mem Val 48.7 Thruput Val 5.04
+Cpu val 8.7 Mem Val 48.7 Thruput Val 5.04
+Hasil deFuzzy = 0.011364510493821256
+Perubahan Load Window Server-3 is 0.01136
+Server yang punya max window load = 3
+Nilai thruput 03: 138060
+Nilai thruput 01: 0
+Value Cpu01: 49.1
+Value mem01: 32.5
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 7.5
+Value mem03: 48.6
+Nilai thruput 03: 138120
+Value Cpu01: 51.7
+Value mem01: 32.5
+Nilai thruput 01: 0
+Value Cpu02: 50.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 8.8
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 51.7 Mem Val 32.5 Thruput Val 0.0
+Cpu val 51.7 Mem Val 32.5 Thruput Val 0.0
+Hasil deFuzzy = -0.0008473399247398931
+Perubahan Load Window Server-1 is -0.00085
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 50.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0017062226452419626
+Perubahan Load Window Server-2 is -0.00171
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 8.8 Mem Val 48.6 Thruput Val 5.04
+Cpu val 8.8 Mem Val 48.6 Thruput Val 5.04
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 137841
+Pengujian berhenti
+Value Cpu01: 46.4
+Value mem01: 32.5
+Nilai thruput 01: 0
+Value Cpu02: 44.8
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.5
+Value mem03: 48.6
+47.34,47.39,6.81,31.84,31.82,47.72,12.06,0.02,130385.59
+saved to csv
+Nilai thruput 03: 137078
+Value Cpu01: 47.3
+Value mem01: 32.4
+Nilai thruput 01: 0
+Value Cpu02: 52.5
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 6.4
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.3 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.3 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005195376343414848
+Perubahan Load Window Server-1 is -0.00520
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 52.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00016054554102003585
+Perubahan Load Window Server-2 is -0.00016
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 137078
+Value Cpu01: 41.1
+Value mem01: 32.4
+Value Cpu02: 42.6
+Nilai thruput 01: 0
+Value mem02: 32.4
+Nilai thruput 02: 0
+Value Cpu03: 5.4
+Value mem03: 48.6
+Nilai thruput 03: 137078
+Value Cpu01: 45.5
+Value mem01: 32.4
+Value Cpu02: 46.4
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007234614932795406
+Perubahan Load Window Server-1 is -0.00723
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006209453212667894
+Perubahan Load Window Server-2 is -0.00621
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 137078
+Value Cpu01: 52.5
+Value mem01: 32.4
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 03: 0
+Value Cpu01: 44.6
+Value mem01: 32.4
+Value Cpu02: 46.2
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 44.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.008271233156295306
+Perubahan Load Window Server-1 is -0.00827
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 46.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006436296211261853
+Perubahan Load Window Server-2 is -0.00644
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 0.0
+Cpu val 4.3 Mem Val 48.6 Thruput Val 0.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 137078
+Value Cpu01: 42.6
+Value mem01: 32.4
+Value Cpu02: 47.4
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Nilai thruput 03: 137078
+Value Cpu01: 47.5
+Value mem01: 32.4
+Value Cpu02: 43.6
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 6.4
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.5 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004971495504418541
+Perubahan Load Window Server-1 is -0.00497
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.009492173450763086
+Perubahan Load Window Server-2 is -0.00949
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.4 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 137078
+Value Cpu01: 45.2
+Value mem01: 32.4
+Value Cpu02: 45.6
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 2.2
+Value mem03: 48.6
+Nilai thruput 03: 137078
+Value Cpu01: 45.6
+Value mem01: 32.4
+Value Cpu02: 45.6
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 6.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00712014929670294
+Perubahan Load Window Server-1 is -0.00712
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00712014929670294
+Perubahan Load Window Server-2 is -0.00712
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 6.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 137078
+Value Cpu01: 44.1
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 03: 137078
+Value Cpu01: 49.2
+Value mem01: 32.4
+Value Cpu02: 47.4
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.2 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0032442938805842198
+Perubahan Load Window Server-1 is -0.00324
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 47.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0050833699151369574
+Perubahan Load Window Server-2 is -0.00508
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 137078
+Value Cpu01: 46.7
+Value mem01: 32.4
+Value Cpu02: 45.2
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Nilai thruput 03: 137078
+Value Cpu01: 46.6
+Value mem01: 32.4
+Value Cpu02: 42.9
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005983157537243642
+Perubahan Load Window Server-1 is -0.00598
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 42.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01041531008779043
+Perubahan Load Window Server-2 is -0.01042
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 137078
+Value Cpu01: 46.8
+Value mem01: 32.4
+Value Cpu02: 46.6
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 5.3
+Value mem03: 48.6
+Value Cpu01: 49.1
+Nilai thruput 03: 137078
+Value mem01: 32.4
+Value Cpu02: 42.9
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 5.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 49.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0033412359552081154
+Perubahan Load Window Server-1 is -0.00334
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 42.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01041531008779043
+Perubahan Load Window Server-2 is -0.01042
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 137078
+Value Cpu01: 41.1
+Value mem01: 32.4
+Value Cpu02: 47.5
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Value Cpu01: 43.9
+Value mem01: 32.4
+Nilai thruput 03: 137078
+Value Cpu02: 42.1
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 5.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 43.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.009099413276553902
+Perubahan Load Window Server-1 is -0.00910
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 42.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01148211103586615
+Perubahan Load Window Server-2 is -0.01148
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Nilai thruput 03: 137078
+Value Cpu01: 48.3
+Value mem01: 32.4
+Value Cpu02: 48.3
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 5.3
+Value mem03: 48.6
+Value Cpu01: 45.6
+Value mem01: 32.4
+Nilai thruput 03: 137078
+Value Cpu02: 48.4
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 5.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.6 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.00712014929670294
+Perubahan Load Window Server-1 is -0.00712
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.4 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.0040225720980878975
+Perubahan Load Window Server-2 is -0.00402
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 5.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 44.8
+Value mem01: 32.4
+Nilai thruput 03: 137078
+Value Cpu02: 47.4
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Value Cpu01: 46.7
+Value mem01: 32.4
+Nilai thruput 03: 137078
+Value Cpu02: 42.1
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 3.2
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Cpu val 46.7 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.005870213711775848
+Perubahan Load Window Server-1 is -0.00587
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 42.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 42.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.01148211103586615
+Perubahan Load Window Server-2 is -0.01148
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 3.2 Mem Val 48.6 Thruput Val 5.0
+Cpu val 3.2 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 52.6
+Value mem01: 32.4
+Nilai thruput 03: 137078
+Value Cpu02: 50.8
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Value Cpu01: 45.0
+Value mem01: 32.4
+Nilai thruput 03: 137078
+Value Cpu02: 43.9
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.0 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.0 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.007809074922383287
+Perubahan Load Window Server-1 is -0.00781
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 43.9 Mem Val 32.4 Thruput Val 0.0
+Cpu val 43.9 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.009099413276553902
+Perubahan Load Window Server-2 is -0.00910
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 42.9
+Value mem01: 32.4
+Nilai thruput 03: 137078
+Value Cpu02: 50.0
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 7.4
+Value mem03: 48.6
+Value Cpu01: 45.8
+Value mem01: 32.4
+Nilai thruput 03: 137078
+Value Cpu02: 48.1
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 4.3
+Value mem03: 48.6
+Perhitungan Fuzzy - Perubahan Load Window server- 1
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Cpu val 45.8 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.006891640189149749
+Perubahan Load Window Server-1 is -0.00689
+Perhitungan Fuzzy - Perubahan Load Window server- 2
+Cpu val 48.1 Mem Val 32.4 Thruput Val 0.0
+Cpu val 48.1 Mem Val 32.4 Thruput Val 0.0
+Hasil deFuzzy = -0.004316058470259789
+Perubahan Load Window Server-2 is -0.00432
+Perhitungan Fuzzy - Perubahan Load Window server- 3
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Cpu val 4.3 Mem Val 48.6 Thruput Val 5.0
+Hasil deFuzzy = 0.01132926074515952
+Perubahan Load Window Server-3 is 0.01133
+Server yang punya max window load = 3
+Value Cpu01: 49.2
+Value mem01: 32.4
+Nilai thruput 03: 137078
+Value Cpu02: 45.6
+Value mem02: 32.4
+Nilai thruput 01: 0
+Nilai thruput 02: 0
+Value Cpu03: 6.5
+Value mem03: 48.6
+^CException ignored in: <module 'threading' from '/usr/lib/python3.8/threading.py'>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 1388, in _shutdown
+    lock.acquire()
+KeyboardInterrupt: 
+
