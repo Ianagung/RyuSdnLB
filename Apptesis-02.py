@@ -369,17 +369,17 @@ def job1Random():
 #publish data ke mqtt broker
 #data = which server has max window load
 #Round Robin Algorithm
- def job1RR():
-     global serverCount 
+def job1RR():
+    global serverCount 
          
 #     serverCount+=1
 #     if(serverCount>3):
 #         serverCount=1
 #     #Publish data to MQTT Broker
      #msg = serverCount
-     msg = '0'
-     print("Round Robin Server =", msg)
-     client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
+    msg = '0'
+    print("Round Robin Server =", msg)
+    client.publish(topic="sdn/fuzzyout", payload=msg, qos=0, retain=False)
 
 #publish data ke mqtt broker
 #data = which server has max window load
