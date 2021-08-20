@@ -65,12 +65,12 @@ class loadBalancer13(app_manager.RyuApp):
 ############Count to indicate which server to use for TCP session. H1=1, H2=2, H3=3
 
         self.serverCount=1
-        self.algoritma = 3
+        self.algoritma = 1
         #algoritma = 0, roundrobin
         #algoritma = 1, random
         #algoritma = 2, Min Response Time
         #algoritma = 3, Fuzzy
-        self.lbIP="192.168.146.10"
+        self.lbIP="192.168.146.100"
         self.bridgeSwitch = 1
         self.bridgePort = 3
         #bridgeSiwtch = 0, no bridge , self mininet network link
