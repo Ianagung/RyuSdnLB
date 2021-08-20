@@ -42,9 +42,9 @@ from statistics import mean
 
 broker_url = "127.0.0.1"
 broker_port = 1883
-add03 = 'http://192.168.146.4:80'
-add01 = 'http://192.168.146.6:80'
-add02 = 'http://192.168.146.7:80'
+add01 = 'http://192.168.146.4:80'
+add02 = 'http://192.168.146.15:80'
+add03 = 'http://192.168.146.16:80'
 alamat_ip = [add01, add02, add03]
 cpu01 = 30
 cpu02 = 30
