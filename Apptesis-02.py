@@ -398,7 +398,7 @@ def job1MinRT():
 # This timer will run job() five times, one second apart
 timer1 = multitimer.MultiTimer(interval=2, function=job1Fuzzy, count=-1)
 # Also, this timer would run indefinitely...
-#timer1.start()
+timer1.start()
 
 #Start getting Server Response From Here
 def job2():
