@@ -397,7 +397,7 @@ def job1MinRT():
 # This timer will run job() five times, one second apart
 timer1 = multitimer.MultiTimer(interval=2, function=job1Fuzzy, count=-1)
 # Also, this timer would run indefinitely...
-timer1.start()
+#timer1.start()
 
 #Start getting Server Response From Here
 def job2():
@@ -564,11 +564,11 @@ timer3 = multitimer.MultiTimer(interval=1, function=job3Uji, count=-1)
 timer3.start()
 
 #fungsi tes
-# def job4():
-#     max_truput_server = max(truput_server01)
-#     print("Maksimal truput: "+str(max_truput_server)+" /s "+ bytes2human(max_truput_server)+"Bytes/s")  
+def job4():
+    max_truput_server = max(truput_server01)
+    print("Maksimal truput: "+str(max_truput_server)+" Byte/s "+ bytes2human(max_truput_server)+"Byte/s")  
     
 # This timer will run job() five times, one second apart
-#timer4 = multitimer.MultiTimer(interval=1, function=job4, count=-1)
+timer4 = multitimer.MultiTimer(interval=1, function=job4, count=-1)
 # Also, this timer would run indefinitely...
-#timer4.start()
+timer4.start()
