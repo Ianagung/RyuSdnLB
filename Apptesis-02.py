@@ -88,7 +88,7 @@ mean_cpu_server03 = 1
 mean_mem_server01 = 1
 mean_mem_server02 = 1
 mean_mem_server03 = 1
-f_name = 'Uji01-FZ01.csv'
+f_name = 'Uji02-Rd01.csv'
 # getting length of list
 lengths = len(listserver)
 serverCount = 1
@@ -402,7 +402,7 @@ def job1MinRT():
 	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
 	#client.publish(topic="sdn/rsptm03", payload=rsp_tm_s3, qos=0, retain=False)
 # This timer will run job() five times, one second apart
-timer1 = multitimer.MultiTimer(interval=2, function=job1Fuzzy, count=-1)
+timer1 = multitimer.MultiTimer(interval=2, function=job1Random, count=-1)
 # Also, this timer would run indefinitely...
 timer1.start()
 
