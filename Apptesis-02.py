@@ -558,6 +558,15 @@ def job3Uji():
         
             # Pass the list as an argument into
             # the writerow()
+            writer_object.writerow(cpu_server01)
+            writer_object.writerow(cpu_server02)
+            writer_object.writerow(cpu_server03)
+            writer_object.writerow(mem_server01)
+            writer_object.writerow(mem_server02)
+            writer_object.writerow(mem_server03)
+            writer_object.writerow(truput_server01)
+            writer_object.writerow(truput_server02)
+            writer_object.writerow(truput_server03)
             writer_object.writerow(List)
             print("saved to csv")
             #Close the file object
