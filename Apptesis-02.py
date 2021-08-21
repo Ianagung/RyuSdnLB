@@ -329,6 +329,8 @@ def job1Fuzzy():
             #print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
 
         #do fuzzy untuk setiap server
+        if truput_val > 100 :
+            truput_val = 99
         print("Cpu val "+str(cpu_val)+" Mem Val "+str(mem_val)+" Thruput Val "+ str(truput_val))
         myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
         delta_ld_window = myFuzzy.get_fuzzy()
