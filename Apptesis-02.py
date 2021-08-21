@@ -574,15 +574,15 @@ def job3Uji():
         #reset toggle value
         togglestartstoptes = 2
         #reset value
-        cpu_server01 = [1]
-        cpu_server02 = [1]
-        cpu_server03 = [1]
-        mem_server01 = [1]
-        mem_server02 = [1]
-        mem_server03 = [1]
-        truput_server01 = [1]
-        truput_server02 = [1]
-        truput_server03 = [1]
+        cpu_server01 = []
+        cpu_server02 = []
+        cpu_server03 = []
+        mem_server01 = []
+        mem_server02 = []
+        mem_server03 = []
+        truput_server01 = []
+        truput_server02 = []
+        truput_server03 = []
 # This timer will run job() five times, one second apart
 timer3 = multitimer.MultiTimer(interval=1, function=job3Uji, count=-1)
 # Also, this timer would run indefinitely...
