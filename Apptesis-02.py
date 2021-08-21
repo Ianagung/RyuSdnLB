@@ -68,7 +68,8 @@ listserver = [1,2,3]
 window_load = [0.1,0.1,0.1]
 respon_time =[1,1,1]
 max_window_load_server = 1
-max_truput_server = 2741560 #max = 2741560 /s 2.6MB/s
+#max_truput_server = 2741560 #max = 2741560 /s 2.6MB/s #iperf
+max_truput_server = 51000 #max = 2741560 /s 2.6MB/s #ab -n 100 -c 5
 truput_server01 = [1]
 truput_server02 = [1]
 truput_server03 = [1]
@@ -183,7 +184,7 @@ def on_message_from_thruput01(client, userdata, message):
     global thruput01
     thruput01 = int(message.payload.decode())
     print("Nilai thruput 01: "+ str(thruput01))
-    truput_server01.append(float(thruput01))
+    #truput_server01.append(float(thruput01))
 
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
@@ -571,4 +572,4 @@ def job4():
 # This timer will run job() five times, one second apart
 timer4 = multitimer.MultiTimer(interval=1, function=job4, count=-1)
 # Also, this timer would run indefinitely...
-timer4.start()
+#timer4.start()
