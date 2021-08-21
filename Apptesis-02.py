@@ -88,7 +88,7 @@ mean_cpu_server03 = 1
 mean_mem_server01 = 1
 mean_mem_server02 = 1
 mean_mem_server03 = 1
-f_name = 'Uji02-RR01.csv'
+f_name = 'Uji02-0.csv'
 # getting length of list
 lengths = len(listserver)
 serverCount = 1
@@ -533,6 +533,15 @@ def job3Uji():
         mean_truput_server02 = round(mean(truput_server02), 2)
         mean_truput_server03 = round(mean(truput_server03), 2)
         #str(max_truput_server)
+        print(','.join(map(str, cpu_server01)))
+        print(','.join(map(str, cpu_server02)))
+        print(','.join(map(str, cpu_server03)))
+        print(','.join(map(str, mem_server01)))
+        print(','.join(map(str, mem_server02)))
+        print(','.join(map(str, mem_server03)))
+        print(','.join(map(str, truput_server01)))
+        print(','.join(map(str, truput_server02)))
+        print(','.join(map(str, truput_server03)))
         # List 
         List=[mean_cpu_server01,mean_cpu_server02,mean_cpu_server03,
               mean_mem_server01,mean_mem_server02,mean_mem_server03,
