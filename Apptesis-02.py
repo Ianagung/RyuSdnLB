@@ -300,6 +300,10 @@ def job1Fuzzy():
     global thruput02
     global window_load
     global max_window_load_server
+    global cpu03
+    global mem03
+    global thruput03
+    global max_truput_server
     # Iterating the index
     # same as 'for i in range(len(list))'
     for i in range(lengths):
