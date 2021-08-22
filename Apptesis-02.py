@@ -88,7 +88,7 @@ mean_cpu_server03 = 1
 mean_mem_server01 = 1
 mean_mem_server02 = 1
 mean_mem_server03 = 1
-f_name = 'Uji02-0.csv'
+f_name = 'Uji02-Rd01.csv'
 # getting length of list
 lengths = len(listserver)
 serverCount = 1
@@ -402,7 +402,7 @@ def job1MinRT():
 	#client.publish(topic="sdn/cpumem01", payload=msg, qos=1, retain=False)
 	#client.publish(topic="sdn/rsptm03", payload=rsp_tm_s3, qos=0, retain=False)
 # This timer will run job() five times, one second apart
-timer1 = multitimer.MultiTimer(interval=2, function=job1RR, count=-1)
+timer1 = multitimer.MultiTimer(interval=2, function=job1Random, count=-1)
 # Also, this timer would run indefinitely...
 timer1.start()
 
@@ -533,15 +533,15 @@ def job3Uji():
         mean_truput_server02 = round(mean(truput_server02), 2)
         mean_truput_server03 = round(mean(truput_server03), 2)
         #str(max_truput_server)
-        print(','.join(map(str, cpu_server01)))
-        print(','.join(map(str, cpu_server02)))
-        print(','.join(map(str, cpu_server03)))
-        print(','.join(map(str, mem_server01)))
-        print(','.join(map(str, mem_server02)))
-        print(','.join(map(str, mem_server03)))
-        print(','.join(map(str, truput_server01)))
-        print(','.join(map(str, truput_server02)))
-        print(','.join(map(str, truput_server03)))
+        # print(','.join(map(str, cpu_server01)))
+        # print(','.join(map(str, cpu_server02)))
+        # print(','.join(map(str, cpu_server03)))
+        # print(','.join(map(str, mem_server01)))
+        # print(','.join(map(str, mem_server02)))
+        # print(','.join(map(str, mem_server03)))
+        # print(','.join(map(str, truput_server01)))
+        # print(','.join(map(str, truput_server02)))
+        # print(','.join(map(str, truput_server03)))
         # List 
         List=[mean_cpu_server01,mean_cpu_server02,mean_cpu_server03,
               mean_mem_server01,mean_mem_server02,mean_mem_server03,
@@ -558,15 +558,15 @@ def job3Uji():
         
             # Pass the list as an argument into
             # the writerow()
-            writer_object.writerow(cpu_server01)
-            writer_object.writerow(cpu_server02)
-            writer_object.writerow(cpu_server03)
-            writer_object.writerow(mem_server01)
-            writer_object.writerow(mem_server02)
-            writer_object.writerow(mem_server03)
-            writer_object.writerow(truput_server01)
-            writer_object.writerow(truput_server02)
-            writer_object.writerow(truput_server03)
+            # writer_object.writerow(cpu_server01)
+            # writer_object.writerow(cpu_server02)
+            # writer_object.writerow(cpu_server03)
+            # writer_object.writerow(mem_server01)
+            # writer_object.writerow(mem_server02)
+            # writer_object.writerow(mem_server03)
+            # writer_object.writerow(truput_server01)
+            # writer_object.writerow(truput_server02)
+            # writer_object.writerow(truput_server03)
             writer_object.writerow(List)
             print("saved to csv")
             #Close the file object
