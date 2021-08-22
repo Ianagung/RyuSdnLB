@@ -88,11 +88,12 @@ mean_cpu_server03 = 1
 mean_mem_server01 = 1
 mean_mem_server02 = 1
 mean_mem_server03 = 1
-f_name = 'Uji02-FZ01.csv'
+f_name = 'Uji03-Rd01.csv'
 # getting length of list
 lengths = len(listserver)
 serverCount = 1
 togglestartstoptes = 2
+tes_count = 1
 
 def bytes2human(n):
     # http://code.activestate.com/recipes/578019
@@ -509,6 +510,7 @@ def job3Uji():
     global mean_truput_server02
     global mean_truput_server03
     global f_name
+    global tes_count
     
     if togglestartstoptes == 1 :
         cpu_server01.append(float(cpu01))
@@ -543,7 +545,7 @@ def job3Uji():
         # print(','.join(map(str, truput_server02)))
         # print(','.join(map(str, truput_server03)))
         # List 
-        List=[mean_cpu_server01,mean_cpu_server02,mean_cpu_server03,
+        List=[tes_count, mean_cpu_server01,mean_cpu_server02,mean_cpu_server03,
               mean_mem_server01,mean_mem_server02,mean_mem_server03,
               mean_truput_server01,mean_truput_server02,mean_truput_server03]
         
@@ -573,6 +575,8 @@ def job3Uji():
             f_object.close()
         #reset toggle value
         togglestartstoptes = 2
+        tes_count += 1
+            
         #reset value
         cpu_server01 = []
         cpu_server02 = []
