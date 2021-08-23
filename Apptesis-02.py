@@ -69,7 +69,7 @@ window_load = [0.1,0.1,0.1]
 respon_time =[1,1,1]
 max_window_load_server = 1
 #max_truput_server = 2741560 #max = 2741560 /s 2.6MB/s #iperf
-max_truput_server = 3000 #max = 2741560 /s 2.6MB/s #ab -n 100 -c 5
+max_truput_server = 10000 #max = 2741560 /s 2.6MB/s #ab -n 100 -c 5
 truput_server01 = [1]
 truput_server02 = [1]
 truput_server03 = [1]
