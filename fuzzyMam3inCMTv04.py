@@ -7,6 +7,7 @@ class Fuzzy:
         self.cpu_val = cpu_value
         self.mem_val = mem_value
         self.truput_val = truput_value
+        
         print("Cpu val "+str(cpu_value)+" Mem Val "+str(mem_value)+" Thruput Val "+ str(truput_value))
         # all input valur in integer
         # input : Cpu Val, RAM mem val, throughput Value
@@ -102,4 +103,4 @@ class Fuzzy:
     def get_fuzzy(self):
         print("Hasil deFuzzy = "+ str(self.outputFuzzy))
         # return float or int
-        return self.outputFuzzy
+        return str(self.outputFuzzy)
