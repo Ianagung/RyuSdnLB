@@ -28,7 +28,7 @@ import datetime
 #from matplotlib import pyplot as plt
 import sys
 sys.path.append(".")
-from fuzzyMam3inCMTv03 import Fuzzy
+from fuzzyMam3inCMTv04 import Fuzzy
 import random
 import pycurl
 try:
@@ -416,20 +416,22 @@ def job2():
         c = pycurl.Curl()
         buffer = BytesIO()
         #c.setopt(c.URL, 'http://pycurl.io/')
-        now1 = datetime.datetime.now() # time object
+        #now1 = datetime.datetime.now() # time object
         #print("now =", now1)
         #print("do curl")    
         c.setopt(c.URL, alamat_ip[i])
         c.setopt(c.WRITEDATA, buffer)
         c.perform()
+        http_total_time = c.getinfo(pycurl.TOTAL_TIME)
         c.close()
-        now2 = datetime.datetime.now() # time object
-        selisih = now2 - now1
+        #now2 = datetime.datetime.now() # time object
+        #selisih = now2 - now1
         #print("selisih :", selisih)
         #hasil dalam seconds
-        hasil = selisih.seconds + (selisih.microseconds/1000000)
+        #hasil = selisih.seconds + (selisih.microseconds/1000000)
         #print("Server-" + str(i) +" Respons time = ", str(hasil))
-        respon_time[i] = float(hasil)
+        #respon_time[i] = float(hasil)
+        respon_time[i] = float(http_total_time)
     
 # This timer will run job() five times, one second apart
 timer2 = multitimer.MultiTimer(interval=1, function=job2, count=-1)
