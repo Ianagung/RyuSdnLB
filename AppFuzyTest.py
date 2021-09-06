@@ -15,7 +15,7 @@ cpu_val = 50
 mem_val = 50
 truput_val = 50 
 myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
-delta_ld_window = "{:.2f}".format(myFuzzy.get_fuzzy())
+delta_ld_window = "{:.5f}".format(myFuzzy.get_fuzzy())
 
 #print("Perubahan Load Window Server- is %.2f" % (delta_ld_window))
 print("Perubahan Load Window Server- is " ,str(delta_ld_window))
