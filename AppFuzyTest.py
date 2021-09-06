@@ -8,7 +8,7 @@
 import sys
 
 sys.path.append(".")
-from fuzzyMam3inCMT import Fuzzy
+from fuzzyMam3inCMTv04 import Fuzzy
 
 #do fuzzy untuk setiap server
 cpu_val = 50
