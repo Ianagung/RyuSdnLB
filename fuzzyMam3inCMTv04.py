@@ -103,4 +103,4 @@ class Fuzzy:
     def get_fuzzy(self):
         print("Hasil deFuzzy = "+ str(self.outputFuzzy))
         # return float or int
-        return str(self.outputFuzzy)
+        return self.outputFuzzy['LoadChange']
