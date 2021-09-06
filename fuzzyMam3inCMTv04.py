@@ -25,7 +25,7 @@ class Fuzzy:
         C3 = FuzzySet(function=Trapezoidal_MF(a=40, b=80, c=110, d=140), term="high")
         LV1 = LinguisticVariable([C1,C2,C3], concept="CPU Usage", universe_of_discourse=[0,100])
         FS.add_linguistic_variable("CPU", LV1)
-        LV1.plot()
+        #LV1.plot()
 
         # Define fuzzy sets for the variable MEMORY
         M1 = FuzzySet(function=Trapezoidal_MF(a=-40, b=-10, c=20, d=60), term="low")
@@ -33,7 +33,7 @@ class Fuzzy:
         M3 = FuzzySet(function=Trapezoidal_MF(a=40, b=80, c=110, d=140), term="high")
         LV2 = LinguisticVariable([M1,M2,M3], concept="Memory Usage", universe_of_discourse=[0,100])
         FS.add_linguistic_variable("MEMORY", LV2)
-        LV2.plot()
+        #LV2.plot()
 
         # Define fuzzy sets for the variable NETWORK
         N1 = FuzzySet(function=Trapezoidal_MF(a=-40, b=-10, c=20, d=60), term="low")
@@ -41,7 +41,7 @@ class Fuzzy:
         N3 = FuzzySet(function=Trapezoidal_MF(a=40, b=80, c=110, d=140), term="high")
         LV3 = LinguisticVariable([N1,N2,N3], concept="Network Usage", universe_of_discourse=[0,100])
         FS.add_linguistic_variable("NETWORK", LV3)
-        LV3.plot()
+        #LV3.plot()
 
         # Define output fuzzy sets and linguistic variable
         L_1 = FuzzySet(function=Trapezoidal_MF(a=-0.7, b=-0.65, c=-0.55, d=-0.5), term="ed")
