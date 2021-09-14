@@ -39,6 +39,8 @@ except ImportError:
 from csv import writer
 # Importing the statistics module
 from statistics import mean
+# importing pandas as pd 
+import pandas as pd
 
 broker_url = "127.0.0.1"
 broker_port = 1883
@@ -64,6 +66,9 @@ rspstd03 = 1
 thruput01 = 10 #throughput=kbps
 thruput02 = 10 #throughput=kbps
 thruput03 = 10 #throughput=kbps
+request01 = 0
+request02 = 0
+request03 = 0
 listserver = [1,2,3]
 window_load = [0.1,0.1,0.1]
 respon_time =[1,1,1]
@@ -89,6 +94,7 @@ mean_mem_server01 = 1
 mean_mem_server02 = 1
 mean_mem_server03 = 1
 f_name = 'Uji04-FZ01.csv'
+f_name2 = 'Uji04-FZ02.csv' #Value of CPU Memory Network per sec for time series analysis
 # getting length of list
 lengths = len(listserver)
 serverCount = 1
@@ -204,7 +210,23 @@ def on_message_from_toggleuji(client, userdata, message):
         print("Pengujian dimulai")
     elif togglestartstoptes == 0 :
         print("Pengujian berhenti")
+        
+def on_message_from_request01(client, userdata, message):
+    global request01
+    request01 += int(message.payload.decode())
+    print("Nilai request 01: "+str(request01))
     
+def on_message_from_request02(client, userdata, message):
+    global request02
+    request02 += int(message.payload.decode())
+    print("Nilai request 02: "+str(request02))
+    
+def on_message_from_request03(client, userdata, message):
+    global request03
+    request03 += int(message.payload.decode())
+    print("Nilai request 03: "+str(request03))
+    
+
 
 client = mqtt.Client()
 client.on_connect = on_connect
@@ -280,6 +302,18 @@ client.message_callback_add("sdn/thruput03", on_message_from_thruput03)
 client.subscribe("sdn/startstoptes", qos=1)
 
 client.message_callback_add("sdn/startstoptes", on_message_from_toggleuji)
+
+client.subscribe("sdn/request01", qos=1)
+
+client.message_callback_add("sdn/request01", on_message_from_request01)
+
+client.subscribe("sdn/request02", qos=1)
+
+client.message_callback_add("sdn/request02", on_message_from_request02)
+
+client.subscribe("sdn/request03", qos=1)
+
+client.message_callback_add("sdn/request03", on_message_from_request03)
 
 #myFuzzy = Fuzzy(cpu_val, mem_val, truput_val)
 #print(mycar.get_fuzzy())
@@ -511,8 +545,11 @@ def job3Uji():
     global mean_truput_server01
     global mean_truput_server02
     global mean_truput_server03
-    global f_name
+    global f_name, f_name2
     global tes_count
+    global request01
+    global request02
+    global request03
     
     if togglestartstoptes == 1 :
         cpu_server01.append(float(cpu01))
@@ -549,7 +586,8 @@ def job3Uji():
         # List 
         List=[tes_count, mean_cpu_server01,mean_cpu_server02,mean_cpu_server03,
               mean_mem_server01,mean_mem_server02,mean_mem_server03,
-              mean_truput_server01,mean_truput_server02,mean_truput_server03]
+              mean_truput_server01,mean_truput_server02,mean_truput_server03,
+              request01,request02,request03]
         
         print(','.join(map(str, List)))
         # Open our existing CSV file in append mode
@@ -575,6 +613,15 @@ def job3Uji():
             print("saved to csv")
             #Close the file object
             f_object.close()
+        
+        # dictionary of lists of server resource value
+        dict = {'cpu01': cpu_server01, 'cpu02': cpu_server02, 'cpu03': cpu_server03,
+                'mem01': mem_server01, 'mem02': mem_server01, 'mem03': mem_server01,
+                'truput01': truput_server01, 'truput02': truput_server02, 'truput03': truput_server03}            
+        df1 = pd.DataFrame(dict)      
+        # saving the dataframe
+        df1.to_csv(f_name2)
+        
         #reset toggle value
         togglestartstoptes = 2
         tes_count += 1
@@ -589,17 +636,20 @@ def job3Uji():
         truput_server01 = []
         truput_server02 = []
         truput_server03 = []
+        request01 = 0
+        request02 = 0
+        request03 = 0
 # This timer will run job() five times, one second apart
 timer3 = multitimer.MultiTimer(interval=1, function=job3Uji, count=-1)
 # Also, this timer would run indefinitely...
 timer3.start()
 
 #fungsi tes
-def job4():
+def job_makstruput():
     max_truput_server = max(truput_server01)
     print("Maksimal truput: "+str(max_truput_server)+" Byte/s "+ bytes2human(max_truput_server)+"Byte/s")  
     
 # This timer will run job() five times, one second apart
-timer4 = multitimer.MultiTimer(interval=1, function=job4, count=-1)
+timer4 = multitimer.MultiTimer(interval=1, function=job_makstruput, count=-1)
 # Also, this timer would run indefinitely...
 #timer4.start()
