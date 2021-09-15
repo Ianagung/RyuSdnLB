@@ -66,6 +66,9 @@ class loadBalancer13(app_manager.RyuApp):
 
         self.serverCount=1
         self.algoritma = 3
+        self.toggleServerCount = 0
+        #toggleServerCount = 0, not send server count as AB Load Test Server is running & sent the count
+        #toggleServerCount = 1, send server count as D-ITG Test is running
         #algoritma = 0, roundrobin
         #algoritma = 1, random
         #algoritma = 2, Min Response Time
@@ -348,7 +351,7 @@ class loadBalancer13(app_manager.RyuApp):
             serverMac=self.serverMac2
         elif(self.serverCount==3):
             serverIP=self.serverIP3
-            serverMac=self.serverMac3        
+            serverMac=self.serverMac3       
 
         if(eth.ethertype==0x0800):
             self.logger.info("Reached inside of IP type check-------->")
@@ -463,6 +466,14 @@ class loadBalancer13(app_manager.RyuApp):
                 ############Server Count increment
                 #Increase count so the next server will serve the next TCP connection from different or same host 
                 #(When it completes the current TCP session with current TCP server)
+                if self.toggleServerCount == 1:
+                    msg = "1"
+                    if(self.serverCount==1):
+                        self.client.publish(topic="sdn/request01", payload=msg, qos=0, retain=False)
+                    elif(self.serverCount==2):
+                        self.client.publish(topic="sdn/request02", payload=msg, qos=0, retain=False)
+                    elif(self.serverCount==3): 
+                        self.client.publish(topic="sdn/request01", payload=msg, qos=0, retain=False)
                 if self.algoritma == 0 :
                     self.serverCount+=1
                     if(self.serverCount>3):

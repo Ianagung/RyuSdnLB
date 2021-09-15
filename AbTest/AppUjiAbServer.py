@@ -10,7 +10,7 @@ import socketserver
 # Creating Server
 ServerClass  = http.server.HTTPServer
 
-broker_url = "192.168.146.8"
+broker_url = "192.168.53.101"
 broker_port = 1883
 
 def on_connect(client, userdata, flags, rc):
