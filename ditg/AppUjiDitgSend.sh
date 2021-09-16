@@ -35,6 +35,7 @@ sleep 1
 
 #30*2=60 request
 # Load python toggle start
+# run in D-ITG fuzzy, random, rr, rt folder for each test
 python3 AppToggleUjiStart.py
 for i in {0..30..1}
   do
