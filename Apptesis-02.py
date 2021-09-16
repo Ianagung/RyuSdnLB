@@ -93,8 +93,8 @@ mean_cpu_server03 = 1
 mean_mem_server01 = 1
 mean_mem_server02 = 1
 mean_mem_server03 = 1
-f_name = 'Uji04-FZ01.csv'
-f_name2 = 'Uji04-FZ02.csv' #Value of CPU Memory Network per sec for time series analysis
+f_name = 'Uji05-FZ01.csv'
+f_name2 = 'Uji05-FZ02.csv' #Value of CPU Memory Network per sec for time series analysis
 # getting length of list
 lengths = len(listserver)
 serverCount = 1
@@ -616,7 +616,7 @@ def job3Uji():
         
         # dictionary of lists of server resource value
         dict = {'cpu01': cpu_server01, 'cpu02': cpu_server02, 'cpu03': cpu_server03,
-                'mem01': mem_server01, 'mem02': mem_server01, 'mem03': mem_server01,
+                'mem01': mem_server01, 'mem02': mem_server02, 'mem03': mem_server03,
                 'truput01': truput_server01, 'truput02': truput_server02, 'truput03': truput_server03}            
         df1 = pd.DataFrame(dict)      
         # saving the dataframe
