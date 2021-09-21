@@ -1,6 +1,7 @@
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 from httplib import HTTPResponse
 from os import curdir,sep
+import paho.mqtt.client as mqtt
 
 #Create a index.html aside the code
 #Run: python server.py
