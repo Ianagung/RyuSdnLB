@@ -28,7 +28,7 @@ client.on_disconnect = on_disconnect
 print("setting  password")
 client.username_pw_set(username="user01",password="mqtt")
 
-client.connect(broker_url, broker_port)
+#client.connect(broker_url, broker_port)
 
 #msg = "1"
 print("Pengujian Load Balancing dimulai")
@@ -50,6 +50,7 @@ class RequestHandler(BaseHTTPRequestHandler):
                 self.wfile.write(f.read())
                 f.close()
                 msg = "1"
+                client.connect(broker_url, broker_port)
                 client.publish(topic="sdn/request01", payload=msg, qos=0, retain=False)
                 # client.publish(topic="sdn/request02", payload=msg, qos=0, retain=False)
                 # client.publish(topic="sdn/request02", payload=msg, qos=0, retain=False)
