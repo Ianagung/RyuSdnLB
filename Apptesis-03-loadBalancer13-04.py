@@ -386,7 +386,7 @@ class loadBalancer13(app_manager.RyuApp):
                 out = parser.OFPPacketOut(datapath=datapath, buffer_id=msg.buffer_id,
                                           in_port=in_port, actions=actions, data=data)
                 datapath.send_msg(out)
-            elif((ipContents.dst==self.lbIP) and (ipContents.proto==0x06)):
+            elif((ipContents.dst==self.lbIP) and ((ipContents.proto==0x06) or (ipContents.proto== 17))):
                 #IPPROTO_ICMP = 1
                 #IPPROTO_IGMP = 2
                 #IPPROTO_TCP = 6
