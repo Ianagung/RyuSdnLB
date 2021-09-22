@@ -392,8 +392,10 @@ class loadBalancer13(app_manager.RyuApp):
                 #IPPROTO_TCP = 6
                 #IPPROTO_UDP = 17
                 self.logger.info("Reached inside of  TCP type && IP controller check-------->")
-                tcpContents=pkt.get_protocols(tcp.tcp)[0]
-
+                if ipContents.proto==0x06 :
+                    tcpContents=pkt.get_protocols(tcp.tcp)[0]
+                elif ipContents.proto== 17 :
+                    tcpContents=pkt.get_protocols(udp.udp)[0]
                 #Perform TCP action only if matching TCP properties
                 match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,eth_src=eth.src,eth_dst=eth.dst,
                     ip_proto=ipContents.proto,ipv4_src=ipContents.src,ipv4_dst=ipContents.dst,
