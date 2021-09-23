@@ -45,7 +45,7 @@ class loadBalancer13(app_manager.RyuApp):
     def __init__(self, *args, **kwargs):
         super(loadBalancer13, self).__init__(*args, **kwargs)
         self.mac_to_port = {}
-############Assigning IP address to TCP servers (H1, H2, and H3)
+        ############Assigning IP address to TCP servers (H1, H2, and H3)
         self.serverIP1="192.168.146.4"
         self.serverMac1="08:00:27:ce:06:23"
         self.serverIP2="192.168.146.15"
@@ -62,7 +62,7 @@ class loadBalancer13(app_manager.RyuApp):
         # self.serverMac2="00:00:00:00:00:02"
         #self.serverIP3="10.0.0.3"
         #self.serverMac3="00:00:00:00:00:03"
-############Count to indicate which server to use for TCP session. H1=1, H2=2, H3=3
+        ############Count to indicate which server to use for TCP session. H1=1, H2=2, H3=3
 
         self.serverCount=1
         self.algoritma = 0
@@ -290,8 +290,8 @@ class loadBalancer13(app_manager.RyuApp):
         #         datapath.send_msg(out)
         
 
-############ARP Reply handling
-#Send ARP reply for ARP request to controller (IP: 192.168.147.100)       
+        ############ARP Reply handling
+        #Send ARP reply for ARP request to controller (IP: 192.168.147.100)       
         if(eth.ethertype==0x0806):
             #ethertype==0x0806==ARP
             self.logger.info("Reached inside of ARP type check-------->")
@@ -334,12 +334,12 @@ class loadBalancer13(app_manager.RyuApp):
                 datapath.send_msg(arpServer)
             return
 
-############TCP Host to Server
-#Assign TCP server to the host request depending on the count of the TCP request
-#Entire TCP session is assigned and handled by a single server based on count
-#S1 or H1 is used as server for count of 1
-#S2 or H2 is used as server for count of 2
-#S3 or H3 is used as server for count of 3
+        ############TCP Host to Server
+        #Assign TCP server to the host request depending on the count of the TCP request
+        #Entire TCP session is assigned and handled by a single server based on count
+        #S1 or H1 is used as server for count of 1
+        #S2 or H2 is used as server for count of 2
+        #S3 or H3 is used as server for count of 3
         #self.logger.info("\n Reached after NOT AN ARP type && IP controller check-------->")
        
 
@@ -397,6 +397,10 @@ class loadBalancer13(app_manager.RyuApp):
                 elif ipContents.proto== 17 :
                     tcpContents=pkt.get_protocols(udp.udp)[0]
                 #Perform TCP action only if matching TCP properties
+                # match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,eth_src=eth.src,eth_dst=eth.dst,
+                #     ip_proto=ipContents.proto,ipv4_src=ipContents.src,ipv4_dst=ipContents.dst,
+                #     tcp_src=tcpContents.src_port,tcp_dst=tcpContents.dst_port)
+                
                 match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,eth_src=eth.src,eth_dst=eth.dst,
                     ip_proto=ipContents.proto,ipv4_src=ipContents.src,ipv4_dst=ipContents.dst,
                     tcp_src=tcpContents.src_port,tcp_dst=tcpContents.dst_port)
