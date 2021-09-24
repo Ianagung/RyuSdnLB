@@ -437,9 +437,9 @@ class loadBalancer13(app_manager.RyuApp):
                 ############TCP Server to Host
 
                 #Perform TCP action only if matching TCP properties
-                match2=parser.OFPMatch(eth_type=eth.ethertype,eth_src=serverMac,
-                    eth_dst="11:22:33:ab:cd:ef",ip_proto=ipContents.proto,ipv4_src=serverIP,
-                    ipv4_dst=self.lbIP,tcp_src=tcpContents.dst_port,tcp_dst=tcpContents.src_port)
+                # match2=parser.OFPMatch(eth_type=eth.ethertype,eth_src=serverMac,
+                #     eth_dst="11:22:33:ab:cd:ef",ip_proto=ipContents.proto,ipv4_src=serverIP,
+                #     ipv4_dst=self.lbIP,tcp_src=tcpContents.dst_port,tcp_dst=tcpContents.src_port)
                 
                 match2=parser.OFPMatch(eth_type=eth.ethertype,ip_proto=ipContents.proto,ipv4_src=serverIP,
                     ipv4_dst=self.lbIP)
