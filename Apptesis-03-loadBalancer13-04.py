@@ -401,9 +401,8 @@ class loadBalancer13(app_manager.RyuApp):
                 #     ip_proto=ipContents.proto,ipv4_src=ipContents.src,ipv4_dst=ipContents.dst,
                 #     tcp_src=tcpContents.src_port,tcp_dst=tcpContents.dst_port)
                 
-                match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,eth_src=eth.src,eth_dst=eth.dst,
-                    ip_proto=ipContents.proto,ipv4_src=ipContents.src,ipv4_dst=ipContents.dst,
-                    tcp_src=tcpContents.src_port,tcp_dst=tcpContents.dst_port)
+                match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,
+                    ipv4_src=ipContents.src,ipv4_dst=ipContents.dst)
 
                 #Send host TCP segments to destination server using destination server port connected to controller
                 #get mac to port
@@ -429,7 +428,7 @@ class loadBalancer13(app_manager.RyuApp):
 
                 self.logger.info("Client-LB - SIP: "+str(ipContents.src)+" DIP: "+str(ipContents.dst))
 
-                self.logger.info("LB-Server - SIP: "+self.lbIP +"DIP: "+str(serverIP))
+                self.logger.info("LB-Server - SIP: "+self.lbIP +" DIP: "+str(serverIP))
 
                 #Add flow in the flow table of the virtual switch
 
@@ -441,6 +440,9 @@ class loadBalancer13(app_manager.RyuApp):
                 match2=parser.OFPMatch(eth_type=eth.ethertype,eth_src=serverMac,
                     eth_dst="11:22:33:ab:cd:ef",ip_proto=ipContents.proto,ipv4_src=serverIP,
                     ipv4_dst=self.lbIP,tcp_src=tcpContents.dst_port,tcp_dst=tcpContents.src_port)
+                
+                match2=parser.OFPMatch(eth_type=eth.ethertype,ip_proto=ipContents.proto,ipv4_src=serverIP,
+                    ipv4_dst=self.lbIP)
 
                 #Send server TCP segments to host using source host port connected to controller
                 # #get mac to port
