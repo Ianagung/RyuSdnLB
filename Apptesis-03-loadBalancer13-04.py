@@ -397,12 +397,12 @@ class loadBalancer13(app_manager.RyuApp):
                 elif ipContents.proto== 17 :
                     tcpContents=pkt.get_protocols(udp.udp)[0]
                 #Perform TCP action only if matching TCP properties
-                # match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,eth_src=eth.src,eth_dst=eth.dst,
-                #     ip_proto=ipContents.proto,ipv4_src=ipContents.src,ipv4_dst=ipContents.dst,
-                #     tcp_src=tcpContents.src_port,tcp_dst=tcpContents.dst_port)
+                match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,eth_src=eth.src,eth_dst=eth.dst,
+                    ip_proto=ipContents.proto,ipv4_src=ipContents.src,ipv4_dst=ipContents.dst,
+                    tcp_src=tcpContents.src_port,tcp_dst=tcpContents.dst_port)
                 
-                match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,
-                    ipv4_src=ipContents.src,ipv4_dst=ipContents.dst)
+                # match1=parser.OFPMatch(in_port=in_port,eth_type=eth.ethertype,
+                #     ipv4_src=ipContents.src,ipv4_dst=ipContents.dst)
 
                 #Send host TCP segments to destination server using destination server port connected to controller
                 #get mac to port
@@ -437,12 +437,12 @@ class loadBalancer13(app_manager.RyuApp):
                 ############TCP Server to Host
 
                 #Perform TCP action only if matching TCP properties
-                # match2=parser.OFPMatch(eth_type=eth.ethertype,eth_src=serverMac,
-                #     eth_dst="11:22:33:ab:cd:ef",ip_proto=ipContents.proto,ipv4_src=serverIP,
-                #     ipv4_dst=self.lbIP,tcp_src=tcpContents.dst_port,tcp_dst=tcpContents.src_port)
+                match2=parser.OFPMatch(eth_type=eth.ethertype,eth_src=serverMac,
+                    eth_dst="11:22:33:ab:cd:ef",ip_proto=ipContents.proto,ipv4_src=serverIP,
+                    ipv4_dst=self.lbIP,tcp_src=tcpContents.dst_port,tcp_dst=tcpContents.src_port)
                 
-                match2=parser.OFPMatch(eth_type=eth.ethertype,ip_proto=ipContents.proto,ipv4_src=serverIP,
-                    ipv4_dst=self.lbIP)
+                # match2=parser.OFPMatch(eth_type=eth.ethertype,ip_proto=ipContents.proto,ipv4_src=serverIP,
+                #     ipv4_dst=self.lbIP)
 
                 #Send server TCP segments to host using source host port connected to controller
                 # #get mac to port
