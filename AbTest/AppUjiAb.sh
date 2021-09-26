@@ -12,10 +12,10 @@ for i in {0..29..1}
     # Load python toggle start
     python3 AppToggleUjiStart.py
     echo "Tes request 100" |& tee -a Uji05-RR01.txt
-    # Run curl - find total time
-    curl -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:1000/index.html |& tee -a Uji05-RR01.txt
+    # Run curl -s -o /dev/null - find total time
+    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji05-RR01.txt
     # Run ab
-    ab -n 100 -c 10 http://192.168.146.100:1000/index.html |& tee -a Uji05-RR01.txt
+    ab -n 100 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji05-RR01.txt
     # Load python toggle stop
     python3 AppToggleUjiStop.py
     sleep 1
@@ -36,10 +36,10 @@ for i in {0..29..1}
     # Load python toggle start
     python3 AppToggleUjiStart.py
     echo "Tes request 200" |& tee -a Uji05-RR02.txt
-    # Run curl - find total time
-    curl -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:1000/index.html |& tee -a Uji05-RR02.txt
+    # Run curl -s -o /dev/null - find total time
+    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji05-RR02.txt
     # Run ab
-    ab -n 200 -c 10 http://192.168.146.100:1000/index.html |& tee -a Uji05-RR02.txt
+    ab -n 200 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji05-RR02.txt
     # Load python toggle stop
     python3 AppToggleUjiStop.py
     sleep 1
@@ -60,10 +60,10 @@ for i in {0..29..1}
     # Load python toggle start
     python3 AppToggleUjiStart.py
     echo "Tes request 300" |& tee -a Uji05-RR03.txt
-    # Run curl - find total time
-    curl -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:1000/index.html |& tee -a Uji05-RR03.txt
+    # Run curl -s -o /dev/null - find total time
+    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji05-RR03.txt
     # Run ab
-    ab -n 300 -c 10 http://192.168.146.100:1000/index.html |& tee -a Uji05-RR03.txt
+    ab -n 300 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji05-RR03.txt
     # Load python toggle stop
     python3 AppToggleUjiStop.py
     sleep 1
@@ -84,10 +84,10 @@ for i in {0..29..1}
     # Load python toggle start
     python3 AppToggleUjiStart.py
     echo "Tes request 400" |& tee -a Uji05-RR04.txt
-    # Run curl - find total time
-    curl -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:1000/index.html |& tee -a Uji05-RR04.txt
+    # Run curl -s -o /dev/null - find total time
+    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji05-RR04.txt
     # Run ab
-    ab -n 400 -c 10 http://192.168.146.100:1000/index.html |& tee -a Uji05-RR04.txt
+    ab -n 400 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji05-RR04.txt
     # Load python toggle stop
     python3 AppToggleUjiStop.py
     sleep 1
@@ -107,10 +107,10 @@ for i in {0..29..1}
     # Load python toggle start
     python3 AppToggleUjiStart.py
     echo "Tes request 500" |& tee -a Uji05-RR05.txt
-    # Run curl - find total time
-    curl -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:1000/index.html |& tee -a Uji05-RR05.txt
+    # Run curl -s -o /dev/null - find total time
+    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji05-RR05.txt
     # Run ab
-    ab -n 500 -c 10 http://192.168.146.100:1000/index.html |& tee -a Uji05-RR05.txt
+    ab -n 500 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji05-RR05.txt
     # Load python toggle stop
     python3 AppToggleUjiStop.py
     sleep 1
