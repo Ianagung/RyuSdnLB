@@ -44,9 +44,9 @@ import pandas as pd
 
 broker_url = "127.0.0.1"
 broker_port = 1883
-add01 = 'http://192.168.146.4:80'
-add02 = 'http://192.168.146.15:80'
-add03 = 'http://192.168.146.16:80'
+add01 = 'http://192.168.146.4:8080'
+add02 = 'http://192.168.146.15:8080'
+add03 = 'http://192.168.146.16:8080'
 alamat_ip = [add01, add02, add03]
 cpu01 = 30
 cpu02 = 30
@@ -93,8 +93,8 @@ mean_cpu_server03 = 1
 mean_mem_server01 = 1
 mean_mem_server02 = 1
 mean_mem_server03 = 1
-f_name = 'Uji05-FZ01.csv'
-f_name2 = 'Uji05-FZ02.csv' #Value of CPU Memory Network per sec for time series analysis
+f_name = 'Uji05-RR01.csv'
+f_name2 = 'Uji05-RR02.csv' #Value of CPU Memory Network per sec for time series analysis
 # getting length of list
 lengths = len(listserver)
 serverCount = 1
@@ -136,32 +136,32 @@ def on_message(client, userdata, message):
 def on_message_from_cpu01(client, userdata, message):
     global cpu01
     cpu01 = float(message.payload.decode())
-    #print("Value Cpu01: "+str(cpu01))
+    print("Value Cpu01: "+str(cpu01))
 
 def on_message_from_cpu02(client, userdata, message):
     global cpu02
     cpu02 = float(message.payload.decode())
-    #print("Value Cpu02: "+str(cpu02))
+    print("Value Cpu02: "+str(cpu02))
 
 def on_message_from_cpu03(client, userdata, message):
     global cpu03
     cpu03 = float(message.payload.decode())
-    #print("Value Cpu03: "+str(cpu03))
+    print("Value Cpu03: "+str(cpu03))
 
 def on_message_from_mem01(client, userdata, message):
     global mem01
     mem01 = float(message.payload.decode())
-    #print("Value mem01: "+str(mem01))
+    print("Value mem01: "+str(mem01))
 
 def on_message_from_mem02(client, userdata, message):
     global mem02
     mem02 = float(message.payload.decode())
-    #print("Value mem02: "+str(mem02))
+    print("Value mem02: "+str(mem02))
 
 def on_message_from_mem03(client, userdata, message):
     global mem03
     mem03 = float(message.payload.decode())
-    #print("Value mem03: "+str(mem03))
+    print("Value mem03: "+str(mem03))
 
 def on_message_from_rsptm01(client, userdata, message):
     global rsptm01
@@ -190,18 +190,18 @@ def on_message_from_rspstd03(client, userdata, message):
 def on_message_from_thruput01(client, userdata, message):
     global thruput01
     thruput01 = int(message.payload.decode())
-    #print("Nilai thruput 01: "+ str(thruput01))
+    print("Nilai thruput 01: "+ str(thruput01))
     #truput_server01.append(float(thruput01))
 
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
     thruput02 = int(message.payload.decode())
-    #print("Nilai thruput 02: "+str(thruput02))
+    print("Nilai thruput 02: "+str(thruput02))
 
 def on_message_from_thruput03(client, userdata, message):
     global thruput03
     thruput03 = int(message.payload.decode())
-    #print("Nilai thruput 03: "+str(thruput03))
+    print("Nilai thruput 03: "+str(thruput03))
 
 def on_message_from_toggleuji(client, userdata, message):
     global togglestartstoptes
@@ -414,10 +414,10 @@ def job1Random():
 def job1RR():
     global serverCount 
          
-#     serverCount+=1
-#     if(serverCount>3):
-#         serverCount=1
-#     #Publish data to MQTT Broker
+    #     serverCount+=1
+    #     if(serverCount>3):
+    #         serverCount=1
+    #     #Publish data to MQTT Broker
      #msg = serverCount
     msg = '0'
     print("Round Robin Server =", msg)
