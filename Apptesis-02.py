@@ -620,7 +620,7 @@ def job3Uji():
                 'truput01': truput_server01, 'truput02': truput_server02, 'truput03': truput_server03}            
         df1 = pd.DataFrame(dict)      
         # saving the dataframe
-        df1.to_csv(f_name2 , mode='a')
+        df1.to_csv(f_name2 , mode='a', header=False)
         
         #reset toggle value
         togglestartstoptes = 2
