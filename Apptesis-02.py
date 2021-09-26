@@ -191,7 +191,7 @@ def on_message_from_thruput01(client, userdata, message):
     global thruput01
     thruput01 = int(message.payload.decode())
     print("Nilai thruput 01: "+ str(thruput01))
-    #truput_server01.append(float(thruput01))
+    truput_server01.append(float(thruput01))
 
 def on_message_from_thruput02(client, userdata, message):
     global thruput02
@@ -652,4 +652,4 @@ def job_makstruput():
 # This timer will run job() five times, one second apart
 timer4 = multitimer.MultiTimer(interval=1, function=job_makstruput, count=-1)
 # Also, this timer would run indefinitely...
-#timer4.start()
+timer4.start()
