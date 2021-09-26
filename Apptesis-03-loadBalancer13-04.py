@@ -65,7 +65,7 @@ class loadBalancer13(app_manager.RyuApp):
         ############Count to indicate which server to use for TCP session. H1=1, H2=2, H3=3
 
         self.serverCount=1
-        self.algoritma = 0
+        self.algoritma = 1
         self.toggleServerCount = 0
         #toggleServerCount = 0, not send server count as AB Load Test Server is running & sent the count
         #toggleServerCount = 1, send server count as D-ITG Test is running
