@@ -1,0 +1,1375 @@
+Pengujian Load Balancing dimulai - Uji5 Dengan Beban - Algoritma Fuzzy
+Testing number 0 
+Tes request 100
+Total Time: 1,024531
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.486 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.71 [#/sec] (mean)
+Time per request:       1148.574 [ms] (mean)
+Time per request:       114.857 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.77 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1005 1019   4.6   1019    1031
+Processing:     1   11  35.2      5     211
+Waiting:        0   10  35.4      4     211
+Total:       1006 1030  36.5   1024    1236
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1029
+  80%   1030
+  90%   1033
+  95%   1034
+  98%   1235
+  99%   1236
+ 100%   1236 (longest request)
+selesai
+Testing number 1 
+Tes request 100
+Total Time: 1,009004
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.451 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.140 [ms] (mean)
+Time per request:       114.514 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1003 1019   4.7   1020    1026
+Processing:     1   11  35.6      5     213
+Waiting:        0   10  35.6      4     212
+Total:       1005 1030  36.8   1024    1236
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1028
+  80%   1030
+  90%   1034
+  95%   1037
+  98%   1235
+  99%   1236
+ 100%   1236 (longest request)
+selesai
+Testing number 2 
+Tes request 100
+Total Time: 1,006923
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.456 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.587 [ms] (mean)
+Time per request:       114.559 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1003 1018   4.2   1019    1027
+Processing:     1   13  40.2      5     212
+Waiting:        0   12  40.2      4     212
+Total:       1005 1032  41.2   1024    1233
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1028
+  80%   1029
+  90%   1031
+  95%   1036
+  98%   1231
+  99%   1233
+ 100%   1233 (longest request)
+selesai
+Testing number 3 
+Tes request 100
+Total Time: 1,023897
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.447 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.74 [#/sec] (mean)
+Time per request:       1144.660 [ms] (mean)
+Time per request:       114.466 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1009 1019   4.2   1018    1033
+Processing:     1   12  34.6      5     208
+Waiting:        0   11  34.6      4     207
+Total:       1011 1031  34.9   1024    1225
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1029
+  80%   1031
+  90%   1036
+  95%   1044
+  98%   1224
+  99%   1225
+ 100%   1225 (longest request)
+selesai
+Testing number 4 
+Tes request 100
+Total Time: 1,027189
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.451 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.116 [ms] (mean)
+Time per request:       114.512 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1006 1019   6.0   1018    1031
+Processing:     1   13  39.4      5     206
+Waiting:        0   12  39.4      5     205
+Total:       1008 1032  41.7   1024    1234
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1029
+  80%   1031
+  90%   1035
+  95%   1039
+  98%   1233
+  99%   1234
+ 100%   1234 (longest request)
+selesai
+Testing number 5 
+Tes request 100
+Total Time: 1,016707
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.457 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.705 [ms] (mean)
+Time per request:       114.570 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1009 1019   4.5   1018    1027
+Processing:     1   12  34.7      5     210
+Waiting:        0   11  34.7      4     210
+Total:       1011 1030  35.9   1025    1233
+
+Percentage of the requests served within a certain time (ms)
+  50%   1025
+  66%   1027
+  75%   1029
+  80%   1030
+  90%   1032
+  95%   1035
+  98%   1230
+  99%   1233
+ 100%   1233 (longest request)
+selesai
+Testing number 6 
+Tes request 100
+Total Time: 1,004846
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.456 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.577 [ms] (mean)
+Time per request:       114.558 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1003 1018   4.8   1019    1027
+Processing:     1   13  40.3      5     212
+Waiting:        0   12  40.4      4     211
+Total:       1005 1032  41.1   1024    1235
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1028
+  80%   1029
+  90%   1032
+  95%   1037
+  98%   1229
+  99%   1235
+ 100%   1235 (longest request)
+selesai
+Testing number 7 
+Tes request 100
+Total Time: 1,012956
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.457 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.681 [ms] (mean)
+Time per request:       114.568 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1003 1019   6.1   1019    1034
+Processing:     1   12  35.2      4     210
+Waiting:        0   10  35.3      3     210
+Total:       1005 1031  36.9   1026    1235
+
+Percentage of the requests served within a certain time (ms)
+  50%   1026
+  66%   1028
+  75%   1031
+  80%   1033
+  90%   1038
+  95%   1045
+  98%   1235
+  99%   1235
+ 100%   1235 (longest request)
+selesai
+Testing number 8 
+Tes request 100
+Total Time: 1,038499
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.451 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.143 [ms] (mean)
+Time per request:       114.514 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1003 1019   4.8   1019    1030
+Processing:     1   11  34.5      5     207
+Waiting:        0   10  34.5      4     206
+Total:       1004 1030  35.8   1024    1231
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1029
+  80%   1031
+  90%   1031
+  95%   1040
+  98%   1230
+  99%   1231
+ 100%   1231 (longest request)
+selesai
+Testing number 9 
+Tes request 100
+Total Time: 1,021390
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.461 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.72 [#/sec] (mean)
+Time per request:       1146.141 [ms] (mean)
+Time per request:       114.614 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1006 1019   4.2   1019    1027
+Processing:     1   13  40.2      5     211
+Waiting:        0   12  40.2      4     210
+Total:       1009 1032  41.2   1024    1235
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1028
+  80%   1029
+  90%   1032
+  95%   1035
+  98%   1234
+  99%   1235
+ 100%   1235 (longest request)
+selesai
+Testing number 10 
+Tes request 100
+Total Time: 1,005264
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   12.249 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.16 [#/sec] (mean)
+Time per request:       1224.946 [ms] (mean)
+Time per request:       122.495 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.60 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1002 1040 202.0   1021    3039
+Processing:     1   10  29.0      4     210
+Waiting:        0    9  28.9      3     207
+Total:       1004 1050 203.4   1025    3040
+
+Percentage of the requests served within a certain time (ms)
+  50%   1025
+  66%   1027
+  75%   1031
+  80%   1032
+  90%   1039
+  95%   1052
+  98%   1236
+  99%   3040
+ 100%   3040 (longest request)
+selesai
+Testing number 11 
+Tes request 100
+Total Time: 1,009713
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.517 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.68 [#/sec] (mean)
+Time per request:       1151.717 [ms] (mean)
+Time per request:       115.172 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.76 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1003 1020   6.3   1021    1033
+Processing:     1   15  40.9      5     215
+Waiting:        0   13  41.1      3     214
+Total:       1006 1034  42.8   1025    1243
+
+Percentage of the requests served within a certain time (ms)
+  50%   1025
+  66%   1031
+  75%   1033
+  80%   1034
+  90%   1039
+  95%   1050
+  98%   1243
+  99%   1243
+ 100%   1243 (longest request)
+selesai
+Testing number 12 
+Tes request 100
+Total Time: 1,005133
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.453 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.297 [ms] (mean)
+Time per request:       114.530 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1001 1019   7.0   1019    1035
+Processing:     1   11  34.3      5     205
+Waiting:        0   10  34.4      4     205
+Total:       1003 1030  37.4   1024    1238
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1026
+  75%   1029
+  80%   1030
+  90%   1038
+  95%   1041
+  98%   1238
+  99%   1238
+ 100%   1238 (longest request)
+selesai
+Testing number 13 
+Tes request 100
+Total Time: 1,003804
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.488 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.70 [#/sec] (mean)
+Time per request:       1148.779 [ms] (mean)
+Time per request:       114.878 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.77 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1006 1020   5.1   1020    1035
+Processing:     1   14  41.1      4     215
+Waiting:        0   12  41.2      2     215
+Total:       1008 1034  42.4   1024    1239
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1029
+  75%   1030
+  80%   1032
+  90%   1042
+  95%   1059
+  98%   1238
+  99%   1239
+ 100%   1239 (longest request)
+selesai
+Testing number 14 
+Tes request 100
+Total Time: 1,032499
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.451 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.076 [ms] (mean)
+Time per request:       114.508 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1000 1019   5.5   1020    1029
+Processing:     1   12  35.9      5     214
+Waiting:        0   11  36.0      3     214
+Total:       1002 1031  37.3   1025    1237
+
+Percentage of the requests served within a certain time (ms)
+  50%   1025
+  66%   1027
+  75%   1029
+  80%   1030
+  90%   1038
+  95%   1047
+  98%   1237
+  99%   1237
+ 100%   1237 (longest request)
+selesai
+Testing number 15 
+Tes request 100
+Total Time: 1,019681
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.519 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.68 [#/sec] (mean)
+Time per request:       1151.906 [ms] (mean)
+Time per request:       115.191 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.76 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1005 1021  11.8   1020    1086
+Processing:     1   12  35.2      5     210
+Waiting:        0   10  35.3      3     209
+Total:       1007 1033  37.6   1025    1233
+
+Percentage of the requests served within a certain time (ms)
+  50%   1025
+  66%   1028
+  75%   1030
+  80%   1032
+  90%   1044
+  95%   1091
+  98%   1232
+  99%   1233
+ 100%   1233 (longest request)
+selesai
+Testing number 16 
+Tes request 100
+Total Time: 1,010964
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.457 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.713 [ms] (mean)
+Time per request:       114.571 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1002 1019   4.4   1019    1025
+Processing:     1   13  40.3      4     213
+Waiting:        0   12  40.1      3     212
+Total:       1004 1032  41.7   1024    1237
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1026
+  75%   1028
+  80%   1028
+  90%   1031
+  95%   1043
+  98%   1236
+  99%   1237
+ 100%   1237 (longest request)
+selesai
+Testing number 17 
+Tes request 100
+Total Time: 1,031782
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.452 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.209 [ms] (mean)
+Time per request:       114.521 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1002 1018   6.5   1019    1035
+Processing:     1   12  35.3      6     211
+Waiting:        0   11  35.4      4     211
+Total:       1004 1031  37.0   1025    1235
+
+Percentage of the requests served within a certain time (ms)
+  50%   1025
+  66%   1028
+  75%   1030
+  80%   1031
+  90%   1036
+  95%   1045
+  98%   1235
+  99%   1235
+ 100%   1235 (longest request)
+selesai
+Testing number 18 
+Tes request 100
+Total Time: 1,002375
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.455 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.527 [ms] (mean)
+Time per request:       114.553 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1002 1019   5.7   1020    1038
+Processing:     1   12  35.9      5     214
+Waiting:        0   10  35.9      3     213
+Total:       1004 1031  37.2   1025    1237
+
+Percentage of the requests served within a certain time (ms)
+  50%   1025
+  66%   1028
+  75%   1029
+  80%   1030
+  90%   1038
+  95%   1052
+  98%   1236
+  99%   1237
+ 100%   1237 (longest request)
+selesai
+Testing number 19 
+Tes request 100
+Total Time: 1,005098
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.453 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.291 [ms] (mean)
+Time per request:       114.529 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1006 1019   3.6   1020    1028
+Processing:     1   11  34.6      4     207
+Waiting:        0   10  34.6      3     206
+Total:       1008 1030  35.4   1024    1229
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1028
+  80%   1028
+  90%   1031
+  95%   1033
+  98%   1228
+  99%   1229
+ 100%   1229 (longest request)
+selesai
+Testing number 20 
+Tes request 100
+Total Time: 1,018765
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.455 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.519 [ms] (mean)
+Time per request:       114.552 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1004 1018   4.0   1018    1028
+Processing:     1   13  40.4      5     211
+Waiting:        0   12  40.4      4     210
+Total:       1008 1031  40.5   1024    1229
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1025
+  75%   1027
+  80%   1028
+  90%   1031
+  95%   1036
+  98%   1228
+  99%   1229
+ 100%   1229 (longest request)
+selesai
+Testing number 21 
+Tes request 100
+Total Time: 1,001773
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.453 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.341 [ms] (mean)
+Time per request:       114.534 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1005 1019   3.6   1020    1024
+Processing:     1   12  35.4      5     211
+Waiting:        0   11  35.4      4     210
+Total:       1006 1031  36.2   1024    1234
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1028
+  80%   1029
+  90%   1033
+  95%   1051
+  98%   1233
+  99%   1234
+ 100%   1234 (longest request)
+selesai
+Testing number 22 
+Tes request 100
+Total Time: 1,011008
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.481 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.71 [#/sec] (mean)
+Time per request:       1148.113 [ms] (mean)
+Time per request:       114.811 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.77 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1010 1021   4.7   1020    1033
+Processing:     1    9  29.3      4     213
+Waiting:        0    8  29.3      3     211
+Total:       1012 1029  30.8   1024    1241
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1029
+  80%   1031
+  90%   1034
+  95%   1040
+  98%   1238
+  99%   1241
+ 100%   1241 (longest request)
+selesai
+Testing number 23 
+Tes request 100
+Total Time: 1,015711
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.455 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.454 [ms] (mean)
+Time per request:       114.545 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1002 1019   5.5   1020    1031
+Processing:     1   12  35.7      5     214
+Waiting:        0   11  35.6      3     214
+Total:       1003 1031  37.2   1025    1238
+
+Percentage of the requests served within a certain time (ms)
+  50%   1025
+  66%   1028
+  75%   1030
+  80%   1032
+  90%   1038
+  95%   1045
+  98%   1238
+  99%   1238
+ 100%   1238 (longest request)
+selesai
+Testing number 24 
+Tes request 100
+Total Time: 1,017533
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.452 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.161 [ms] (mean)
+Time per request:       114.516 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1001 1019   5.7   1021    1034
+Processing:     1   11  35.6      4     214
+Waiting:        0   10  35.6      3     212
+Total:       1003 1030  37.0   1025    1238
+
+Percentage of the requests served within a certain time (ms)
+  50%   1025
+  66%   1027
+  75%   1030
+  80%   1030
+  90%   1033
+  95%   1039
+  98%   1235
+  99%   1238
+ 100%   1238 (longest request)
+selesai
+Testing number 25 
+Tes request 100
+Total Time: 1,015181
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.464 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.72 [#/sec] (mean)
+Time per request:       1146.397 [ms] (mean)
+Time per request:       114.640 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1005 1018   4.3   1019    1034
+Processing:     1   11  34.7      4     208
+Waiting:        0   10  34.7      3     207
+Total:       1007 1030  35.0   1024    1226
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1029
+  80%   1030
+  90%   1033
+  95%   1037
+  98%   1224
+  99%   1226
+ 100%   1226 (longest request)
+selesai
+Testing number 26 
+Tes request 100
+Total Time: 1,032083
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 99 requests completed
+selesai
+Testing number 27 
+Tes request 100
+Total Time: 1,026026
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.452 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1145.206 [ms] (mean)
+Time per request:       114.521 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1005 1019   4.7   1020    1031
+Processing:     1   11  35.2      4     210
+Waiting:        0   10  35.2      3     210
+Total:       1007 1030  36.4   1024    1234
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1029
+  80%   1029
+  90%   1032
+  95%   1033
+  98%   1233
+  99%   1234
+ 100%   1234 (longest request)
+selesai
+Testing number 28 
+Tes request 100
+Total Time: 1,006016
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.450 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.73 [#/sec] (mean)
+Time per request:       1144.973 [ms] (mean)
+Time per request:       114.497 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1004 1019   6.6   1019    1036
+Processing:     1   11  34.8      5     211
+Waiting:        0   10  34.7      4     209
+Total:       1005 1030  36.7   1024    1234
+
+Percentage of the requests served within a certain time (ms)
+  50%   1024
+  66%   1027
+  75%   1031
+  80%   1031
+  90%   1035
+  95%   1040
+  98%   1234
+  99%   1234
+ 100%   1234 (longest request)
+selesai
+Testing number 29 
+Tes request 100
+Total Time: 1,032649
+Code: 200
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.146.100 (be patient).....done
+
+
+Server Software:        BaseHTTP/0.3
+Server Hostname:        192.168.146.100
+Server Port:            8080
+
+Document Path:          /index.html
+Document Length:        209 bytes
+
+Concurrency Level:      10
+Time taken for tests:   11.484 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      32600 bytes
+HTML transferred:       20900 bytes
+Requests per second:    8.71 [#/sec] (mean)
+Time per request:       1148.436 [ms] (mean)
+Time per request:       114.844 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.77 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:     1002 1022   7.0   1022    1038
+Processing:     1   10  36.5      3     218
+Waiting:        0    9  36.5      2     217
+Total:       1003 1032  37.7   1025    1242
+
+Percentage of the requests served within a certain time (ms)
+  50%   1025
+  66%   1028
+  75%   1030
+  80%   1032
+  90%   1038
+  95%   1047
+  98%   1240
+  99%   1242
+ 100%   1242 (longest request)
+selesai

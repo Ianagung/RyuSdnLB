@@ -75,16 +75,11 @@ class RequestHandler(http.server.SimpleHTTPRequestHandler):
             self.send_error(404,'File not found!')
 
 
-def run():
+def run(self):
     print('http server is starting...')
     #by default http server port is 80
-    # Creating Server
-    ServerClass  = http.server.HTTPServer
-    
-    # Defining protocol
-    Protocol     = "HTTP/1.0"
     server_address = ('127.0.0.1', 8080)
-    httpd = ServerClass(server_address, RequestHandler)
+    httpd = self.ServerClass(server_address, RequestHandler)
     try:
         # Getting logs
         sa = httpd.socket.getsockname()
