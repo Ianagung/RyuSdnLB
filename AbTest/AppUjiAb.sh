@@ -1,121 +1,121 @@
 #!/bin/bash
 #defining a variable
-Kalimat="Pengujian Load Balancing dimulai - Uji5 Dengan Beban - Algoritma Fuzzy"
-echo $Kalimat |& tee Uji05-FZ01.txt
+Kalimat="Pengujian Load Balancing dimulai - Uji6 Tanpa Beban Hanya Traffic - Algoritma Round Robin"
+echo $Kalimat |& tee Uji06-RR01.txt
 # for loop
 for i in {0..29..1}
   do 
     
     #sleep 5
-    echo "Testing number $i " |& tee -a Uji05-FZ01.txt
+    echo "Testing number $i " |& tee -a Uji06-RR01.txt
 
     # Load python toggle start
     python3 AppToggleUjiStart.py
-    echo "Tes request 100" |& tee -a Uji05-FZ01.txt
+    echo "Tes request 100" |& tee -a Uji06-RR01.txt
     # Run curl -s -o /dev/null - find total time
-    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji05-FZ01.txt
+    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji06-RR01.txt
     # Run ab
-    ab -n 100 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji05-FZ01.txt
+    ab -n 100 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji06-RR01.txt
     # Load python toggle stop
     python3 AppToggleUjiStop.py
     sleep 1
 
-    echo "selesai" |& tee -a Uji05-FZ01.txt
+    echo "selesai" |& tee -a Uji06-RR01.txt
     sleep 1    
  done
 # End loop
 
-echo $Kalimat |& tee Uji05-FZ02.txt
+echo $Kalimat |& tee Uji06-RR02.txt
 # for loop
 for i in {0..29..1}
   do 
     
     #sleep 5
-    echo "Testing number $i " |& tee -a Uji05-FZ02.txt
+    echo "Testing number $i " |& tee -a Uji06-RR02.txt
 
     # Load python toggle start
     python3 AppToggleUjiStart.py
-    echo "Tes request 200" |& tee -a Uji05-FZ02.txt
+    echo "Tes request 200" |& tee -a Uji06-RR02.txt
     # Run curl -s -o /dev/null - find total time
-    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji05-FZ02.txt
+    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji06-RR02.txt
     # Run ab
-    ab -n 200 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji05-FZ02.txt
+    ab -n 200 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji06-RR02.txt
     # Load python toggle stop
     python3 AppToggleUjiStop.py
     sleep 1
 
-    echo "selesai" |& tee -a Uji05-FZ02.txt
+    echo "selesai" |& tee -a Uji06-RR02.txt
     sleep 1    
  done
 # End loop
 
-echo $Kalimat |& tee Uji05-FZ03.txt
+echo $Kalimat |& tee Uji06-RR03.txt
 # for loop
 for i in {0..29..1}
   do 
     
     #sleep 5
-    echo "Testing number $i " |& tee -a Uji05-FZ03.txt
+    echo "Testing number $i " |& tee -a Uji06-RR03.txt
 
     # Load python toggle start
     python3 AppToggleUjiStart.py
-    echo "Tes request 300" |& tee -a Uji05-FZ03.txt
+    echo "Tes request 300" |& tee -a Uji06-RR03.txt
     # Run curl -s -o /dev/null - find total time
-    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji05-FZ03.txt
+    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji06-RR03.txt
     # Run ab
-    ab -n 300 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji05-FZ03.txt
+    ab -n 300 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji06-RR03.txt
     # Load python toggle stop
     python3 AppToggleUjiStop.py
     sleep 1
 
-    echo "selesai" |& tee -a Uji05-FZ03.txt
+    echo "selesai" |& tee -a Uji06-RR03.txt
     sleep 1    
  done
 # End loop
 
-echo $Kalimat |& tee Uji05-FZ04.txt
+echo $Kalimat |& tee Uji06-RR04.txt
 # for loop
 for i in {0..29..1}
   do 
     
     #sleep 5
-    echo "Testing number $i " |& tee -a Uji05-FZ04.txt
+    echo "Testing number $i " |& tee -a Uji06-RR04.txt
 
     # Load python toggle start
     python3 AppToggleUjiStart.py
-    echo "Tes request 400" |& tee -a Uji05-FZ04.txt
+    echo "Tes request 400" |& tee -a Uji06-RR04.txt
     # Run curl -s -o /dev/null - find total time
-    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji05-FZ04.txt
+    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji06-RR04.txt
     # Run ab
-    ab -n 400 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji05-FZ04.txt
+    ab -n 400 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji06-RR04.txt
     # Load python toggle stop
     python3 AppToggleUjiStop.py
     sleep 1
 
-    echo "selesai" |& tee -a Uji05-FZ04.txt
+    echo "selesai" |& tee -a Uji06-RR04.txt
     sleep 1    
  done
 # End loop
 
-echo $Kalimat |& tee Uji05-FZ05.txt
+echo $Kalimat |& tee Uji06-RR05.txt
 # for loop
 for i in {0..29..1}
   do 
     
     #sleep 5
-    echo "Testing number $i " |& tee -a Uji05-FZ05.txt
+    echo "Testing number $i " |& tee -a Uji06-RR05.txt
     # Load python toggle start
     python3 AppToggleUjiStart.py
-    echo "Tes request 500" |& tee -a Uji05-FZ05.txt
+    echo "Tes request 500" |& tee -a Uji06-RR05.txt
     # Run curl -s -o /dev/null - find total time
-    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji05-FZ05.txt
+    curl -s -o /dev/null -w "Total Time: %{time_total}\nCode: %{response_code}\n" http://192.168.146.100:8080/index.html |& tee -a Uji06-RR05.txt
     # Run ab
-    ab -n 500 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji05-FZ05.txt
+    ab -n 500 -c 10 http://192.168.146.100:8080/index.html |& tee -a Uji06-RR05.txt
     # Load python toggle stop
     python3 AppToggleUjiStop.py
     sleep 1
 
-    echo "selesai" |& tee -a Uji05-FZ05.txt
+    echo "selesai" |& tee -a Uji06-RR05.txt
     sleep 1    
  done
 # End loop
